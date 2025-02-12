@@ -1,4 +1,5 @@
 import brainwave from "./brainwave.svg";
+import waylogo from "./waylogo.png";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -100,6 +101,7 @@ export {
   background,
   curve,
   robot,
+  waylogo,
   heroBackground,
   curve1,
   curve2,

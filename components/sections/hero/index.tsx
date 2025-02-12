@@ -57,13 +57,14 @@ const Hero = (props: Props) => {
                   "aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]"
                 )}
               >
-                <Image
-                  src={images.robot}
-                  width={1024}
-                  height={490}
-                  className="w-full translate-y-[8%] scale-[1.7] md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
-                  alt="AI"
-                />
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="w-full translate-y-[8%] aspect-video scale-[1.7] md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
+                >
+                  <source src={images.heroVideo} type="video/mp4" />
+                </video>
 
                 <Generating className="absolute inset-x-4 bottom-5 md:bottom-8 md:left-1/2 md:right-auto md:w-[31rem] md:-translate-x-1/2" />
 

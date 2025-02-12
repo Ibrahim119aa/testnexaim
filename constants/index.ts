@@ -23,6 +23,7 @@ export const images = {
   background: "/assets/background.jpg",
   curve: "/assets/hero/curve.png",
   robot: "/assets/hero/robot.jpg",
+  heroVideo: "/assets/hero/Agency.mp4",
   heroBackground: "/assets/hero/hero-background.jpg",
   curve1: "/assets/collaboration/curve-1.svg",
   curve2: "/assets/collaboration/curve-2.svg",
@@ -146,7 +147,13 @@ export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const companyLogos = [
+  "/assets/brands/Image8.png",
+  "/assets/brands/Image2.png",
+  "/assets/brands/Image3.png",
+  "/assets/brands/Image5.jpg",
+  "/assets/brands/Image6.png",
+];
 
 export const brainwaveServices = ["Photo generating", "Photo enhance", "Seamless Integration"];
 
@@ -305,16 +312,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Création & Développement Web",
+    text: "Sites institutionnels (Vitrine, corporate, portfolio), E-commerce (Boutique en ligne, marketplaces), Sites de contenu (Blogs, magazines, actualités), Sites éducatifs (Plateformes d'apprentissage, ressources pédagogiques), Services en ligne (Réservation en ligne, applications web), Sites personnels (Blogs et sites personnels).",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Design & Branding",
+    text: "Création d'identité visuelle, Conception de logos, Supports de communication (Flyers, brochures, cartes de visite).",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -322,16 +329,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "Stratégie Marketing (SEM)",
+    text: "SEO (Optimisation pour les moteurs de recherche), SEA (Publicité sur les moteurs de recherche) : Google Ads.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Communication & Réseaux Sociaux",
+    text: "Community Management, Création et planification de contenu (Posts, vidéos, infographies), Publicité sponsorisée (Campagnes META ADS : Facebook, Instagram).",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -339,18 +346,34 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Marketing Digital",
+    text: "Élaboration de stratégies digitales sur-mesure, Emailing & Automatisation (Campagnes ciblées et automatisées), Publicité en ligne (Display, retargeting, etc.).",
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Événementiel & Gestion d'Événements",
+    text: "Lancements de produits, Séminaires et conférences, Team-building et événements d'entreprise.",
     backgroundUrl: "assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "6",
+    title: "Développement d'Applications & Solutions",
+    text: "Applications mobiles (iOS & Android), Solutions web & SaaS (Applications en ligne et solutions personnalisées), Maintenance et support (Suivi et optimisation des applications).",
+    backgroundUrl: "assets/benefits/card-1.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "7",
+    title: "Maintenance & Support Web",
+    text: "Sécurisation et mises à jour, Hébergement & support technique, Audit & optimisation des performances.",
+    backgroundUrl: "assets/benefits/card-3.svg",
+    iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
   },
 ];
