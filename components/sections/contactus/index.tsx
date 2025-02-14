@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
 import { useState } from "react";
 import { images } from "@/constants";
-import { Heading } from "lucide-react";
+import Heading from "@/components/atoms/heading";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -40,7 +40,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <Heading tag="Get started with Brainwave" title="Pay once, use forever" />
+        <Heading tag="Get started with 1way2com" title="Pay once, Build Brand Forever" />
         <div className="relative max-w-lg m-auto">
           <div className="bg-conic-gradient rounded-xl p-[1px]">
             <Card className="w-full relative bg-n-8 backdrop-blur-xl border border-[#ffffff10]">
