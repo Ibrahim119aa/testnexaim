@@ -18,8 +18,8 @@ export const Gradient = () => {
 
 export const PhotoChatMessage = () => {
   return (
-    <div className="absolute right-8 top-8 max-w-[17.5rem] rounded-t-xl rounded-bl-xl bg-black px-8 py-6 font-code text-base lg:right-[8.75rem] lg:top-16 lg:max-w-[17.5rem]">
-      Hey 1waycom, enhance this photo
+    <div className="absolute right-8 top-8 max-w-[17.5rem] rounded-t-xl rounded-bl-xl bg-black text-white px-8 py-6 font-code text-base lg:right-[8.75rem] lg:top-16 lg:max-w-[17.5rem]">
+      Hey 1way2com, enhance my digial marketing.
       <ChatBubbleWing className="absolute bottom-0 left-full" />
     </div>
   );
@@ -27,8 +27,8 @@ export const PhotoChatMessage = () => {
 
 export const VideoChatMessage = () => {
   return (
-    <div className="absolute left-[3.125rem] top-8 w-full max-w-56 rounded-t-xl rounded-br-xl bg-n-6 pb-7 pl-5 pr-2.5 pt-2.5 font-code text-base md:max-w-[17.5rem]">
-      Video generated!
+    <div className="absolute left-[3.125rem] top-8 w-full max-w-56 text-white rounded-t-xl rounded-br-xl bg-n-6 pb-7 pl-5 pr-2.5 pt-2.5 font-code text-base md:max-w-[17.5rem]">
+      Need Digital Marketing!
       <div className="absolute bottom-[-1.125rem] left-5 flex size-9 items-center justify-center rounded-xl bg-color-1">
         <Image src={images.brainwaveWhiteSymbol} width={26} height={26} alt="Brainwave" />
       </div>

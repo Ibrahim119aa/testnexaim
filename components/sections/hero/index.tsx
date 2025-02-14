@@ -26,8 +26,8 @@ const Hero = (props: Props) => {
     >
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24">
-          <h1 className="h1 mb-6">
-            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
+          <h1 className="h1 mb-6 text-white">
+            Explore the Possibilities of&nbsp;Digital&nbsp;Marketing with{" "}
             <span className="relative inline-block">
               1WayCom
               <Image
@@ -40,8 +40,8 @@ const Hero = (props: Props) => {
             </span>
           </h1>
           <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            Unleash the power of AI within 1waycom. Upgrade your productivity with 1waycom, the open
-            AI chat app.
+            Unleash the power of AI with 1way2com. Upgrade your productivity with 1way2com, the
+            digital marketing and AI call app.
           </p>
           <Button href="#pricing" white>
             Get Started
@@ -81,7 +81,7 @@ const Hero = (props: Props) => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="absolute bottom-44 right-[-5.5rem] hidden w-72 xl:flex"
-                    title="Code generation"
+                    title="Call AI"
                   />
                 </ScrollParallax>
               </div>

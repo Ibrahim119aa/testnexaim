@@ -23,8 +23,8 @@ const Services = (props: Props) => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Generative Digital Marketing AI made for creators."
+          text="1way2com unlocks the potential of AI-powered applications"
         />
 
         <div className="relative">
@@ -40,15 +40,15 @@ const Services = (props: Props) => {
             </div>
 
             <div className="relative z-1 ml-auto max-w-[17rem]">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+              <h4 className="h4 mb-4">Digital Marketing</h4>
               <p className="body-2 mb-12 text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                1way2com unlocks the potential of AI-powered applications
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((service, index) => (
                   <li key={index} className="flex items-start border-t border-n-6 py-4">
                     <Image src={images.check} alt="check" width={24} height={24} />
-                    <p className="ml-4">{service}</p>
+                    <p className="ml-4 text-white">{service}</p>
                   </li>
                 ))}
               </ul>
@@ -68,10 +68,10 @@ const Services = (props: Props) => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-b from-n-8/0 to-n-8/90 p-8 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4 text-white">Digital Branding</h4>
                 <p className="body-2 mb-12 text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s photo editing feature.
-                  Try it now!
+                  Automatically enhance your photos using our Digital Marketing and Branding Try it
+                  now!
                 </p>
               </div>
 
@@ -80,7 +80,7 @@ const Services = (props: Props) => {
 
             <div className="overflow-hidden rounded-3xl bg-n-7 p-4 lg:min-h-[46rem]">
               <div className="px-4 py-12 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4 text-white">Video generation</h4>
                 <p className="body-2 mb-8 text-n-3">
                   The world’s most powerful AI photo and video art generation engine. What will you
                   create?

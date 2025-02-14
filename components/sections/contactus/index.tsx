@@ -1,0 +1,120 @@
+"use client";
+
+import { LeftLine, RightLine } from "@/components/design/pricing";
+import Section from "@/components/layout/section";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import Image from "next/image";
+import { useState } from "react";
+import { images } from "@/constants";
+import { Heading } from "lucide-react";
+
+export default function ContactForm() {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    // Simulate form submission
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setLoading(false);
+  };
+
+  return (
+    <Section id="contact-us" className="overflow-hidden">
+      <div className="container relative z-2">
+        <div className="relative mb-[6.5rem] hidden justify-center lg:flex">
+          <Image
+            src={images.smallSphere}
+            className="relative z-1"
+            width={255}
+            height={255}
+            alt="small sphere"
+          />
+
+          <div className="pointer-events-none absolute left-1/2 top-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2">
+            <Image src={images.stars} className="w-full" width={950} height={400} alt="stars" />
+          </div>
+        </div>
+
+        <Heading tag="Get started with Brainwave" title="Pay once, use forever" />
+        <div className="relative max-w-lg m-auto">
+          <div className="bg-conic-gradient rounded-xl p-[1px]">
+            <Card className="w-full relative bg-n-8 backdrop-blur-xl border border-[#ffffff10]">
+              <CardHeader>
+                <CardTitle className="text-white">Send us a message</CardTitle>
+                <CardDescription className="text-gray-400">
+                  Fill out the form below and we&apos;ll get back to you.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="space-y-2">
+                      <Label htmlFor="firstName" className="text-gray-300">
+                        First name
+                      </Label>
+                      <Input
+                        id="firstName"
+                        placeholder="Enter your first name"
+                        className="bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="lastName" className="text-gray-300">
+                        Last name
+                      </Label>
+                      <Input
+                        id="lastName"
+                        placeholder="Enter your last name"
+                        className="bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email" className="text-gray-300">
+                      Email
+                    </Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email"
+                      className="bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="message" className="text-gray-300">
+                      Message
+                    </Label>
+                    <Textarea
+                      id="message"
+                      placeholder="Enter your message"
+                      className="min-h-[120px] bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
+                      required
+                    />
+                  </div>
+                  <Button
+                    type="submit"
+                    className="w-full bg-white text-black hover:bg-gray-200 transition-colors"
+                    disabled={loading}
+                  >
+                    {loading ? "Sending..." : "Send message"}
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+          <RightLine />
+          <LeftLine />
+        </div>
+      </div>
+      {/* Background gradient sphere */}
+    </Section>
+  );
+}

@@ -15,7 +15,7 @@ const Benefits = (props: Props) => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Chat Smarter, Not Harder with Brainwave"
+          title="Market Smarter, Not Harder with 1way2com"
         />
 
         <div className="mb-10 flex flex-wrap gap-10">
@@ -28,7 +28,7 @@ const Benefits = (props: Props) => {
               }}
             >
               <div className="pointer-events-none relative z-2 flex min-h-[22rem] flex-col p-[2.4rem]">
-                <h5 className="h5 mb-5">{item.title}</h5>
+                <h5 className="h5 mb-5 text-white">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="mt-auto flex items-center">
                   <Image src={item.iconUrl} width={48} height={48} alt={item.title} />
