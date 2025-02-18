@@ -10,10 +10,10 @@ type Props = {};
 
 const Collaboration = (props: Props) => {
   return (
-    <Section id="collaboration" crosses>
+    <Section id="collaboration" className="bg-white" crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-12 max-md:mb-4 text-white">
+          <h2 className="h2 mb-12 max-md:mb-4 text-black">
             AI Digital Marketing for seamless collaboration
           </h2>
           <ul className="mb-10 max-w-[22rem] md:mb-14">
@@ -21,13 +21,13 @@ const Collaboration = (props: Props) => {
               <li key={item.id} className="mb-3 py-3">
                 <div className="flex items-center">
                   <Image src={images.check} width={24} height={24} alt="check" />
-                  <h6 className="body-2 ml-5 text-white">{item.title}</h6>
+                  <h6 className="body-2 ml-5 text-black">{item.title}</h6>
                 </div>
                 {item.text && <p className="body-2 mt-3 text-n-4">{item.text}</p>}
               </li>
             ))}
           </ul>
-          <Button>Try it now</Button>
+          <Button className="text-black">Try it now</Button>
         </div>
 
         <div className="mt-4 lg:ml-auto xl:w-[38rem]">

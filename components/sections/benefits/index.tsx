@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion, useInView } from "framer-motion";
 import Section from "@/components/layout/section";
 import Heading from "../../atoms/heading";
 import { benefits } from "@/constants";
@@ -10,6 +13,9 @@ import ClipPath from "@/components/svg/clip-path";
 type Props = {};
 
 const Benefits = (props: Props) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <Section id="features">
       <div className="container relative z-2">
@@ -18,14 +24,17 @@ const Benefits = (props: Props) => {
           title="Market Smarter, Not Harder with 1way2com"
         />
 
-        <div className="mb-10 flex flex-wrap gap-10">
+        <div className="mb-10 flex flex-wrap gap-10" ref={ref}>
           {benefits.map((item) => (
-            <div
+            <motion.div
               key={item.id}
               className="relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}
+              initial={{ opacity: 0, y: 50 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: item.id * 0.2 }}
             >
               <div className="pointer-events-none relative z-2 flex min-h-[22rem] flex-col p-[2.4rem]">
                 <h5 className="h5 mb-5 text-white">{item.title}</h5>
@@ -56,7 +65,7 @@ const Benefits = (props: Props) => {
               </div>
 
               <ClipPath />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

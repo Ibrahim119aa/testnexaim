@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/atoms/button";
 import Heading from "@/components/atoms/heading";
 import TagLine from "@/components/atoms/tag-line";
@@ -7,26 +9,33 @@ import { images, roadmap } from "@/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React from "react";
+import { motion, useInView } from "framer-motion";
 
 type Props = {};
 
 const Roadmap = (props: Props) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <Section id="roadmap" className="overflow-hidden">
       <div className="container md:pb-10">
         <Heading tag="Ready to get started" title="What we're working on" />
 
-        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-28">
+        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-28" ref={ref}>
           {roadmap.map((item) => {
             const status = item.status === "done" ? "Done" : "In progress";
 
             return (
-              <div
+              <motion.div
                 key={item.id}
                 className={cn(
                   "md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem]",
                   item.colorful ? "bg-conic-gradient" : "bg-n-6"
                 )}
+                initial={{ opacity: 0, y: 50 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.8, delay: item.id * 0.2 }}
               >
                 <div className="relative overflow-hidden rounded-[2.4375rem] bg-n-8 p-8 xl:p-15">
                   <div className="absolute left-0 top-0 max-w-full">
@@ -68,7 +77,7 @@ const Roadmap = (props: Props) => {
                     <p className="body-2 text-n-4">{item.text}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
 

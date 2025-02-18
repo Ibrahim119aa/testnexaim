@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
 import Section from "../../layout/section";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -16,6 +17,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const parallaxRef = useRef(null);
+
   return (
     <Section
       className={cn("pt-[12rem] -mt-[5.25rem]")}
@@ -25,7 +27,12 @@ const Hero = (props: Props) => {
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
-        <div className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24"
+        >
           <h1 className="h1 mb-6 text-white">
             Explore the Possibilities of&nbsp;Digital&nbsp;Marketing with{" "}
             <span className="relative inline-block">
@@ -46,9 +53,14 @@ const Hero = (props: Props) => {
           <Button href="#pricing" white>
             Get Started
           </Button>
-        </div>
+        </motion.div>
 
-        <div className={cn("relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24")}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className={cn("relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24")}
+        >
           <div className={cn("relative z-1 rounded-2xl p-0.5 bg-conic-gradient")}>
             <div className={cn("relative bg-n-8 rounded-[1rem]")}>
               <div className={cn("h-[1.4rem] bg-n-10 rounded-t-[0.9rem]")} />
@@ -100,7 +112,7 @@ const Hero = (props: Props) => {
           </div>
 
           <BackgroundCircles parallaxRef={parallaxRef} />
-        </div>
+        </motion.div>
 
         <CompanyLogos className="relative z-10 mt-20 hidden lg:block" />
       </div>

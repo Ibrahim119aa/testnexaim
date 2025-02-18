@@ -1,23 +1,60 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import Section from "@/components/layout/section";
 import Heading from "../../atoms/heading";
 import { brainwaveServices, brainwaveServicesIcons, images } from "@/constants";
 import Image from "next/image";
 import Generating from "../../atoms/generating";
-import {
-  PhotoChatMessage,
-  VideoBar,
-  VideoChatMessage,
-  Gradient,
-} from "@/components/design/services";
+import { PhotoChatMessage, Gradient } from "@/components/design/services";
 import { cn } from "@/lib/utils";
 
 type Props = {};
 
 const Services = (props: Props) => {
   const [selectedItem, setSelectedItem] = useState<number>(2);
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const serviceDetails = [
+    {
+      heading: "Digital Marketing",
+      text: "1way2com unlocks the potential of AI-powered applications",
+      imageUrl: "/assets/service/service1.jpg",
+    },
+    {
+      heading: "Digital Branding",
+      text: "Automatically enhance your photos using our Digital Marketing and Branding. Try it now!",
+      imageUrl: "/assets/service/service2.jpg",
+    },
+    {
+      heading: "Video Generation",
+      text: "The world’s most powerful AI photo and video art generation engine. What will you create?",
+      imageUrl: "/assets/service/service3.jpg",
+    },
+    {
+      heading: "Video Generation",
+      text: "The world’s most powerful AI photo and video art generation engine. What will you create?",
+      imageUrl: "/assets/service/service4.jpg",
+    },
+    {
+      heading: "Video Generation",
+      text: "The world’s most powerful AI photo and video art generation engine. What will you create?",
+      imageUrl: "/assets/service/service4.jpg",
+    },
+  ];
+
+  useEffect(() => {
+    if (selectedItem === 1 && audioRef.current) {
+      audioRef.current.play();
+    } else {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    }
+  }, [selectedItem]);
 
   return (
     <Section id="how-to-use">
@@ -27,8 +64,13 @@ const Services = (props: Props) => {
           text="1way2com unlocks the potential of AI-powered applications"
         />
 
-        <div className="relative">
-          <div className="relative z-1 mb-5 flex h-[39rem] items-center overflow-hidden rounded-3xl border border-n-1/10 p-8 lg:p-20 xl:h-[46rem]">
+        <div className="relative" ref={ref}>
+          <motion.div
+            className="relative z-1 mb-5 flex h-[39rem] items-center overflow-hidden rounded-3xl border border-n-1/10 p-8 lg:p-20 xl:h-[46rem]"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
+          >
             <div className="pointer-events-none absolute left-0 top-0 h-full md:w-3/5 xl:w-auto">
               <Image
                 src={images.service1}
@@ -40,7 +82,7 @@ const Services = (props: Props) => {
             </div>
 
             <div className="relative z-1 ml-auto max-w-[17rem]">
-              <h4 className="h4 mb-4">Digital Marketing</h4>
+              <h4 className="h4 mb-4 text-white">Digital Marketing</h4>
               <p className="body-2 mb-12 text-n-3">
                 1way2com unlocks the potential of AI-powered applications
               </p>
@@ -54,10 +96,15 @@ const Services = (props: Props) => {
               </ul>
             </div>
             <Generating className="absolute inset-x-4 bottom-4 border border-n-1/10 lg:bottom-8 lg:left-1/2 lg:right-auto lg:-translate-x-1/2" />
-          </div>
+          </motion.div>
 
-          <div className="relative z-1 grid gap-5 lg:grid-cols-2">
-            <div className="relative min-h-[39rem] overflow-hidden rounded-3xl border border-n-1/10">
+          <motion.div
+            className="relative z-1 grid gap-5 lg:grid-cols-2"
+            initial={{ opacity: 0, y: 50 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className="relative min-h-[39rem] bg-white overflow-hidden rounded-3xl border border-n-1/10">
               <div className="absolute inset-0">
                 <Image
                   src={images.service2}
@@ -68,9 +115,9 @@ const Services = (props: Props) => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-b from-n-8/0 to-n-8/90 p-8 lg:p-15">
-                <h4 className="h4 mb-4 text-white">Digital Branding</h4>
+                <h4 className="h4 mb-4 text-black">Digital Branding</h4>
                 <p className="body-2 mb-12 text-n-3">
-                  Automatically enhance your photos using our Digital Marketing and Branding Try it
+                  Automatically enhance your photos using our Digital Marketing and Branding. Try it
                   now!
                 </p>
               </div>
@@ -80,11 +127,8 @@ const Services = (props: Props) => {
 
             <div className="overflow-hidden rounded-3xl bg-n-7 p-4 lg:min-h-[46rem]">
               <div className="px-4 py-12 xl:px-8">
-                <h4 className="h4 mb-4 text-white">Video generation</h4>
-                <p className="body-2 mb-8 text-n-3">
-                  The world’s most powerful AI photo and video art generation engine. What will you
-                  create?
-                </p>
+                <h4 className="h4 mb-4 text-white">{serviceDetails[selectedItem].heading}</h4>
+                <p className="body-2 mb-8 text-n-3">{serviceDetails[selectedItem].text}</p>
 
                 <ul className="flex items-center justify-between">
                   {brainwaveServicesIcons.map((item, index) => (
@@ -113,21 +157,22 @@ const Services = (props: Props) => {
 
               <div className="relative h-80 overflow-hidden rounded-xl bg-n-8 md:h-[25rem]">
                 <Image
-                  src={images.service3}
+                  src={serviceDetails[selectedItem].imageUrl}
                   className="size-full object-cover"
                   width={520}
                   height={400}
                   alt="scary robot"
                 />
 
-                <VideoChatMessage />
-                <VideoBar />
+                {/* <VideoChatMessage /> */}
+                {/* <VideoBar /> */}
               </div>
             </div>
             <Gradient />
-          </div>
+          </motion.div>
         </div>
       </div>
+      {selectedItem === 1 && <audio ref={audioRef} src="/assets/bot/bots.mp3" />}
     </Section>
   );
 };
