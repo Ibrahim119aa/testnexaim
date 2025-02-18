@@ -24,7 +24,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Section id="contact-us" className="overflow-hidden">
+    <Section id="contact-us" className="overflow-hidden bg-white">
       <div className="container relative z-2">
         <div className="relative mb-[6.5rem] hidden justify-center lg:flex">
           <Image
@@ -40,7 +40,11 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <Heading tag="Get started with 1way2com" title="Pay once, Build Brand Forever" />
+        <Heading
+          tag="Get started with 1way2com"
+          className="!text-black"
+          title="Pay once, Build Brand Forever"
+        />
         <div className="relative max-w-lg m-auto">
           <div className="bg-conic-gradient rounded-xl p-[1px]">
             <Card className="w-full relative bg-n-8 backdrop-blur-xl border border-[#ffffff10]">
