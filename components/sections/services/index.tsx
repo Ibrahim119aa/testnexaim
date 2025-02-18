@@ -22,6 +22,7 @@ const Services = (props: Props) => {
     {
       heading: "Digital Marketing",
       text: "1way2com unlocks the potential of AI-powered applications",
+      // imageUrl: "/assets/service/service1.jpg",
       imageUrl: "/assets/service/service1.jpg",
     },
     {
@@ -32,7 +33,8 @@ const Services = (props: Props) => {
     {
       heading: "Video Generation",
       text: "The world’s most powerful AI photo and video art generation engine. What will you create?",
-      imageUrl: "/assets/service/service3.jpg",
+      // imageUrl: "/assets/service/service3.jpg",
+      imageUrl: "/assets/services/service-2.png",
     },
     {
       heading: "Video Generation",
@@ -73,7 +75,7 @@ const Services = (props: Props) => {
           >
             <div className="pointer-events-none absolute left-0 top-0 h-full md:w-3/5 xl:w-auto">
               <Image
-                src={images.service1}
+                src="/assets/services/service-1.png"
                 alt="smartest ai"
                 width={800}
                 height={730}
@@ -107,7 +109,7 @@ const Services = (props: Props) => {
             <div className="relative min-h-[39rem] bg-white overflow-hidden rounded-3xl border border-n-1/10">
               <div className="absolute inset-0">
                 <Image
-                  src={images.service2}
+                  src="/assets/service/service3.jpg"
                   className="size-full object-cover"
                   width={630}
                   height={750}
@@ -115,7 +117,7 @@ const Services = (props: Props) => {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-b from-n-8/0 to-n-8/90 p-8 lg:p-15">
-                <h4 className="h4 mb-4 text-black">Digital Branding</h4>
+                <h4 className="h4 mb-4 text-white">Digital Branding</h4>
                 <p className="body-2 mb-12 text-n-3">
                   Automatically enhance your photos using our Digital Marketing and Branding. Try it
                   now!
