@@ -24,7 +24,7 @@ export default function ContactForm() {
   };
 
   return (
-    <Section id="contact-us" className="overflow-hidden bg-white">
+    <Section id="contact-us" className="overflow-hidden">
       <div className="container relative z-2">
         <div className="relative mb-[6.5rem] hidden justify-center lg:flex">
           <Image
