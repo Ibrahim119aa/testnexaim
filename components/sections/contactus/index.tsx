@@ -42,7 +42,7 @@ export default function ContactForm() {
 
         <Heading
           tag="Get started with 1way2com"
-          className="!text-black"
+          className="!text-white"
           title="Pay once, Build Brand Forever"
         />
         <div className="relative max-w-lg m-auto">
