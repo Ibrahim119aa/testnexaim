@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
           <h1 className="h1 mb-6 text-white">
             Explore the Possibilities of&nbsp;Digital&nbsp;Marketing with{" "}
             <span className="relative inline-block">
-              1WayCom
+              1Way2Com
               <Image
                 src={images.curve}
                 className="absolute left-0 top-full w-full xl:-mt-2"
@@ -51,7 +51,7 @@ const Hero = (props: Props) => {
             digital marketing and AI call app.
           </p>
           <Button href="#pricing" white>
-            Get Started
+            Get Your Offer
           </Button>
         </motion.div>
 
@@ -73,14 +73,15 @@ const Hero = (props: Props) => {
                   autoPlay
                   loop
                   muted
-                  className="w-full translate-y-[8%] aspect-video scale-[1.7] md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
+                  controls
+                  className="w-full relative z-[1000] translate-y-[8%] aspect-video scale-100 md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
                 >
                   <source src={images.heroVideo} type="video/mp4" />
                 </video>
 
                 <Generating className="absolute inset-x-4 bottom-5 md:bottom-8 md:left-1/2 md:right-auto md:w-[31rem] md:-translate-x-1/2" />
 
-                <ScrollParallax isAbsolutelyPositioned>
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <ul className="absolute bottom-[7.5rem] left-[-5.5rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 p-1 backdrop-blur xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
@@ -88,7 +89,7 @@ const Hero = (props: Props) => {
                       </li>
                     ))}
                   </ul>
-                </ScrollParallax>
+                </ScrollParallax> */}
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification

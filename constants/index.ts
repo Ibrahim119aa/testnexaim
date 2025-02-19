@@ -46,10 +46,10 @@ export const images = {
   coins: "/assets/roadmap/coins.png",
   done: "/assets/roadmap/done.svg",
   hero: "/assets/roadmap/hero.png",
-  roadmap1: "/assets/roadmap/image-1.png",
-  roadmap2: "/assets/roadmap/image-2.png",
-  roadmap3: "/assets/roadmap/image-3.png",
-  roadmap4: "/assets/roadmap/image-4.png",
+  roadmap1: "/assets/roadmap/image-5.jpg",
+  roadmap2: "/assets/roadmap/image-6.jpg",
+  roadmap3: "/assets/roadmap/image-7.jpg",
+  roadmap4: "/assets/roadmap/image-8.jpg",
   undone: "/assets/roadmap/undone.svg",
   notification1: "/assets/notification/image-1.png",
   notification2: "/assets/notification/image-2.png",
@@ -125,23 +125,18 @@ const {
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "Services",
     url: "#features",
   },
   {
-    id: "1",
-    title: "Pricing",
-    url: "#pricing",
-  },
-  {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "AI STUFF",
+    url: "#collaboration",
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "contact us",
+    url: "#contact-us",
   },
   {
     id: "4",
