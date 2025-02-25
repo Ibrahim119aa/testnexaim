@@ -130,12 +130,12 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "AI STUFF",
+    title: "Trucs d'Ai",
     url: "#collaboration",
   },
   {
     id: "3",
-    title: "contact us",
+    title: "Contactez-nous",
     url: "#contact-us",
   },
   {
