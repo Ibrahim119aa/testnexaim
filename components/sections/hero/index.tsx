@@ -34,7 +34,7 @@ const Hero = (props: Props) => {
           className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24"
         >
           <h1 className="h1 mb-6 text-white">
-            Explore the Possibilities of&nbsp;Digital&nbsp;Marketing with{" "}
+            Développez tout le potentiel de votre entreprise avec
             <span className="relative inline-block">
               1Way2Com
               <Image
@@ -47,8 +47,8 @@ const Hero = (props: Props) => {
             </span>
           </h1>
           <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            Unleash the power of AI with 1way2com. Upgrade your productivity with 1way2com, the
-            digital marketing and AI call app.
+            Plongez dans l'avenir du marketing digital et de l'IA avec 1Way2Com — où l'innovation
+            rencontre l'excellence.
           </p>
           <Button href="#pricing" white>
             Get Your Offer

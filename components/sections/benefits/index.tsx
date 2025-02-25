@@ -21,7 +21,8 @@ const Benefits = (props: Props) => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Market Smarter, Not Harder with 1way2com"
+          title="Stratégies intelligentes, résultats exceptionnels"
+          text="Arrêtez de perdre votre temps avec des techniques obsolètes — laissez 1Way2Com s'occuper du travail et vous, vous concentrez sur la croissance et le développement"
         />
 
         <div className="mb-10 flex flex-wrap gap-10" ref={ref}>
@@ -42,7 +43,7 @@ const Benefits = (props: Props) => {
                 <div className="mt-auto flex items-center">
                   <Image src={item.iconUrl} width={48} height={48} alt={item.title} />
                   <p className="ml-auto font-code text-xs font-bold uppercase tracking-wider text-n-1">
-                    Explore more
+                    Découvrez des opportunités
                   </p>
                   <Arrow />
                 </div>

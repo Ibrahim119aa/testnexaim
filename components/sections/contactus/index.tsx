@@ -41,9 +41,9 @@ export default function ContactForm() {
         </div>
 
         <Heading
-          tag="Get started with 1way2com"
+          tag="Démarrez avec 1Way2Com"
           className="!text-white"
-          title="Pay once, Build Brand Forever"
+          title="Créez une fois et c'est parti pour toujours : Investissez dans la révolution 1Way2Com et profitez d'une valeur à vie "
         />
         <div className="relative max-w-lg m-auto">
           <div className="bg-conic-gradient rounded-xl p-[1px]">

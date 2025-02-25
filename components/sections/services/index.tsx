@@ -31,8 +31,8 @@ const Services = (props: Props) => {
       imageUrl: "/assets/service/service2.jpg",
     },
     {
-      heading: "Video Generation",
-      text: "The world’s most powerful AI photo and video art generation engine. What will you create?",
+      heading: "Salut 1Way2Com, Booste mon marketing digital!",
+      text: "Maîtrisez l’excellence du bout des doigts : Demandez simplement, et laissez notre IA propulser vos campagnes vers de nouveaux sommets.",
       // imageUrl: "/assets/service/service3.jpg",
       imageUrl: "/assets/services/service-2.png",
     },
@@ -62,8 +62,8 @@ const Services = (props: Props) => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative Digital Marketing AI made for creators."
-          text="1way2com unlocks the potential of AI-powered applications"
+          title="Solutions de Marketing Digital IA spécialement conçues pour les créateurs et les marques par 1Way2Com"
+          text="Boostez votre créativité avec l'IA : Donnez à votre marque un avantage exceptionnel grâce à la technologie IA de 1Way2Com, qui transforme vos visions en réalité."
         />
 
         <div className="relative" ref={ref}>
@@ -83,8 +83,10 @@ const Services = (props: Props) => {
               />
             </div>
 
-            <div className="relative z-1 ml-auto max-w-[17rem]">
-              <h4 className="h4 mb-4 text-white">Digital Marketing</h4>
+            <div className="relative z-1 ml-auto max-w-[26rem]">
+              <h4 className="h4 mb-4 text-white">
+                Découvrez tout le Potentiel deVotre Marque avec 1Way2Com
+              </h4>
               <p className="body-2 mb-12 text-n-3">
                 1way2com unlocks the potential of AI-powered applications
               </p>
@@ -119,8 +121,8 @@ const Services = (props: Props) => {
               <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-b from-n-8/0 to-n-8/90 p-8 lg:p-15">
                 <h4 className="h4 mb-4 text-white">Digital Branding</h4>
                 <p className="body-2 mb-12 text-n-3">
-                  Automatically enhance your photos using our Digital Marketing and Branding. Try it
-                  now!
+                  Demandez simplement, et laissez notre IA propulser vos campagnes vers de nouveaux
+                  sommets.
                 </p>
               </div>
 

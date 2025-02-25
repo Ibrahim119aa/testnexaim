@@ -164,7 +164,12 @@ export const companyLogos = [
   "/assets/brands/Image6.png",
 ];
 
-export const brainwaveServices = ["Marketing", "Branding", "Web Development", "Web Development"];
+export const brainwaveServices = [
+  "Marketing : Attirez des audiences plus vastes grâce à des stratégies ciblées avec précision.",
+  "Branding : Créez des marques inoubliables qui résonnent à l’échelle mondiale.",
+  "Création de Contenu : Produisez du contenu engageant en un temps record.",
+  "Bots IA : Générez des bots IA capables d’effectuer toutes les tâches et gérer vos appels automatiquement.",
+];
 
 export const brainwaveServicesIcons = [recording03, recording01, disc02, chromecast, sliders04];
 
@@ -205,21 +210,23 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Avec une Automatisation Intelligente et une Sécurité de Pointe : Travaillez plus malin, plus adapté! Libérez votre potentiel en simplifiant vos opérations comme jamais auparavant.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Intégration transparente",
+    text: "Connectez tous vos outils en un clin d’œil, sans effort.",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Automatisation Intelligent",
+    text: "Laissez l’IA gérer les tâches répétitives pour que vous puissiez vous concentrer sur la créativité. 🧠",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Sécurité de Niveau Supérieur",
+    text: "Protégez vos données avec un décryptage ultra-sécurisée.",
   },
 ];
 
