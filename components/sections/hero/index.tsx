@@ -51,7 +51,7 @@ const Hero = (props: Props) => {
             rencontre l'excellence.
           </p>
           <Button href="#pricing" white>
-            Get Your Offer
+            Obtenez Votre Offre
           </Button>
         </motion.div>
 

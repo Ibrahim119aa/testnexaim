@@ -54,7 +54,7 @@ const Roadmap = (props: Props) => {
                     <div className="mb-8 flex max-w-[27rem] items-center justify-between md:mb-20">
                       <TagLine>{item.date}</TagLine>
 
-                      <div className="flex items-center rounded bg-n-1 px-4 py-1 text-n-8">
+                      {/* <div className="flex items-center rounded bg-n-1 px-4 py-1 text-n-8">
                         <Image
                           src={item.status === "done" ? images.done : images.loading1}
                           width={16}
@@ -63,7 +63,7 @@ const Roadmap = (props: Props) => {
                           className="mr-2.5"
                         />
                         <div className="tagline">{status}</div>
-                      </div>
+                      </div> */}
                     </div>
 
                     <div className="-mx-15 -my-10 mb-10">
