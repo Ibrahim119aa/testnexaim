@@ -35,7 +35,7 @@ const Benefits = (props: Props) => {
               }}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: item.id * 0.2 }}
+              transition={{ duration: 0.8 }}
             >
               <div className="pointer-events-none relative z-2 flex min-h-[22rem] flex-col p-[2.4rem]">
                 <h5 className="h5 mb-5 text-white">{item.title}</h5>
