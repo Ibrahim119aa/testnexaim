@@ -38,7 +38,7 @@ const Roadmap = (props: Props) => {
                 )}
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: item.id * 0.2 }}
+                transition={{ duration: 0.8 }}
               >
                 <div className="relative overflow-hidden rounded-[2.4375rem] bg-n-8 p-8 xl:p-15">
                   <div className="absolute left-0 top-0 max-w-full">
