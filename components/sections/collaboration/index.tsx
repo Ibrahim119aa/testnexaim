@@ -12,7 +12,7 @@ const Collaboration = (props: Props) => {
   return (
     <div
       style={{
-        background: "url(/assets/service/service1.jpg)",
+        background: "url(/image.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -22,7 +22,7 @@ const Collaboration = (props: Props) => {
           <div className="container lg:flex">
             <div className="max-w-[25rem]">
               <h2 className="h2 mb-12 max-md:mb-4 text-white">
-                Chez 1Way2Com, l&apos;IA réinvente le travail d&apos;équipe
+              Nexaim – Elevate, Create, and Innovate – Your One-Stop Solution for Digital Excellence
               </h2>
               <ul className="mb-10 max-w-[22rem] md:mb-14">
                 {collabContent.map((item) => (

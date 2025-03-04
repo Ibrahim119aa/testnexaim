@@ -62,8 +62,8 @@ const Services = (props: Props) => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Solutions de Marketing Digital IA spécialement conçues pour les créateurs et les marques par 1Way2Com"
-          text="Boostez votre créativité avec l'IA : Donnez à votre marque un avantage exceptionnel grâce à la technologie IA de 1Way2Com, qui transforme vos visions en réalité."
+          title="AI Digital Marketing Solutions Specifically Designed for Creators and Brands by 1Way2Com"
+          text="We craft impactful digital experiences that elevate brands and drive results."
         />
 
         <div className="relative" ref={ref}>
@@ -85,11 +85,11 @@ const Services = (props: Props) => {
 
             <div className="relative z-1 ml-auto max-w-[26rem]">
               <h4 className="h4 mb-4 text-white">
-                Découvrez tout le Potentiel deVotre Marque avec 1Way2Com
+              About us
               </h4>
-              <p className="body-2 mb-12 text-n-3">
+              {/* <p className="body-2 mb-12 text-n-3">
                 1way2com unlocks the potential of AI-powered applications
-              </p>
+              </p> */}
               <ul className="body-2">
                 {brainwaveServices.map((service, index) => (
                   <li key={index} className="flex items-start border-t border-n-6 py-4">
@@ -108,7 +108,7 @@ const Services = (props: Props) => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="relative min-h-[39rem] bg-white overflow-hidden rounded-3xl border border-n-1/10">
+            {/* <div className="relative min-h-[39rem] bg-white overflow-hidden rounded-3xl border border-n-1/10">
               <div className="absolute inset-0">
                 <Image
                   src="/assets/service/service3.jpg"
@@ -127,9 +127,9 @@ const Services = (props: Props) => {
               </div>
 
               <PhotoChatMessage />
-            </div>
+            </div> */}
 
-            <div className="overflow-hidden rounded-3xl bg-n-7 p-4 lg:min-h-[46rem]">
+            {/* <div className="overflow-hidden rounded-3xl bg-n-7 p-4 lg:min-h-[46rem]">
               <div className="px-4 py-12 xl:px-8">
                 <h4 className="h4 mb-4 text-white">{serviceDetails[selectedItem].heading}</h4>
                 <p className="body-2 mb-8 text-n-3">{serviceDetails[selectedItem].text}</p>
@@ -170,8 +170,8 @@ const Services = (props: Props) => {
 
                 {/* <VideoChatMessage /> */}
                 {/* <VideoBar /> */}
-              </div>
-            </div>
+              {/* </div>
+            </div> */}
             <Gradient />
           </motion.div>
         </div>

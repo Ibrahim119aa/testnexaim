@@ -165,10 +165,7 @@ export const companyLogos = [
 ];
 
 export const brainwaveServices = [
-  "Marketing : Attirez des audiences plus vastes grâce à des stratégies ciblées avec précision.",
-  "Branding : Créez des marques inoubliables qui résonnent à l’échelle mondiale.",
-  "Création de Contenu : Produisez du contenu engageant en un temps record.",
-  "Bots IA : Générez des bots IA capables d’effectuer toutes les tâches et gérer vos appels automatiquement.",
+  "At Nexaim, we specialize in creating impactful digital experiences that help businesses thrive in the online world. With expertise in content management, graphic design, social media strategy, web development, video editing, product shoots, event management, and podcast production, we provide end-to-end solutions tailored to your brand’s needs. Our team believes in innovation, collaboration, and precision, ensuring every project stands out with creativity and excellence. Whether it's managing your social media, designing stunning visuals, or crafting engaging content, Nexaim is your trusted partner in digital growth. Let’s bring your vision to life and build a powerful online presence together!",
 ];
 
 export const brainwaveServicesIcons = [recording03, recording01, disc02, chromecast, sliders04];
@@ -328,16 +325,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Création & Développement Web",
-    text: "Sites institutionnels (Vitrine, corporate, portfolio), E-commerce (Boutique en ligne, marketplaces), Sites de contenu (Blogs, magazines, actualités), Sites éducatifs (Plateformes d'apprentissage, ressources pédagogiques), Services en ligne (Réservation en ligne, applications web), Sites personnels (Blogs et sites personnels).",
+    title: "Facebook Management",
+    text: "Boost your brand’s presence with expert Facebook management by Nexaim! We handle content creation, audience engagement, and ad campaigns to maximize reach and drive results. Let’s grow your business together",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Design & Branding",
-    text: "Création d'identité visuelle, Conception de logos, Supports de communication (Flyers, brochures, cartes de visite).",
+    title: "Instagram Management",
+    text: "Grow your presence with Nexaim’s strategic Instagram management. From stunning visuals to Reels, Stories, and targeted ads, we help you connect with your audience and increase engagement.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -345,16 +342,16 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Stratégie Marketing (SEM)",
-    text: "SEO (Optimisation pour les moteurs de recherche), SEA (Publicité sur les moteurs de recherche) : Google Ads.",
+    title: "Youtube Management",
+    text: "Expand your reach with Nexaim’s professional YouTube management. We optimize content, enhance SEO, and drive audience growth to boost visibility, engagement, and monetization.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Communication & Réseaux Sociaux",
-    text: "Community Management, Création et planification de contenu (Posts, vidéos, infographies), Publicité sponsorisée (Campagnes META ADS : Facebook, Instagram).",
+    title: "Graphic Design & Branding  ",
+    text: "Nexaim delivers stunning and impactful designs that elevate your brand. From logos to marketing materials, we create visually compelling graphics that capture attention and leave a lasting impression.",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -362,32 +359,32 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Marketing Digital",
-    text: "Élaboration de stratégies digitales sur-mesure, Emailing & Automatisation (Campagnes ciblées et automatisées), Publicité en ligne (Display, retargeting, etc.).",
+    title: "Video Editing ",
+    text: "Transform your raw footage into high-quality, engaging content with Nexaim’s expert video editing. We enhance visuals, add effects, and ensure a seamless flow to create professional videos that captivate your audience.",
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Événementiel & Gestion d'Événements",
-    text: "Lancements de produits, Séminaires et conférences, Team-building et événements d'entreprise.",
+    title: "Product shoot",
+    text: "Showcase your products with high-quality, professional photography by Nexaim. We capture stunning visuals that highlight every detail, making your products stand out and drive more sales.",
     backgroundUrl: "assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
   },
   {
     id: "6",
-    title: "Développement d'Applications & Solutions",
-    text: "Applications mobiles (iOS & Android), Solutions web & SaaS (Applications en ligne et solutions personnalisées), Maintenance et support (Suivi et optimisation des applications).",
+    title: "Web Development ",
+    text: "Nexaim builds fast, responsive, and user-friendly websites tailored to your brand. From design to functionality, we create stunning, high-performing sites that enhance your online presence and drive growth",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "7",
-    title: "Maintenance & Support Web",
-    text: "Sécurisation et mises à jour, Hébergement & support technique, Audit & optimisation des performances.",
+    title: "Event Management & Podcast",
+    text: "Nexaim delivers seamless event planning and expert podcast management to elevate your brand. From organizing and promoting events to producing high-quality podcasts, we handle everything to engage your audience and create impactful experiences.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,

@@ -21,8 +21,8 @@ const Benefits = (props: Props) => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Stratégies intelligentes, résultats exceptionnels"
-          text="Arrêtez de perdre votre temps avec des techniques obsolètes — laissez 1Way2Com s'occuper du travail et vous, vous concentrez sur la croissance et le développement"
+          title="Smart strategies, exceptional results"
+          text="Stop wasting your time with outdated techniques — Nexaim takes care of the work and you focus on growth and development."
         />
 
         <div className="mb-10 flex flex-wrap gap-10" ref={ref}>

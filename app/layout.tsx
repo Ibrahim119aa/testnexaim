@@ -6,8 +6,8 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "1WayCom",
-  description: "1WayCom",
+  title: "Nexaim",
+  description: "Nexaim is a digital marketing agency that helps businesses grow online.",
 };
 
 export default function RootLayout({

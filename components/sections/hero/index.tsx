@@ -34,9 +34,9 @@ const Hero = (props: Props) => {
           className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24"
         >
           <h1 className="h1 mb-6 text-white">
-            Développez tout le potentiel de votre entreprise avec
+          Your Business, Our Strategy Shape your path to growth with
             <span className="relative inline-block">
-              1Way2Com
+            Nexaim!
               <Image
                 src={images.curve}
                 className="absolute left-0 top-full w-full xl:-mt-2"
@@ -47,11 +47,10 @@ const Hero = (props: Props) => {
             </span>
           </h1>
           <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            Plongez dans l'avenir du marketing digital et de l'IA avec 1Way2Com — où l'innovation
-            rencontre l'excellence.
+          Boost Your Digital Presence with Nexaim Your Ultimate Digital Marketing Partner
           </p>
           <Button href="#pricing" white>
-            Obtenez Votre Offre
+            Get Your Offer
           </Button>
         </motion.div>
 
