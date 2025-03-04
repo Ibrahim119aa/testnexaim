@@ -5,7 +5,7 @@ import Collaboration from "@/components/sections/collaboration";
 import ContactForm from "@/components/sections/contactus";
 import Hero from "@/components/sections/hero";
 import Pricing from "@/components/sections/pricing";
-import Roadmap from "@/components/sections/roadmap";
+// import Roadmap from "@/components/sections/roadmap";
 import Services from "@/components/sections/services";
 import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
@@ -20,7 +20,7 @@ export default function Home() {
         <Collaboration />
         <Services />
         {/* <Pricing /> */}
-        <Roadmap />
+        {/* <Roadmap /> */}
         <ContactForm />
         <Footer />
       </div>
