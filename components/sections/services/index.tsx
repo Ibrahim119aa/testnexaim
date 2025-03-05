@@ -62,8 +62,8 @@ const Services = (props: Props) => {
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="AI Digital Marketing Solutions Specifically Designed for Creators and Brands by 1Way2Com"
-          text="We craft impactful digital experiences that elevate brands and drive results."
+          title="We craft impactful digital experiences that elevate brands and drive results."
+          text="We create impactful digital experiences that drive results. From content management to design and social media strategy, we help businesses stand out online"
         />
 
         <div className="relative" ref={ref}>
@@ -84,9 +84,7 @@ const Services = (props: Props) => {
             </div>
 
             <div className="relative z-1 ml-auto max-w-[26rem]">
-              <h4 className="h4 mb-4 text-white">
-              About us
-              </h4>
+              <h4 className="h4 mb-4 text-white">About us</h4>
               {/* <p className="body-2 mb-12 text-n-3">
                 1way2com unlocks the potential of AI-powered applications
               </p> */}
@@ -169,8 +167,8 @@ const Services = (props: Props) => {
                 />
 
                 {/* <VideoChatMessage /> */}
-                {/* <VideoBar /> */}
-              {/* </div>
+            {/* <VideoBar /> */}
+            {/* </div>
             </div> */}
             <Gradient />
           </motion.div>

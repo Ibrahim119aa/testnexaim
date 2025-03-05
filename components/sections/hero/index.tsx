@@ -34,9 +34,9 @@ const Hero = (props: Props) => {
           className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24"
         >
           <h1 className="h1 mb-6 text-white">
-          Your Business, Our Strategy Shape your path to growth with
+            Your Business, Our Strategy Shape your path to growth with
             <span className="relative inline-block">
-            Nexaim!
+              Nexaim!
               <Image
                 src={images.curve}
                 className="absolute left-0 top-full w-full xl:-mt-2"
@@ -47,9 +47,9 @@ const Hero = (props: Props) => {
             </span>
           </h1>
           <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-          Boost Your Digital Presence with Nexaim Your Ultimate Digital Marketing Partner
+            Boost Your Digital Presence with Nexaim Your Ultimate Digital Marketing Partner
           </p>
-          <Button href="#pricing" white>
+          <Button href="https://wa.me/+923342648061" white>
             Get Your Offer
           </Button>
         </motion.div>
