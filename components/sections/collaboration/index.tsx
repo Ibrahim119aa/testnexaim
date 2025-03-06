@@ -5,6 +5,7 @@ import Image from "next/image";
 import Button from "@/components/atoms/button";
 import { cn } from "@/lib/utils";
 import { LeftCurve, RightCurve } from "@/components/design/collaboration";
+import { div } from "framer-motion/client";
 
 type Props = {};
 
@@ -21,8 +22,8 @@ const Collaboration = (props: Props) => {
         <Section id="collaboration" crosses>
           <div className="container lg:flex">
             <div className="max-w-[25rem]">
-              <h2 className="h2 mb-12 max-md:mb-4 text-white">
-              Nexaim – Elevate, Create, and Innovate – Your One-Stop Solution for Digital Excellence
+              <h2 className="h3 mb-12 max-md:mb-4 text-white text-center font-semibold">
+                HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
               </h2>
               <ul className="mb-10 max-w-[22rem] md:mb-14">
                 {collabContent.map((item) => (
@@ -35,7 +36,9 @@ const Collaboration = (props: Props) => {
                   </li>
                 ))}
               </ul>
-              <Button className="text-white">Try it now</Button>
+              <Button className="text-white" href="https://wa.me/+923432469633">
+                Try it now
+              </Button>
             </div>
 
             <div className="mt-4 lg:ml-auto xl:w-[38rem]">

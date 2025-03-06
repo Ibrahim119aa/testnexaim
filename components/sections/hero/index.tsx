@@ -49,7 +49,7 @@ const Hero = (props: Props) => {
           <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
             Boost Your Digital Presence with Nexaim Your Ultimate Digital Marketing Partner
           </p>
-          <Button href="https://wa.me/+923342648061" white>
+          <Button href="https://wa.me/+923432469633 " white>
             Get Your Offer
           </Button>
         </motion.div>
@@ -114,7 +114,7 @@ const Hero = (props: Props) => {
           <BackgroundCircles parallaxRef={parallaxRef} />
         </motion.div>
 
-        <CompanyLogos className="relative z-10 mt-20 hidden lg:block" />
+        {/* <CompanyLogos className="relative z-10 mt-20 hidden lg:block" /> */}
       </div>
       <BottomLine />
     </Section>

@@ -97,7 +97,7 @@ const Services = (props: Props) => {
                 ))}
               </ul>
             </div>
-            <Generating className="absolute z-[100000] inset-x-4 bottom-4 border border-n-1/10 lg:bottom-8 lg:left-1/2 lg:right-auto lg:-translate-x-1/2" />
+            {/* <Generating className="absolute z-[100000] inset-x-4 bottom-4 border border-n-1/10 lg:bottom-8 lg:left-1/2 lg:right-auto lg:-translate-x-1/2" /> */}
           </motion.div>
 
           <motion.div

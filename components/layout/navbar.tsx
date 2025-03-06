@@ -91,13 +91,13 @@ const Navbar = (props: Props) => {
         </nav>
 
         <Link
-          href="#signup"
+          href="mailto:thenexaim@gmail.com"
           className="button mr-8 hidden text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
-          New account
+          Email Us
         </Link>
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
+        <Button className="hidden lg:flex" href="https://wa.me/+923432469633">
+          WhatsApp Us
         </Button>
 
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>

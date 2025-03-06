@@ -130,24 +130,24 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "Trucs d'Ai",
+    title: "About Us",
     url: "#collaboration",
   },
   {
     id: "3",
-    title: "Contactez-nous",
+    title: "Contact Us",
     url: "#contact-us",
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
+    title: "Mail Us",
+    url: "mailto:thenexaim@gmail.com",
     onlyMobile: true,
   },
   {
     id: "5",
-    title: "Sign in",
-    url: "#login",
+    title: "WhatsApp Us",
+    url: "https://wa.me/+923432469633",
     onlyMobile: true,
   },
 ];
