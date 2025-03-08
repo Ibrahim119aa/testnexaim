@@ -12,7 +12,7 @@ const Generating = ({ className }: { className?: string }) => {
       )}
     >
       <Image
-        src={images.loading}
+        src={images.nexiam}
         className="mr-4 size-5 animate-spin"
         alt="loading"
         width={5}

@@ -22,17 +22,16 @@ const Collaboration = (props: Props) => {
         <Section id="collaboration" crosses>
           <div className="container lg:flex">
             <div className="max-w-[25rem]">
-              <h2 className="h3 mb-12 max-md:mb-4 text-white text-center font-semibold">
+              <h2 className="h3 mb-12 max-md:mb-4 text-white">
                 HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
               </h2>
               <ul className="mb-10 max-w-[22rem] md:mb-14">
                 {collabContent.map((item) => (
-                  <li key={item.id} className="mb-3 py-3">
-                    <div className="flex items-center">
-                      <Image src={images.check} width={24} height={24} alt="check" />
-                      <h6 className="body-2 ml-5 text-white">{item.title}</h6>
+                  <li key={item.id} className="py-0">
+                    <div className="flex items-center py-4">
+                      <Image src={item.image} width={item.width} height={item.height} alt="check" />{" "}
                     </div>
-                    {item.text && <p className="body-2 mt-3 text-n-3">{item.text}</p>}
+                    {/* {item.text && <p className="body-2 mt-3 text-n-3">{item.text}</p>} */}
                   </li>
                 ))}
               </ul>
@@ -42,7 +41,7 @@ const Collaboration = (props: Props) => {
             </div>
 
             <div className="mt-4 lg:ml-auto xl:w-[38rem]">
-              <p className="body-2 mb-8 text-white md:mb-16 lg:mx-auto lg:mb-32 lg:w-[22rem]">
+              <p className="h5 mb-8 text-white md:mb-16 lg:mx-auto lg:mb-32 lg:w-[22rem]">
                 {collabText}
               </p>
 
@@ -50,7 +49,7 @@ const Collaboration = (props: Props) => {
                 <div className="m-auto flex aspect-square w-60 rounded-full border border-n-6">
                   <div className="m-auto aspect-square w-24 rounded-full bg-conic-gradient p-[0.2rem]">
                     <div className="flex h-full items-center justify-center rounded-full bg-n-8">
-                      <Image src={images.brainwaveSymbol} width={48} height={48} alt="brainwave" />
+                      <Image src={images.nexiam} width={48} height={48} alt="brainwave" />
                     </div>
                   </div>
                 </div>
@@ -75,7 +74,7 @@ const Collaboration = (props: Props) => {
                           alt={item.title}
                           width={36}
                           height={36}
-                          className="m-auto"
+                          className="m-auto brightness-0 invert"
                         />
                       </div>
                     </li>

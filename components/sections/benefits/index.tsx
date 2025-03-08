@@ -40,7 +40,7 @@ const Benefits = (props: Props) => {
               <div className="pointer-events-none relative z-2 flex min-h-[22rem] flex-col p-[2.4rem]">
                 <h5 className="h5 mb-5 text-white">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="mt-auto flex items-center">
+                <div className="mt-auto flex items-center relative z-[10000]">
                   <Image src={item.iconUrl} width={48} height={48} alt={item.title} />
                   <a
                     href="https://wa.me/+923432469633"
