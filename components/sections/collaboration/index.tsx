@@ -13,7 +13,7 @@ const Collaboration = (props: Props) => {
   return (
     <div
       style={{
-        background: "url(/image.png)",
+        // background: "url(/image.png)",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -22,7 +22,7 @@ const Collaboration = (props: Props) => {
         <Section id="collaboration" crosses>
           <div className="container lg:flex">
             <div className="max-w-[25rem]">
-              <h2 className="h3 mb-12 max-md:mb-4 text-white">
+              <h2 className="h4 mb-12 max-md:mb-4 text-white">
                 HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
               </h2>
               <ul className="mb-10 max-w-[22rem] md:mb-14">
@@ -41,7 +41,7 @@ const Collaboration = (props: Props) => {
             </div>
 
             <div className="mt-4 lg:ml-auto xl:w-[38rem]">
-              <p className="h5 mb-8 text-white md:mb-16 lg:mx-auto lg:mb-32 lg:w-[22rem]">
+              <p className="h6 mb-8 text-white md:mb-16 lg:mx-auto lg:mb-32 lg:w-[22rem]">
                 {collabText}
               </p>
 
