@@ -6,6 +6,9 @@ import Button from "@/components/atoms/button";
 import { cn } from "@/lib/utils";
 import { LeftCurve, RightCurve } from "@/components/design/collaboration";
 import { div } from "framer-motion/client";
+import ButtonGradient from "@/components/svg/button-gradient";
+import { Gradient } from "@/components/design/hero";
+import { GradientLight } from "@/components/design/benefits";
 
 type Props = {};
 
@@ -18,11 +21,14 @@ const Collaboration = (props: Props) => {
         backgroundPosition: "center",
       }}
     >
-      <div className="bg-gradient-to-b from-n-8/0 to-n-8/90">
+      {/* <Gradient /> */}
+      {/* <ButtonGradient /> */}
+      <div className="bg-gradient-to-b from-n-8/0 to-n-8/90 relative">
         <Section id="collaboration" crosses>
+          <GradientLight />
           <div className="container lg:flex">
             <div className="max-w-[25rem]">
-              <h2 className="h4 mb-12 max-md:mb-4 text-white">
+              <h2 className="h5 mb-12 max-md:mb-4 text-white">
                 HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
               </h2>
               <ul className="mb-10 max-w-[22rem] md:mb-14">
