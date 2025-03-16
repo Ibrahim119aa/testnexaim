@@ -9,6 +9,8 @@ import Image from "next/image";
 import Arrow from "@/components/svg/arrow";
 import { GradientLight } from "@/components/design/benefits";
 import ClipPath from "@/components/svg/clip-path";
+import { div } from "framer-motion/client";
+import style from "styled-jsx/style";
 
 type Props = {};
 
@@ -37,24 +39,27 @@ const Benefits = (props: Props) => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8 }}
             >
-              <div className="pointer-events-none relative z-2 flex min-h-[22rem] flex-col p-[2.4rem]">
+              <div className="relative z-[1000] flex min-h-[22rem] flex-col p-[2.4rem]">
                 <h5 className="h5 mb-5 text-white">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="mt-auto flex items-center relative z-[10000]">
+                <a
+                  href="https://wa.me/+923432469633"
+                  className="mt-auto flex items-center relative z-[10000]"
+                >
                   <Image src={item.iconUrl} width={48} height={48} alt={item.title} />
-                  <a
-                    href="https://wa.me/+923432469633"
-                    className="ml-auto font-code text-xs font-bold uppercase tracking-wider cursor-pointer text-n-1"
-                  >
+                  <div className="ml-auto font-code text-xs font-bold uppercase tracking-wider cursor-pointer text-n-1">
                     Discover More
-                  </a>
+                  </div>
                   <Arrow />
-                </div>
+                </a>
               </div>
 
               {item.light && <GradientLight />}
 
-              <div className="absolute inset-0.5 bg-n-8" style={{ clipPath: `url(#benefits)` }}>
+              <div
+                className="absolute inset-0.5 bg-n-8 -z-10"
+                style={{ clipPath: `url(#benefits)` }}
+              >
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                   {item.imageUrl && (
                     <Image

@@ -68,7 +68,7 @@ const Services = (props: Props) => {
 
         <div className="relative" ref={ref}>
           <motion.div
-            className="relative z-1 mb-5 flex h-[39rem] items-center overflow-hidden rounded-3xl border border-n-1/10 p-8 lg:p-20 xl:h-[46rem]"
+            className="relative z-1 mb-5 flex h-[44rem] items-center overflow-hidden rounded-3xl border border-n-1/10 p-8 lg:p-20 xl:h-[46rem]"
             initial={{ opacity: 0, y: 50 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
@@ -91,8 +91,14 @@ const Services = (props: Props) => {
               <ul className="body-2">
                 {brainwaveServices.map((service, index) => (
                   <li key={index} className="flex items-start border-t border-n-6 py-4">
-                    <Image src={images.check} alt="check" width={24} height={24} />
-                    <p className="ml-4 text-white">{service}</p>
+                    <Image
+                      src={images.check}
+                      alt="check"
+                      className="hidden md:block"
+                      width={24}
+                      height={24}
+                    />
+                    <p className="md:ml-4 text-white">{service}</p>
                   </li>
                 ))}
               </ul>

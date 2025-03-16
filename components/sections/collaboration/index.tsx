@@ -26,15 +26,21 @@ const Collaboration = (props: Props) => {
       <div className="bg-gradient-to-b from-n-8/0 to-n-8/90 relative">
         <Section id="collaboration" crosses>
           <GradientLight />
+          <h2 className="h5 mb-12 2xl:text-5xl md:text-3xl text-2xl font-semibold max-w-5xl m-auto max-md:mb-3 text-white text-center px-4">
+            HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
+          </h2>
+          <p className="text-sm px-4 md:h6 text-white text-center lg:mx-auto lg:max-w-2xl font-light px-4">
+            {collabText}
+          </p>
           <div className="container lg:flex">
             <div className="max-w-[25rem]">
-              <h2 className="h5 mb-12 max-md:mb-4 text-white">
+              {/* <h2 className="h5 mb-12 max-md:mb-4 text-white">
                 HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
-              </h2>
-              <ul className="mb-10 max-w-[22rem] md:mb-14">
+              </h2> */}
+              <ul className="mb-10 max-w-[22rem] md:mb-3">
                 {collabContent.map((item) => (
                   <li key={item.id} className="py-0">
-                    <div className="flex items-center py-4">
+                    <div className="flex items-center py-4 justify-center">
                       <Image src={item.image} width={item.width} height={item.height} alt="check" />{" "}
                     </div>
                     {/* {item.text && <p className="body-2 mt-3 text-n-3">{item.text}</p>} */}
@@ -46,13 +52,9 @@ const Collaboration = (props: Props) => {
               </Button>
             </div>
 
-            <div className="mt-4 lg:ml-auto xl:w-[38rem]">
-              <p className="h6 mb-8 text-white md:mb-16 lg:mx-auto lg:mb-32 lg:w-[22rem]">
-                {collabText}
-              </p>
-
-              <div className="relative left-1/2 flex aspect-square w-[22rem] -translate-x-1/2 scale-75 rounded-full border border-n-6 md:scale-100">
-                <div className="m-auto flex aspect-square w-60 rounded-full border border-n-6">
+            <div className="mt-[124px] lg:ml-auto xl:w-[38rem]">
+              <div className="relative left-1/2 flex aspect-square w-[22rem] -translate-x-1/2 scale-75 rounded-full border border-[#B500A5] md:scale-100">
+                <div className="m-auto flex aspect-square w-60 rounded-full border border-[#B500A5]">
                   <div className="m-auto aspect-square w-24 rounded-full bg-conic-gradient p-[0.2rem]">
                     <div className="flex h-full items-center justify-center rounded-full bg-n-8">
                       <Image src={images.nexiam} width={48} height={48} alt="brainwave" />

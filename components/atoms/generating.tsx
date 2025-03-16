@@ -18,7 +18,7 @@ const Generating = ({ className }: { className?: string }) => {
         width={5}
         height={5}
       />
-      L&apos;avenir est là
+      {/* L&apos;avenir est là */}
     </div>
   );
 };
