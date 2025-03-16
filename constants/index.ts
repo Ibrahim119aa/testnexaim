@@ -1,3 +1,5 @@
+import { Image } from "lucide-react";
+
 export const images = {
   youtube: "/assets/youtube.svg",
   linkedin: "/assets/linkedin.png",
@@ -85,10 +87,20 @@ export const images = {
   bolnews: "/assets/bol-news.png",
   childrenhostpital: "/assets/childrenhostpital.png",
   expressnews: "/assets/expressnews.png",
+  graphicdesign: "/assets/graphic-design.png",
+  videoediting: "/assets/video-editing.png",
+  photoshoot: "/assets/camera.png",
+  webDevelopment: "/assets/web-deveplopment.png",
+  podcast: "/assets/podcast.png",
 };
 
 const {
   mailIcon,
+  photoshoot,
+  webDevelopment,
+  graphicdesign,
+  podcast,
+  videoediting,
   bolnews,
   camera,
   content,
@@ -380,7 +392,7 @@ export const benefits = [
     title: "Facebook Management",
     text: "Boost your brand’s presence with expert Facebook management by Nexaim! We handle content creation, audience engagement, and ad campaigns to maximize reach and drive results. Let’s grow your business together",
     backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: facebook,
     imageUrl: benefitImage2,
   },
   {
@@ -388,7 +400,7 @@ export const benefits = [
     title: "Instagram Management",
     text: "Grow your presence with Nexaim’s strategic Instagram management. From stunning visuals to Reels, Stories, and targeted ads, we help you connect with your audience and increase engagement.",
     backgroundUrl: "assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: instagram,
     imageUrl: benefitImage2,
     light: true,
   },
@@ -397,7 +409,7 @@ export const benefits = [
     title: "Youtube Management",
     text: "Expand your reach with Nexaim’s professional YouTube management. We optimize content, enhance SEO, and drive audience growth to boost visibility, engagement, and monetization.",
     backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+    iconUrl: youtube,
     imageUrl: benefitImage2,
   },
   {
@@ -405,7 +417,7 @@ export const benefits = [
     title: "Graphic Design & Branding  ",
     text: "Nexaim delivers stunning and impactful designs that elevate your brand. From logos to marketing materials, we create visually compelling graphics that capture attention and leave a lasting impression.",
     backgroundUrl: "assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
+    iconUrl: graphicdesign,
     imageUrl: benefitImage2,
     light: true,
   },
@@ -414,7 +426,7 @@ export const benefits = [
     title: "Video Editing ",
     text: "Transform your raw footage into high-quality, engaging content with Nexaim’s expert video editing. We enhance visuals, add effects, and ensure a seamless flow to create professional videos that captivate your audience.",
     backgroundUrl: "assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
+    iconUrl: videoediting,
     imageUrl: benefitImage2,
   },
   {
@@ -422,7 +434,7 @@ export const benefits = [
     title: "Product shoot",
     text: "Showcase your products with high-quality, professional photography by Nexaim. We capture stunning visuals that highlight every detail, making your products stand out and drive more sales.",
     backgroundUrl: "assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
+    iconUrl: photoshoot,
     imageUrl: benefitImage2,
   },
   {
@@ -430,7 +442,7 @@ export const benefits = [
     title: "Web Development ",
     text: "Nexaim builds fast, responsive, and user-friendly websites tailored to your brand. From design to functionality, we create stunning, high-performing sites that enhance your online presence and drive growth",
     backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: benefitIcon3,
+    iconUrl: webDevelopment,
     imageUrl: benefitImage2,
   },
   {
@@ -438,7 +450,7 @@ export const benefits = [
     title: "Event Management & Podcast",
     text: "Nexaim delivers seamless event planning and expert podcast management to elevate your brand. From organizing and promoting events to producing high-quality podcasts, we handle everything to engage your audience and create impactful experiences.",
     backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: benefitIcon4,
+    iconUrl: podcast,
     imageUrl: benefitImage2,
   },
 ];

@@ -46,9 +46,15 @@ const Benefits = (props: Props) => {
                   href="https://wa.me/+923432469633"
                   className="mt-auto flex items-center relative z-[10000]"
                 >
-                  <Image src={item.iconUrl} width={48} height={48} alt={item.title} />
+                  <Image
+                    src={item.iconUrl}
+                    className="brightness-0 invert"
+                    width={48}
+                    height={48}
+                    alt={item.title}
+                  />
                   <div className="ml-auto font-code text-xs font-bold uppercase tracking-wider cursor-pointer text-n-1">
-                    Discover More
+                    Learn More
                   </div>
                   <Arrow />
                 </a>
