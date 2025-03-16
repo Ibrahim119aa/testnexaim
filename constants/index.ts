@@ -227,7 +227,7 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "NEXAIM – ELEVATE, CREATE, AND INNOVATE YOUR ONE-STOP SOLUTION FOR DIGITAL EXCELLENCE";
+  "Nexaim – Elevate, Create, and Innovate Your One-Stop Solution for Digital Excellence";
 
 export const collabContent = [
   {

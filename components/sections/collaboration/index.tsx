@@ -27,9 +27,9 @@ const Collaboration = (props: Props) => {
         <Section id="collaboration" crosses>
           <GradientLight />
           <h2 className="h5 mb-12 2xl:text-5xl md:text-3xl text-2xl font-semibold max-w-5xl m-auto max-md:mb-3 text-white text-center px-4">
-            HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
+            Helping People Create Beautiful Contant At
           </h2>
-          <p className="text-sm px-4 md:h6 text-white text-center lg:mx-auto lg:max-w-2xl font-light px-4">
+          <p className="body-2 mt-4 text-n-4 text-center lg:mx-auto lg:max-w-2xl font-light px-4">
             {collabText}
           </p>
           <div className="container lg:flex">
