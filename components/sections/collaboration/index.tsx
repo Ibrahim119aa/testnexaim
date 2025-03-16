@@ -26,7 +26,7 @@ const Collaboration = (props: Props) => {
       <div className="bg-gradient-to-b from-n-8/0 to-n-8/90 relative">
         <Section id="collaboration" crosses>
           <GradientLight />
-          <h2 className="h5 mb-12 2xl:text-5xl md:text-3xl text-2xl font-semibold max-w-5xl m-auto max-md:mb-3 text-white text-center px-4">
+          <h2 className="h2 max-w-4xl m-auto max-md:mb-3 text-white text-center px-4">
             Helping People Create Beautiful Contant At
           </h2>
           <p className="body-2 mt-4 text-n-4 text-center lg:mx-auto lg:max-w-2xl font-light px-4">
