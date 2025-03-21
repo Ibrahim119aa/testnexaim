@@ -18,9 +18,27 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    setLoading(false);
+
+    const formData = new FormData(e.currentTarget as HTMLFormElement);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: formData.get("firstName"),
+          lastName: formData.get("lastName"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+        }),
+      });
+      if (!response.ok) {
+        console.error("Failed to send email.");
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -63,6 +81,7 @@ export default function ContactForm() {
                       </Label>
                       <Input
                         id="firstName"
+                        name="firstName"
                         placeholder="Enter your first name"
                         className="bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
                         required
@@ -74,6 +93,7 @@ export default function ContactForm() {
                       </Label>
                       <Input
                         id="lastName"
+                        name="lastName"
                         placeholder="Enter your last name"
                         className="bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
                         required
@@ -86,6 +106,7 @@ export default function ContactForm() {
                     </Label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="Enter your email"
                       className="bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
@@ -98,6 +119,7 @@ export default function ContactForm() {
                     </Label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Enter your message"
                       className="min-h-[120px] bg-black/50 border-gray-800 text-white placeholder:text-gray-500"
                       required
