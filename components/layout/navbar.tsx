@@ -60,7 +60,7 @@ const Navbar = (props: Props) => {
           className={cn(`flex gap-2 items-center text-xl font-bold xl:mr-8 text-[#B500A5]`)}
         >
           <Image src={waylogo} alt="waylogo" width={80} height={80} />
-          The Nexiam
+          The Nexaim
         </Link>
 
         <nav
