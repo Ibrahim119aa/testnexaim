@@ -25,7 +25,7 @@ const Collaboration = (props: Props) => {
       {/* <ButtonGradient /> */}
       <div className="bg-gradient-to-b from-n-8/0 to-n-8/90 relative">
         <Section id="collaboration" className="z-2 relative" crosses>
-          <GradientLight />
+          {/* <GradientLight /> */}
           <h2 className="h2 relative z-10 max-w-4xl m-auto max-md:mb-3 text-white text-center px-4">
             Helping People Create Beautiful Content At
           </h2>

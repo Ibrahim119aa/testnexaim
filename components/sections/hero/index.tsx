@@ -65,7 +65,7 @@ const Hero = (props: Props) => {
               <div className={cn("h-[1.4rem] bg-n-10 rounded-t-[0.9rem]")} />
               <div
                 className={cn(
-                  "aspect-[688/520] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]"
+                  "aspect-[688/470] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]"
                 )}
               >
                 <video
