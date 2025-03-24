@@ -20,9 +20,9 @@ const Benefits = (props: Props) => {
 
   return (
     <Section id="features">
-      <div className="container relative z-2">
+      <div className="container relative z-[10]">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl z-[10] relative"
           title="Smart strategies, exceptional results"
           text="Stop wasting your time with outdated techniques — Nexaim takes care of the work and you focus on growth and development."
         />
