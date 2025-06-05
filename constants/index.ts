@@ -463,6 +463,50 @@ export const benefits = [
     imageUrl: benefitImage2,
   },
 ];
+export const Seobenefits = [
+  {
+    id: "0",
+    title: "SEO Strategies",
+    text: "We don't use copy-paste formulas. Every website is different, and so is our approach.",
+    backgroundUrl: "/assets/benefits/card-1.svg",
+    iconUrl: seo,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "1",
+    title: "Transparent Reporting",
+    text: "You'll always know what's happening behind the scenes. No jargon, just clear updates.",
+    backgroundUrl: "/assets/benefits/card-2.svg",
+    iconUrl: seo,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "2",
+    title: "Result-driven Work",
+    text: "Our focus isn't just rankings, it's growth — in traffic, leads, and revenue.",
+    backgroundUrl: "/assets/benefits/card-3.svg",
+    iconUrl: seo,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "3",
+    title: "White-hat SEO",
+    text: "We follow Google-approved methods that bring long-term, stable results.",
+    backgroundUrl: "/assets/benefits/card-4.svg",
+    iconUrl: seo,
+    imageUrl: benefitImage2,
+    light: true,
+  },
+  {
+    id: "4",
+    title: "Local Expertise",
+    text: "We've worked with clients in Pakistan. We care about your success as much as you do. Your goals become our goals — simple.",
+    backgroundUrl: "/assets/benefits/card-5.svg",
+    iconUrl: seo,
+    imageUrl: benefitImage2,
+  },
+];
 
 export const socials = [
   {
