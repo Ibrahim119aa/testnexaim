@@ -179,6 +179,7 @@ export const navigation = [
     title: "Contact Us",
     url: "#contact-us",
   },
+
   {
     id: "4",
     title: "Mail Us",
@@ -398,70 +399,61 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Facebook Management",
-    text: "Boost your brand’s presence with expert Facebook management by Nexaim! We handle content creation, audience engagement, and ad campaigns to maximize reach and drive results. Let’s grow your business together",
+    title: "Digital Marketing",
+    text: "Drive Growth with Smart Strategies! Maximize your brand’s online presence through targeted campaigns, social media, and performance-based digital marketing. Nexaim turns clicks into customers.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: facebookService,
     imageUrl: benefitImage2,
+    url: "/services/digital-marketing"
   },
   {
     id: "1",
-    title: "Instagram Management",
-    text: "Grow your presence with Nexaim’s strategic Instagram management. From stunning visuals to Reels, Stories, and targeted ads, we help you connect with your audience and increase engagement.",
+    title: "Graphic Design",
+    text: "Designs That Speak for Your Brand! From branding to visuals, Nexaim creates impactful and memorable designs that leave a strong impression and support your business identity.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: instagramService,
     imageUrl: benefitImage2,
     light: true,
+    url: "/services/graphic-design-and-video-editing"
   },
   {
     id: "2",
-    title: "Youtube Management",
-    text: "Expand your reach with Nexaim’s professional YouTube management. We optimize content, enhance SEO, and drive audience growth to boost visibility, engagement, and monetization.",
+    title: "Video Editing",
+    text: "Create Videos That Captivate & Convert! Nexaim transforms your raw footage into polished, high-quality videos. We enhance visuals, add effects, and craft seamless edits that engage your audience and elevate your brand.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: youtubeService,
     imageUrl: benefitImage2,
+    url: "/services/graphic-design-and-video-editing"
   },
   {
     id: "3",
-    title: "Graphic Design & Branding  ",
-    text: "Nexaim delivers stunning and impactful designs that elevate your brand. From logos to marketing materials, we create visually compelling graphics that capture attention and leave a lasting impression.",
+    title: " Web Development  ",
+    text: "Websites That Work, Perform & Scale! We build fast, secure, and SEO-ready websites designed for user experience, brand impact, and business results custom-built from the ground up.",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: graphicdesign,
     imageUrl: benefitImage2,
+    url: "/services/web-development",
     light: true,
   },
   {
     id: "4",
-    title: "Video Editing ",
-    text: "Transform your raw footage into high-quality, engaging content with Nexaim’s expert video editing. We enhance visuals, add effects, and ensure a seamless flow to create professional videos that captivate your audience.",
+    title: "SEO ",
+    text: "Get Found Where It Matters! Boost your visibility with Nexaim’s smart SEO solutions. From on-page optimization to technical SEO, we help you rank higher and grow organically",
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: videoediting,
     imageUrl: benefitImage2,
+    url: "/services/seo"
   },
   {
     id: "5",
-    title: "Product shoot",
-    text: "Showcase your products with high-quality, professional photography by Nexaim. We capture stunning visuals that highlight every detail, making your products stand out and drive more sales.",
+    title: "Podcast",
+    text: "Turn Your Voice into a Brand! From recording to promotion, Nexaim helps you launch and grow a podcast that connects, engages, and builds a loyal audience",
     backgroundUrl: "assets/benefits/card-6.svg",
     iconUrl: photoshoot,
     imageUrl: benefitImage2,
+    url: "/services/podcast-production"
   },
-  {
-    id: "6",
-    title: "Web Development ",
-    text: "Nexaim builds fast, responsive, and user-friendly websites tailored to your brand. From design to functionality, we create stunning, high-performing sites that enhance your online presence and drive growth",
-    backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: webDevelopment,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "7",
-    title: "Event Management & Podcast",
-    text: "Nexaim delivers seamless event planning and expert podcast management to elevate your brand. From organizing and promoting events to producing high-quality podcasts, we handle everything to engage your audience and create impactful experiences.",
-    backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: podcast,
-    imageUrl: benefitImage2,
-  },
+
 ];
 export const Seobenefits = [
   {

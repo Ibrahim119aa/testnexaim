@@ -1,21 +1,30 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Section from "@/components/layout/section";
-import Heading from "../../atoms/heading";
-import { Seobenefits } from "@/constants";
+import Heading from "@/components/atoms/heading";
 import Image from "next/image";
 import Arrow from "@/components/svg/arrow";
 import { GradientLight } from "@/components/design/benefits";
 import ClipPath from "@/components/svg/clip-path";
-import { div } from "framer-motion/client";
-import style from "styled-jsx/style";
 
-type Props = {};
+export interface BenefitItem {
+  id: number | string;
+  title: string;
+  text: string;
+  backgroundUrl: string;
+  imageUrl?: string;
+  light?: boolean;
+}
 
-const ServiceBenefits = (props: Props) => {
-  const ref = React.useRef(null);
+interface Props {
+  sectionTitle: string;
+  benefits: BenefitItem[];
+}
+
+const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
@@ -23,18 +32,16 @@ const ServiceBenefits = (props: Props) => {
       <div className="container relative z-[10]">
         <Heading
           className="md:max-w-md lg:max-w-2xl z-[10] relative"
-          title="There are hundreds of SEO agencies in Pakistan. So, why trust us?"
+          title={sectionTitle}
           text=""
         />
 
         <div className="mb-10 flex flex-wrap gap-10" ref={ref}>
-          {Seobenefits.map((item) => (
+          {benefits.map((item) => (
             <motion.div
               key={item.id}
               className="relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
-              style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
-              }}
+              style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8 }}
@@ -46,7 +53,6 @@ const ServiceBenefits = (props: Props) => {
                   href="https://wa.me/+923432469633"
                   className="mt-auto flex items-center relative z-[10000]"
                 >
-                  {/* <Image src={item.iconUrl} className="" width={48} height={48} alt={item.title} /> */}
                   <div className="ml-auto font-code text-xs font-bold uppercase tracking-wider cursor-pointer text-n-1">
                     Learn More
                   </div>

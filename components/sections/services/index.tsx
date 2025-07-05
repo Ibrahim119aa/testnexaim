@@ -9,6 +9,7 @@ import Image from "next/image";
 import Generating from "../../atoms/generating";
 import { PhotoChatMessage, Gradient } from "@/components/design/services";
 import { cn } from "@/lib/utils";
+import { ul } from "framer-motion/client";
 
 type Props = {};
 
@@ -21,29 +22,34 @@ const Services = (props: Props) => {
   const serviceDetails = [
     {
       heading: "Digital Marketing",
-      text: "1way2com unlocks the potential of AI-powered applications",
+      text: "Drive Growth with Smart Strategies! Maximize your brand’s online presence through targeted campaigns, social media, and performance-based digital marketing. Nexaim turns clicks into customers.",
       // imageUrl: "/assets/service/service1.jpg",
       imageUrl: "/assets/service/service1.jpg",
     },
     {
-      heading: "Digital Branding",
-      text: "Automatically enhance your photos using our Digital Marketing and Branding. Try it now!",
+      heading: " Graphic Design",
+      text: "Designs That Speak for Your Brand! From branding to visuals, Nexaim creates impactful and memorable designs that leave a strong impression and support your business identity.",
       imageUrl: "/assets/service/service2.jpg",
     },
     {
-      heading: "Salut 1Way2Com, Booste mon marketing digital!",
-      text: "Maîtrisez l’excellence du bout des doigts : Demandez simplement, et laissez notre IA propulser vos campagnes vers de nouveaux sommets.",
+      heading: "Video Editing",
+      text: "Create Videos That Captivate & Convert! Nexaim transforms your raw footage into polished, high-quality videos. We enhance visuals, add effects, and craft seamless edits that engage your audience and elevate your brand.",
       // imageUrl: "/assets/service/service3.jpg",
       imageUrl: "/assets/services/service-2.png",
     },
     {
-      heading: "Video Generation",
-      text: "The world’s most powerful AI photo and video art generation engine. What will you create?",
+      heading: "Web Development",
+      text: "Websites That Work, Perform & Scale! We build fast, secure, and SEO-ready websites designed for user experience, brand impact, and business results custom-built from the ground up.",
       imageUrl: "/assets/service/service4.jpg",
     },
     {
-      heading: "Video Generation",
-      text: "The world’s most powerful AI photo and video art generation engine. What will you create?",
+      heading: "SEO",
+      text: "Get Found Where It Matters! Boost your visibility with Nexaim’s smart SEO solutions. From on-page optimization to technical SEO, we help you rank higher and grow organically.",
+      imageUrl: "/assets/service/service4.jpg",
+    },
+    {
+      heading: "Podcast",
+      text: "Turn Your Voice into a Brand! From recording to promotion, Nexaim helps you launch and grow a podcast that connects, engages, and builds a loyal audience.",
       imageUrl: "/assets/service/service4.jpg",
     },
   ];

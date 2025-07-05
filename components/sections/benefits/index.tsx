@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 import { motion, useInView } from "framer-motion";
 import Section from "@/components/layout/section";
 import Heading from "../../atoms/heading";
@@ -17,7 +18,7 @@ type Props = {};
 const Benefits = (props: Props) => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
-
+  const n = useRouter();
   return (
     <Section id="features">
       <div className="container relative z-[10]">
@@ -30,8 +31,9 @@ const Benefits = (props: Props) => {
         <div className="mb-10 flex flex-wrap gap-10" ref={ref}>
           {benefits.map((item) => (
             <motion.div
+              onClick={() => n.push(item.url)}
               key={item.id}
-              className="relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
+              className="relative cursor-pointer block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
               style={{
                 backgroundImage: `url(${item.backgroundUrl})`,
               }}

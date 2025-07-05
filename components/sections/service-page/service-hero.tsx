@@ -5,17 +5,30 @@ import { motion } from "framer-motion";
 import Section from "../../layout/section";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { images, heroIcons } from "@/constants";
 import Button from "../../atoms/button";
 import { BackgroundCircles, BottomLine, Gradient } from "../../design/hero";
 import { ScrollParallax } from "react-just-parallax";
 import Generating from "../../atoms/generating";
 import Notification from "../hero/notification";
-// import CompanyLogos from "./company-logos";
 
-type Props = {};
+interface HeroContent {
+  heading: string;
+  highlight: string;
+  paragraphs: string[];
+  button: {
+    text: string;
+    link: string;
+  };
+  videoSrc: string;
+  backgroundImage: string;
+  curveImage: string;
+}
 
-const ServiceHero = (props: Props) => {
+interface Props {
+  content: HeroContent;
+}
+
+const ServiceHero = ({ content }: Props) => {
   const parallaxRef = useRef(null);
 
   return (
@@ -27,6 +40,7 @@ const ServiceHero = (props: Props) => {
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
+        {/* Headline + Text */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,11 +48,11 @@ const ServiceHero = (props: Props) => {
           className="relative z-1 mx-auto mb-16 max-w-[62rem] text-center md:mb-20 lg:mb-24"
         >
           <h1 className="h1 mb-6 text-white">
-            Best SEO Agency in
+            {content.heading}{" "}
             <span className="relative inline-block">
-              Pakistan!
+              {content.highlight}
               <Image
-                src={images.curve}
+                src={content.curveImage}
                 className="absolute left-0 top-full w-full xl:-mt-2"
                 width={624}
                 height={28}
@@ -46,25 +60,19 @@ const ServiceHero = (props: Props) => {
               />
             </span>
           </h1>
-          <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            Looking for real results, not just reports? You're in the right place.
-          </p>
-          <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            We’re not just another SEO company in Pakistan — we’re your growth partners. At Nexiam,
-            we specialize in turning search traffic into real business by combining data-driven
-            strategies with personalized SEO solutions. Whether you're a local startup or an
-            international brand targeting Pakistan, our job is to make sure your customers find you
-            before your competitors.{" "}
-          </p>
-          <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
-            With years of experience, a proven track record, and a passion for digital performance,
-            we take your online visibility seriously — so you don’t have to.
-          </p>
-          <Button href="https://wa.me/+923432469633 " white>
-            Get Your Offer
+
+          {content.paragraphs.map((text, idx) => (
+            <p key={idx} className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
+              {text}
+            </p>
+          ))}
+
+          <Button href={content.button.link} white>
+            {content.button.text}
           </Button>
         </motion.div>
 
+        {/* Video Area */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -86,20 +94,10 @@ const ServiceHero = (props: Props) => {
                   controls
                   className="w-full relative z-[1000] translate-y-[8%] aspect-video scale-100 md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
                 >
-                  <source src={images.heroVideo} type="video/mp4" />
+                  <source src={content.videoSrc} type="video/mp4" />
                 </video>
 
                 <Generating className="absolute inset-x-4 bottom-5 md:bottom-8 md:left-1/2 md:right-auto md:w-[31rem] md:-translate-x-1/2" />
-
-                {/* <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="absolute bottom-[7.5rem] left-[-5.5rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 p-1 backdrop-blur xl:flex">
-                    {heroIcons.map((icon, index) => (
-                      <li className="p-5" key={index}>
-                        <Image src={icon} height={24} width={25} alt={icon} />
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollParallax> */}
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
@@ -112,21 +110,21 @@ const ServiceHero = (props: Props) => {
 
             <Gradient />
           </div>
+
           <div className="absolute left-1/2 top-[-54%] w-[234%] -translate-x-1/2 md:top-[-46%] md:w-[138%] lg:top-[-104%]">
             <Image
-              src={images.heroBackground}
+              src={content.backgroundImage}
               width={1440}
               height={1880}
               className="w-full"
-              alt="hero"
+              alt="hero background"
             />
           </div>
 
           <BackgroundCircles parallaxRef={parallaxRef} />
         </motion.div>
-
-        {/* <CompanyLogos className="relative z-10 mt-20 hidden lg:block" /> */}
       </div>
+
       <BottomLine />
     </Section>
   );

@@ -3,45 +3,18 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-interface FAQItem {
+export interface FAQItem {
   question: string;
   answer: string;
 }
 
-const faqData: FAQItem[] = [
-  {
-    question: "What is SEO and why do I need it?",
-    answer:
-      "SEO (Search Engine Optimization) is the practice of optimizing your website to rank higher in search engine results. With better visibility, your website attracts more visitors, leading to increased traffic, leads, and ultimately sales. If you're not utilizing SEO, you're missing out on one of the most cost-effective ways to grow your business online.",
-  },
-  {
-    question: "What is the difference between SEO and AEO?",
-    answer:
-      "While SEO focuses on improving your website's ranking in search engines, AEO (Answer Engine Optimization) focuses on optimizing content to appear in featured snippets and voice search results. With the rise of voice assistants like Siri and Google Assistant, AEO is becoming an essential part of SEO to ensure your content answers user queries directly.",
-  },
-  {
-    question: "Do you provide local SEO services in Pakistan?",
-    answer:
-      "Yes! We specialize in local SEO services to help your business get noticed by local customers. Whether you're in Karachi, Lahore, or Islamabad, our local SEO strategies ensure that your business shows up in search results for location-based queries. We also optimize your Google Business Profile, local citations, and maps for maximum visibility.",
-  },
-  {
-    question: "What makes you different from other SEO agencies in Pakistan?",
-    answer:
-      "At The Nexaim, we don't believe in cookie-cutter solutions. Our SEO strategies are personalized for each client, ensuring we meet your specific needs and goals. With years of experience, a data-driven approach, and a team of experts, we focus on delivering sustainable results that drive traffic and business growth.",
-  },
-  {
-    question: "What is Content Optimization?",
-    answer:
-      "Content optimization is the process of ensuring that the content on your website is valuable, relevant, and strategically optimized to rank higher in search engines. It involves more than just using keywords — it's about structuring the content correctly, improving readability, enhancing engagement, and ensuring that the right message reaches your audience.",
-  },
-  {
-    question: "Why Choose Us for Content Optimization?",
-    answer:
-      "We research user intent to create content that answers questions and solves problems. We use SEO writing techniques that help your content rank higher while maintaining its natural flow and readability. Our SEO content audits ensure your existing content is performing at its best, and we recommend strategies for improvement.",
-  },
-];
+interface Props {
+  data: FAQItem[];
+  subtitle: string;
 
-export default function FAQSection() {
+}
+
+export default function FAQSection({ data, subtitle }: Props) {
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
@@ -52,7 +25,7 @@ export default function FAQSection() {
 
   return (
     <div className="min-h-screen bg-n-8 relative overflow-hidden">
-      {/* Background decorative elements */}
+      {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-color-1/20 rounded-full blur-xl"></div>
         <div className="absolute top-40 right-20 w-24 h-24 bg-color-6/20 rounded-full blur-lg"></div>
@@ -62,7 +35,6 @@ export default function FAQSection() {
       </div>
 
       <div className="relative z-10 container">
-        {/* Header Section */}
         <div className="text-center mb-16 pt-16">
           <h1 className="h2 text-n-1 mb-6">
             Frequently Asked
@@ -71,13 +43,12 @@ export default function FAQSection() {
             </span>
           </h1>
           <p className="body-1 text-n-3 max-w-3xl mx-auto">
-            Get answers to the most common questions about our SEO and digital marketing services
+            {subtitle}
           </p>
         </div>
 
-        {/* FAQ Items */}
         <div className="max-w-4xl mx-auto space-y-4">
-          {faqData.map((item, index) => (
+          {data.map((item, index) => (
             <div
               key={index}
               className="bg-n-7/50 backdrop-blur-sm border border-n-6 rounded-2xl overflow-hidden transition-all duration-300 hover:bg-n-6 hover:border-color-1/30"
@@ -89,17 +60,18 @@ export default function FAQSection() {
                 <h3 className="h6 text-n-1 pr-4">{item.question}</h3>
                 <div className="flex-shrink-0">
                   {openItems.includes(index) ? (
-                    <ChevronUp className="w-6 h-6 text-color-1 transition-transform duration-200" />
+                    <ChevronUp className="w-6 h-6 text-color-1" />
                   ) : (
-                    <ChevronDown className="w-6 h-6 text-color-1 transition-transform duration-200" />
+                    <ChevronDown className="w-6 h-6 text-color-1" />
                   )}
                 </div>
               </button>
 
               <div
-                className={`transition-all duration-300 ease-in-out ${
-                  openItems.includes(index) ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                } overflow-hidden`}
+                className={`transition-all duration-300 ease-in-out ${openItems.includes(index)
+                  ? "max-h-96 opacity-100"
+                  : "max-h-0 opacity-0"
+                  } overflow-hidden`}
               >
                 <div className="px-8 pb-6">
                   <div className="h-px bg-gradient-to-r from-transparent via-color-1/30 to-transparent mb-4"></div>
@@ -110,12 +82,11 @@ export default function FAQSection() {
           ))}
         </div>
 
-        {/* Call to Action */}
         <div className="text-center mt-16 pb-16">
           <div className="bg-n-7/50 backdrop-blur-sm border border-n-6 rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="h5 text-n-1 mb-4">Still have questions?</h3>
             <p className="body-2 text-n-3 mb-6">
-              {"Can't find the answer you're looking for? Our team is here to help you succeed."}
+              Can't find the answer you're looking for? Our team is here to help you succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="button px-8 py-3 bg-gradient-to-r from-color-1 to-color-6 text-n-1 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105">
