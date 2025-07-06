@@ -1,13 +1,18 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import { motion, useInView } from "framer-motion";
 import Section from "@/components/layout/section";
-import Heading from "@/components/atoms/heading";
+import Heading from "../../atoms/heading";
+
 import Image from "next/image";
 import Arrow from "@/components/svg/arrow";
 import { GradientLight } from "@/components/design/benefits";
 import ClipPath from "@/components/svg/clip-path";
+import { div } from "framer-motion/client";
+import style from "styled-jsx/style";
+
+
 
 export interface BenefitItem {
   id: number | string;
@@ -23,8 +28,9 @@ interface Props {
   benefits: BenefitItem[];
 }
 
+
 const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
-  const ref = useRef(null);
+  const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
@@ -41,7 +47,9 @@ const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
             <motion.div
               key={item.id}
               className="relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
-              style={{ backgroundImage: `url(${item.backgroundUrl})` }}
+              style={{
+                backgroundImage: `url(${item.backgroundUrl})`,
+              }}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8 }}
@@ -53,6 +61,7 @@ const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
                   href="https://wa.me/+923432469633"
                   className="mt-auto flex items-center relative z-[10000]"
                 >
+                  {/* <Image src={item.iconUrl} className="" width={48} height={48} alt={item.title} /> */}
                   <div className="ml-auto font-code text-xs font-bold uppercase tracking-wider cursor-pointer text-n-1">
                     Learn More
                   </div>

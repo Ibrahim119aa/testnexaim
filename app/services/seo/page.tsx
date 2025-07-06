@@ -33,7 +33,8 @@ export default function Home() {
       id: 1,
       title: "SEO strategies:",
       text: "We don’t use copy-paste formulas. Every website is different, and so is our approach.",
-      backgroundUrl: "/assets/bg/seo-bg-1.png",
+      backgroundUrl: "/assets/benefits/card-1.svg",
+
       imageUrl: "/assets/images/seo-benefit-1.jpg",
       light: true,
     },
@@ -41,27 +42,31 @@ export default function Home() {
       id: 2,
       title: "Transparent reporting",
       text: "You’ll always know what’s happening behind the scenes. No jargon, just clear updates.",
-      backgroundUrl: "/assets/bg/seo-bg-2.png",
+      backgroundUrl: "/assets/benefits/card-2.svg",
+
       imageUrl: "/assets/images/seo-benefit-2.jpg",
     },
     {
       id: 3,
       title: "Result-driven work",
       text: "Our focus isn’t just rankings, it's growth — in traffic, leads, and revenue.",
-      backgroundUrl: "/assets/bg/seo-bg-3.png",
+      backgroundUrl: "/assets/benefits/card-3.svg",
+
     },
 
     {
       id: 4,
       title: "White-hat SEO",
       text: "We follow Google-approved methods that bring long-term, stable results.",
-      backgroundUrl: "/assets/bg/seo-bg-3.png",
+      backgroundUrl: "/assets/benefits/card-4.svg",
+
     },
     {
       id: 5,
       title: "Local",
       text: "We’ve worked with clients in Pakistan.We care about your success as much as you do. Your goals become our goals — simple.",
-      backgroundUrl: "/assets/bg/seo-bg-3.png",
+      backgroundUrl: "/assets/benefits/card-5.svg",
+
     },
   ];
 

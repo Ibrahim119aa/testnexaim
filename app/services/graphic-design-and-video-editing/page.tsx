@@ -1,5 +1,8 @@
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
+import { images } from "@/constants";
+
+
 import {
     Video,
     Youtube,
@@ -9,13 +12,76 @@ import {
     TextCursorInput,
     CalendarCheck
 } from "lucide-react";
+const {
+    mailIcon,
+    facebookService,
+    instagramService,
+    // videoediting,
+    youtubeService,
+    photoshoot,
+    webDevelopment,
+    graphicdesign,
+    podcast,
+    videoediting,
+    bolnews,
+    camera,
+    content,
+    yourlogo,
+    nexiam,
+    wordpress,
+    googleAnalytics,
+    googleAds,
+    homeSmile,
+    socialMediaIcon,
+    youtube,
+    file02,
+    searchMd,
+    plusSquare,
+    recording03,
+    recording01,
+    childrenhostpital,
+    disc02,
+    chromecast,
+    sliders04,
+    discord,
+    discord2,
+    figma,
+    pinterest,
+    seo,
+    expressnews,
+    framer,
+    notion,
+    photoshop,
+    protopie,
+    raindrop,
+    advancetelecom,
+    slack,
+    linkedin,
+    roadmap1,
+    roadmap2,
+    roadmap3,
+    roadmap4,
+    notification2,
+    notification3,
+    notification4,
+    benefitIcon1,
+    benefitIcon2,
+    benefitIcon3,
+    benefitIcon4,
+    benefitImage2,
+    discordBlack,
+    facebook,
+    instagram,
+    telegram,
+    twitter,
+} = images;
 import FAQSection, { FAQItem } from "@/components/sections/service-page/Faqs";
 import ServiceBenefits, { BenefitItem } from "@/components/sections/service-page/service-benefits";
 import ServicesSectionDetails, { Service } from "@/components/sections/service-page/service-details";
 import ServiceHero from "@/components/sections/service-page/service-hero";
 import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
-import { images } from "@/constants";
+// import { images, Seobenefits } from "@/constants";
 
 export default function Home() {
 
@@ -35,58 +101,69 @@ export default function Home() {
         backgroundImage: images.heroBackground,
         curveImage: images.curve,
     };
+
+
     const benefitsData: BenefitItem[] = [
         {
             id: 1,
             title: " Logo Design & Branding:",
             text: "Unique logos and visual identity systems tailored to your business personality.",
-            backgroundUrl: "/assets/bg/seo-bg-1.png",
-            imageUrl: "/assets/images/seo-benefit-1.jpg",
+            backgroundUrl: "/assets/benefits/card-1.svg",
+
+            imageUrl: benefitImage2,
             light: true,
         },
         {
             id: 2,
             title: "Social Media Post & Story Design",
             text: "Scroll-stopping creatives for Instagram, Facebook, LinkedIn, and more.",
-            backgroundUrl: "/assets/bg/seo-bg-2.png",
+            backgroundUrl: "/assets/benefits/card-2.svg",
+
             imageUrl: "/assets/images/seo-benefit-2.jpg",
         },
         {
             id: 4,
             title: "Website Banners & Visual Content  ",
             text: "Visually engaging elements that boost user experience and click-through rates.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-4.svg",
+
+
         },
         {
             id: 5,
             title: "Ad Creatives (Static & Animated) ",
             text: "Conversion-driven ad designs optimized for paid campaigns.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-5.svg",
+
         },
 
         {
             id: 6,
             title: "Business Cards, Flyers & Brochures ",
             text: "Print-ready, branded materials that leave a lasting impression.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-1.svg",
+
         },
         {
             id: 7,
             title: "Infographics & Custom Illustrations",
             text: "Visual storytelling tools to simplify complex information.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-2.svg",
+
         },
         {
             id: 8,
             title: "Product Packaging Mockups",
             text: " Eye-catching packaging designs that enhance product appeal.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-3.svg",
+
         },
         {
             id: 9,
             title: "YouTube Thumbnails & Channel Art",
             text: " Designs that attract clicks and elevate your YouTube presence.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-4.svg",
+
         },
     ];
 

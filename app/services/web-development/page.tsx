@@ -51,55 +51,64 @@ export default function Home() {
             id: 9,
             title: "Custom Website Design & Development",
             text: "Tailored from scratch to fit your brand and user goals.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-1.svg",
+
         },
         {
             id: 10,
             title: "WordPress, Shopify & CMS Integration",
             text: "Flexible content management with your preferred platform.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-2.svg",
+
         },
         {
             id: 11,
             title: "E-commerce Website Development",
             text: "High-converting online stores built for sales and scalability.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-3.svg",
+
         },
         {
             id: 12,
             title: "Landing Page Design for Campaigns",
             text: "Conversion-focused pages for paid ads, email, or social media.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-4.svg",
+
         },
         {
             id: 13,
             title: "Website Redesign & Performance Optimization",
             text: "Refresh outdated websites for modern performance.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-5.svg",
+
         },
         {
             id: 14,
             title: "On-Page SEO Setup & Optimization",
             text: "Optimized structure, meta data, speed, and mobile UX.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-1.svg",
+
         },
         {
             id: 15,
             title: "Fast Loading, Secure & Scalable Websites",
             text: "Powered by best practices in UX and technical SEO.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-1.svg",
+
         },
         {
             id: 16,
             title: "Maintenance & Technical Support Plans",
             text: "Ongoing support to keep your site running smoothly.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-2.svg",
+
         },
         {
             id: 17,
             title: "Integration with Marketing Tools & Analytics",
             text: "Track, test, and grow with smart integrations.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-3.svg",
+
         },
     ];
 

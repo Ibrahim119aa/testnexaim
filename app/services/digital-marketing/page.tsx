@@ -32,7 +32,8 @@ export default function Home() {
             id: 1,
             title: " Proven strategies:",
             text: "Proven strategies built on experience and research.",
-            backgroundUrl: "/assets/bg/seo-bg-1.png",
+            backgroundUrl: "/assets/benefits/card-1.svg",
+
             imageUrl: "/assets/images/seo-benefit-1.jpg",
             light: true,
         },
@@ -40,20 +41,23 @@ export default function Home() {
             id: 2,
             title: "Customized digital marketing",
             text: "Customized digital marketing plans for your unique goals.",
-            backgroundUrl: "/assets/bg/seo-bg-2.png",
+            backgroundUrl: "/assets/benefits/card-2.svg",
+
             imageUrl: "/assets/images/seo-benefit-2.jpg",
         },
         {
             id: 4,
             title: "Transparent communication  ",
             text: "Transparent communication and real-time results.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-3.svg",
+
         },
         {
             id: 5,
             title: "Affordable marketing ",
             text: " Affordable marketing solutions for startups and small businesses.",
-            backgroundUrl: "/assets/bg/seo-bg-3.png",
+            backgroundUrl: "/assets/benefits/card-4.svg",
+
         },
 
 
