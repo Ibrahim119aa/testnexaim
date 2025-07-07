@@ -69,49 +69,49 @@ export default function Home() {
             icon: Facebook, // Replace with an appropriate icon
             title: "Facebook & Instagram Ads",
             description: "Precision-targeted campaigns for sales, leads, and brand awareness — optimized for high ROAS.",
-            color: "color-5",
+            color: "color-1",
         },
         {
             icon: Users, // Replace with an appropriate icon
             title: "Social Media Management",
             description: "Engaging content, consistent posting, and growth strategies to keep your audience hooked.",
-            color: "color-6",
+            color: "color-1",
         },
         {
             icon: Youtube, // Replace with an appropriate icon
             title: "YouTube Marketing",
             description: "Grow your brand’s visibility and connect through powerful video storytelling.",
-            color: "color-7",
+            color: "color-1",
         },
         {
             icon: ShoppingBag, // Replace with an appropriate icon
             title: "E-commerce Scaling",
             description: "Product-focused strategies for fashion and retail brands — ideal for platforms like Shopify, WooCommerce, and custom stores.",
-            color: "color-8",
+            color: "color-1",
         },
         {
             icon: Compass, // Replace with an appropriate icon
             title: "Strategy & Consulting",
             description: "Get a custom growth blueprint backed by research, insights, and clear KPIs.",
-            color: "color-9",
+            color: "color-1",
         },
         {
             icon: Image, // Replace with an appropriate icon
             title: "Content Creation & Graphic Design",
             description: "Professional visuals including graphics, videos, Reels, thumbnails, and posts crafted to reflect your brand and capture attention.",
-            color: "color-10",
+            color: "color-1",
         },
         {
             icon: Video, // Replace with an appropriate icon
             title: "Story & Reel Creation",
             description: "Short-form videos that boost visibility, increase shares, and emotionally connect with your audience on a deeper level.",
-            color: "color-11",
+            color: "color-1",
         },
         {
             icon: Youtube, // Replace with an appropriate icon
             title: "YouTube Video Marketing",
             description: "We optimize your YouTube channel with SEO-friendly titles, custom thumbnails, and keyword-rich descriptions to grow views, watch time, and subscribers.",
-            color: "color-12",
+            color: "color-1",
         }
     ];
 

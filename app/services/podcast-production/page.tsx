@@ -52,6 +52,7 @@ export default function Home() {
 
             imageUrl: "/assets/images/seo-benefit-1.jpg",
             light: true,
+
         },
         {
             id: 2,
@@ -83,49 +84,49 @@ export default function Home() {
             icon: Mic2,
             title: "Podcast Concept Development",
             description: "Find your niche, audience, and content strategy.",
-            color: "color-20",
+            color: "color-1",
         },
         {
             icon: SlidersHorizontal,
             title: "Audio & Video Editing",
             description: "Crisp, clean, and professionally mixed episodes.",
-            color: "color-21",
+            color: "color-1",
         },
         {
             icon: Music,
             title: "Branded Podcast Intros & Outros",
             description: "Custom voiceovers and music to match your identity.",
-            color: "color-22",
+            color: "color-1",
         },
         {
             icon: UploadCloud,
             title: "Publishing to All Major Platforms",
             description: "Spotify, Facebook, Google, YouTube & more.",
-            color: "color-23",
+            color: "color-1",
         },
         {
             icon: Share2,
             title: "Social Media Reels & Audiograms",
             description: "Short-form content to promote your episodes.",
-            color: "color-24",
+            color: "color-1",
         },
         {
             icon: Image,
             title: "Podcast Graphics & Cover Design",
             description: "Eye-catching thumbnails and branding assets.",
-            color: "color-25",
+            color: "color-1",
         },
         {
             icon: UserPlus2,
             title: "Guest Booking & Collaboration Strategy",
             description: "Reach new audiences with the right guests.",
-            color: "color-26",
+            color: "color-1",
         },
         {
             icon: BarChart3,
             title: "Performance Tracking & Analytics Reports",
             description: "Know what’s working, and scale it.",
-            color: "color-27",
+            color: "color-1",
         },
     ];
 

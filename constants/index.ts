@@ -447,7 +447,7 @@ export const benefits = [
   {
     id: "5",
     title: "Podcast",
-    text: "Turn Your Voice into a Brand! From recording to promotion, Nexaim helps you launch and grow a podcast that connects, engages, and builds a loyal audience",
+    text: "Turn Your  Voice into a Brand! From recording to promotion, Nexaim helps you launch and grow a podcast that connects, engages, and builds a loyal audience",
     backgroundUrl: "assets/benefits/card-6.svg",
     iconUrl: photoshoot,
     imageUrl: benefitImage2,

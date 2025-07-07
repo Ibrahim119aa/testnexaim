@@ -172,43 +172,43 @@ export default function Home() {
             icon: Video, // Represents short videos like Reels & Shorts
             title: "Social Media Reels & Shorts",
             description: "Fast-paced, engaging edits for Instagram, TikTok, and Facebook",
-            color: "color-13",
+            color: "color-1",
         },
         {
             icon: Youtube, // Clearly represents YouTube editing
             title: "YouTube Video Editing",
             description: "Complete editing for vlogs, tutorials, intros, and outros.",
-            color: "color-14",
+            color: "color-1",
         },
         {
             icon: Megaphone, // Represents advertisements and promotions
             title: "Promotional & Ad Videos",
             description: "High-impact visuals that spark interest and boost conversions.",
-            color: "color-15",
+            color: "color-1",
         },
         {
             icon: HelpCircle, // A metaphor for explaining something clearly
             title: "Explainer Videos",
             description: "Clear and creative content that simplifies your product or service.",
-            color: "color-16",
+            color: "color-1",
         },
         {
             icon: Users, // Represents people giving testimonials or case studies
             title: "Testimonial & Case Study Videos",
             description: "Real stories told through authentic, compelling edits.",
-            color: "color-17",
+            color: "color-1",
         },
         {
             icon: TextCursorInput, // Represents motion and animated text
             title: "Motion Graphics & Text Animation",
             description: "Dynamic visuals that bring your brand to life.",
-            color: "color-18",
+            color: "color-1",
         },
         {
             icon: CalendarCheck, // Symbolizes event coverage
             title: "Event Highlights",
             description: "Capture the energy and essence of your corporate or social events.",
-            color: "color-19",
+            color: "color-1",
         },
     ];
 

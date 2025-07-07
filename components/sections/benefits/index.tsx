@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
 import { motion, useInView } from "framer-motion";
@@ -44,8 +44,8 @@ const Benefits = (props: Props) => {
               <div className="relative z-[1000] flex min-h-[22rem] flex-col p-[2.4rem]">
                 <h5 className="h5 mb-5 text-white">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <a
-                  href="https://wa.me/+923432469633"
+                <Link
+                  href={item.url}
                   className="mt-auto flex items-center relative z-[10000]"
                 >
                   {/* <Image src={item.iconUrl} className="" width={48} height={48} alt={item.title} /> */}
@@ -53,7 +53,7 @@ const Benefits = (props: Props) => {
                     Learn More
                   </div>
                   <Arrow />
-                </a>
+                </Link>
               </div>
 
               {item.light && <GradientLight />}

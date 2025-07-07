@@ -81,19 +81,19 @@ export default function Home() {
       icon: MessageSquare,
       title: "AEO (Answer Engine Optimization)",
       description: "AEO is the future of SEO. With voice search and AI assistants growing fast, we optimize your content to answer questions directly. Our AEO techniques help your website appear in featured snippets and voice results — making you the go-to source in your niche.",
-      color: "color-2",
+      color: "color-1",
     },
     {
       icon: MapPin,
       title: "GEO (Geo-targeted SEO)",
       description: "Targeting local customers? We specialize in local SEO strategies that put your business on the map — literally. From optimizing your Google Business Profile to managing local citations and maps, we help your business show up in local search results for maximum visibility.",
-      color: "color-3",
+      color: "color-1",
     },
     {
       icon: FileText,
       title: "Content Optimization",
       description: "Great content is the backbone of any successful SEO strategy. At Nexaim,We optimize it to meet both user and search engine expectations.",
-      color: "color-4",
+      color: "color-1",
     },
   ];
   const faqData: FAQItem[] = [
