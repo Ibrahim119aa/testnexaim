@@ -110,7 +110,7 @@ export default function Home() {
             text: "Unique logos and visual identity systems tailored to your business personality.",
             backgroundUrl: "/assets/benefits/card-1.svg",
 
-            imageUrl: benefitImage2,
+            imageUrl: "/assets/images/seo-benefit-2.jpg",
             light: true,
         },
         {
