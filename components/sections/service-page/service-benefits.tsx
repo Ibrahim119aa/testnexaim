@@ -1,100 +1,169 @@
-"use client";
-
-import React from "react";
-import { motion, useInView } from "framer-motion";
-import Section from "@/components/layout/section";
-import Heading from "../../atoms/heading";
-
-import Image from "next/image";
-import Arrow from "@/components/svg/arrow";
-import { GradientLight } from "@/components/design/benefits";
-import ClipPath from "@/components/svg/clip-path";
-import { div } from "framer-motion/client";
-import style from "styled-jsx/style";
-
-
+"use client"
+import React from "react"
+import { motion, useInView } from "framer-motion"
+import Section from "@/components/layout/section"
+import Heading from "../../atoms/heading"
+import Image from "next/image"
+import Arrow from "@/components/svg/arrow"
+import { GradientLight } from "@/components/design/benefits"
+import ClipPath from "@/components/svg/clip-path"
 
 export interface BenefitItem {
-  id: number | string;
-  title: string;
-  text: string;
-  backgroundUrl: string;
-  imageUrl?: string;
-  light?: boolean;
+  id: number | string
+  title: string
+  text: string
+  backgroundUrl: string
+  imageUrl?: string
+  light?: boolean
 }
 
 interface Props {
-  sectionTitle: string;
-  benefits: BenefitItem[];
+  sectionTitle: string
+  benefits: BenefitItem[]
 }
 
-
 const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
-  const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const ref = React.useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  }
+
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+      y: 60,
+      scale: 0.95,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: [0.25, 0.46, 0.45, 0.94],
+      },
+    },
+  }
 
   return (
     <Section id="features">
-      <div className="container relative z-[10]">
-        <Heading
-          className="md:max-w-md lg:max-w-2xl z-[10] relative"
-          title={sectionTitle}
-          text=""
-        />
+      <div className="container relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <Heading className="md:max-w-md lg:max-w-2xl z-10 relative mb-16" title={sectionTitle} text="" />
+        </motion.div>
 
-        <div className="mb-10 flex flex-wrap gap-10" ref={ref}>
-          {benefits.map((item) => (
+        <motion.div
+          ref={ref}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
+          {benefits.map((item, index) => (
             <motion.div
               key={item.id}
-              className="relative block bg-[length:100%_100%] bg-no-repeat p-0.5 md:max-w-sm"
-              style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
+              variants={itemVariants}
+              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-n-8/50 to-n-8/80 backdrop-blur-sm border border-n-6/20 hover:border-n-4/30 transition-all duration-500"
+              whileHover={{
+                y: -8,
+                transition: { duration: 0.3, ease: "easeOut" },
               }}
-              initial={{ opacity: 0, y: 50 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8 }}
             >
-              <div className="relative z-[1000] flex min-h-[22rem] flex-col p-[2.4rem]">
-                <h5 className="h5 mb-5 text-white">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <a
-                  href="https://wa.me/+923432469633"
-                  className="mt-auto flex items-center relative z-[10000]"
-                >
-                  {/* <Image src={item.iconUrl} className="" width={48} height={48} alt={item.title} /> */}
-                  <div className="ml-auto font-code text-xs font-bold uppercase tracking-wider cursor-pointer text-n-1">
-                    Learn More
-                  </div>
-                  <Arrow />
-                </a>
+              {/* Background Image with Overlay */}
+              <div className="absolute inset-0 overflow-hidden rounded-2xl">
+                <div
+                  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+                  style={{
+                    backgroundImage: `url(${item.backgroundUrl})`,
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-n-8/60 via-n-8/40 to-transparent" />
               </div>
 
-              {item.light && <GradientLight />}
+              {/* Content */}
+              <div className="relative z-20 flex flex-col h-full min-h-[12rem] p-8">
+                <div className="flex-1">
+                  <motion.h3
+                    className="text-xl font-semibold text-white mb-4 leading-tight"
+                    initial={{ opacity: 0 }}
+                    animate={isInView ? { opacity: 1 } : {}}
+                    transition={{ delay: index * 0.1 + 0.3 }}
+                  >
+                    {item.title}
+                  </motion.h3>
 
-              <div
-                className="absolute inset-0.5 bg-n-8 -z-10"
-                style={{ clipPath: `url(#benefits)` }}
-              >
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
-                  {item.imageUrl && (
-                    <Image
-                      src={item.imageUrl}
-                      width={380}
-                      height={362}
-                      alt={item.title}
-                      className="size-full object-cover"
-                    />
-                  )}
+                  <motion.p
+                    className="text-n-3 leading-relaxed text-sm mb-8"
+                    initial={{ opacity: 0 }}
+                    animate={isInView ? { opacity: 1 } : {}}
+                    transition={{ delay: index * 0.1 + 0.4 }}
+                  >
+                    {item.text}
+                  </motion.p>
                 </div>
+
+                {/* CTA Link */}
+                {/* <motion.a
+                  href="https://wa.me/+923432469633"
+                  className="inline-flex items-center gap-3 text-n-1 hover:text-white transition-colors duration-300 group/link"
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : {}}
+                  transition={{ delay: index * 0.1 + 0.5 }}
+                >
+                  <span className="text-xs font-bold uppercase tracking-wider">Learn More</span>
+                  <div className="transform group-hover/link:translate-x-1 transition-transform duration-300">
+                    <Arrow />
+                  </div>
+                </motion.a> */}
               </div>
 
+              {/* Hover Image Overlay */}
+              {item.imageUrl && (
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl overflow-hidden">
+                  <Image
+                    src={item.imageUrl || "/placeholder.svg"}
+                    width={380}
+                    height={362}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              )}
+
+              {/* Gradient Light Effect */}
+              {item.light && (
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <GradientLight />
+                </div>
+              )}
+
+              {/* Subtle Border Glow */}
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-n-4/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              {/* ClipPath for additional styling */}
               <ClipPath />
             </motion.div>
           ))}
-        </div>
+        </motion.div>
+
+        {/* Background Decoration */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-n-4/5 via-transparent to-transparent opacity-20 pointer-events-none" />
       </div>
     </Section>
-  );
-};
+  )
+}
 
-export default ServiceBenefits;
+export default ServiceBenefits

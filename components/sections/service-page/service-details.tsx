@@ -20,7 +20,8 @@ interface Props {
   primaryCta?: { text: string; link?: string };
   secondaryCta?: { text: string; link?: string };
   title: string,
-  subheading: string
+  subheading: string,
+  
 }
 
 export default function ServicesSectionDetails({
