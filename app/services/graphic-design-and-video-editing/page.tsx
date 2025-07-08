@@ -118,7 +118,7 @@ export default function Home() {
             title: "Social Media Post & Story Design",
             text: "Scroll-stopping creatives for Instagram, Facebook, LinkedIn, and more.",
             backgroundUrl: "/assets/benefits/card-2.svg",
-
+            light: true,
             imageUrl: "/assets/images/seo-benefit-2.jpg",
         },
         {
@@ -126,7 +126,7 @@ export default function Home() {
             title: "Website Banners & Visual Content  ",
             text: "Visually engaging elements that boost user experience and click-through rates.",
             backgroundUrl: "/assets/benefits/card-4.svg",
-
+            light: true,
 
         },
         {
@@ -134,7 +134,7 @@ export default function Home() {
             title: "Ad Creatives (Static & Animated) ",
             text: "Conversion-driven ad designs optimized for paid campaigns.",
             backgroundUrl: "/assets/benefits/card-5.svg",
-
+            light: true,
         },
 
         {
@@ -142,28 +142,28 @@ export default function Home() {
             title: "Business Cards, Flyers & Brochures ",
             text: "Print-ready, branded materials that leave a lasting impression.",
             backgroundUrl: "/assets/benefits/card-1.svg",
-
+            light: true,
         },
         {
             id: 7,
             title: "Infographics & Custom Illustrations",
             text: "Visual storytelling tools to simplify complex information.",
             backgroundUrl: "/assets/benefits/card-2.svg",
-
+            light: true,
         },
         {
             id: 8,
             title: "Product Packaging Mockups",
             text: " Eye-catching packaging designs that enhance product appeal.",
             backgroundUrl: "/assets/benefits/card-3.svg",
-
+            light: true,
         },
         {
             id: 9,
             title: "YouTube Thumbnails & Channel Art",
             text: " Designs that attract clicks and elevate your YouTube presence.",
             backgroundUrl: "/assets/benefits/card-4.svg",
-
+            light: true,
         },
     ];
 

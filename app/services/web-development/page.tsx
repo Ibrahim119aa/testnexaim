@@ -52,63 +52,63 @@ export default function Home() {
             title: "Custom Website Design & Development",
             text: "Tailored from scratch to fit your brand and user goals.",
             backgroundUrl: "/assets/benefits/card-1.svg",
-
+            light: true,
         },
         {
             id: 10,
             title: "WordPress, Shopify & CMS Integration",
             text: "Flexible content management with your preferred platform.",
             backgroundUrl: "/assets/benefits/card-2.svg",
-
+            light: true,
         },
         {
             id: 11,
             title: "E-commerce Website Development",
             text: "High-converting online stores built for sales and scalability.",
             backgroundUrl: "/assets/benefits/card-3.svg",
-
+            light: true,
         },
         {
             id: 12,
             title: "Landing Page Design for Campaigns",
             text: "Conversion-focused pages for paid ads, email, or social media.",
             backgroundUrl: "/assets/benefits/card-4.svg",
-
+            light: true,
         },
         {
             id: 13,
             title: "Website Redesign & Performance Optimization",
             text: "Refresh outdated websites for modern performance.",
             backgroundUrl: "/assets/benefits/card-5.svg",
-
+            light: true,
         },
         {
             id: 14,
             title: "On-Page SEO Setup & Optimization",
             text: "Optimized structure, meta data, speed, and mobile UX.",
             backgroundUrl: "/assets/benefits/card-1.svg",
-
+            light: true,
         },
         {
             id: 15,
             title: "Fast Loading, Secure & Scalable Websites",
             text: "Powered by best practices in UX and technical SEO.",
             backgroundUrl: "/assets/benefits/card-1.svg",
-
+            light: true,
         },
         {
             id: 16,
             title: "Maintenance & Technical Support Plans",
             text: "Ongoing support to keep your site running smoothly.",
             backgroundUrl: "/assets/benefits/card-2.svg",
-
+            light: true,
         },
         {
             id: 17,
             title: "Integration with Marketing Tools & Analytics",
             text: "Track, test, and grow with smart integrations.",
             backgroundUrl: "/assets/benefits/card-3.svg",
-
+            light: true,
         },
     ];
 

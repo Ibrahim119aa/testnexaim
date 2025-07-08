@@ -59,7 +59,7 @@ export default function Home() {
             title: "Blend Creativity",
             text: "We blend creativity with proven digital marketing strategies.",
             backgroundUrl: "/assets/benefits/card-2.svg",
-
+            light: true,
             imageUrl: "/assets/images/seo-benefit-2.jpg",
         },
         {
@@ -67,14 +67,14 @@ export default function Home() {
             title: "Grow Your Listener Base  ",
             text: "We help you grow your listener base and convert them into loyal fans or leads.",
             backgroundUrl: "/assets/benefits/card-3.svg",
-
+            light: true,
         },
         {
             id: 5,
             title: "Optimize every episode ",
             text: "We optimize every episode for platforms and search engines.",
             backgroundUrl: "/assets/benefits/card-4.svg",
-
+            light: true,
         }
     ];
 

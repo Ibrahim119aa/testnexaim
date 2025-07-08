@@ -42,7 +42,7 @@ export default function Home() {
             title: "Customized digital marketing",
             text: "Customized digital marketing plans for your unique goals.",
             backgroundUrl: "/assets/benefits/card-2.svg",
-
+            light: true,
             imageUrl: "/assets/images/seo-benefit-2.jpg",
         },
         {
@@ -50,14 +50,14 @@ export default function Home() {
             title: "Transparent communication  ",
             text: "Transparent communication and real-time results.",
             backgroundUrl: "/assets/benefits/card-3.svg",
-
+            light: true,
         },
         {
             id: 5,
             title: "Affordable marketing ",
             text: " Affordable marketing solutions for startups and small businesses.",
             backgroundUrl: "/assets/benefits/card-4.svg",
-
+            light: true,
         },
 
 
