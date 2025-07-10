@@ -14,6 +14,7 @@ export default function Home() {
 
   const heroData = {
     heading: "Best SEO Agency in",
+    image: "/assets/SEO.jpg",
     highlight: "Pakistan!",
     paragraphs: [
       "We’re not just another SEO company in Pakistan — we’re your growth partners. At Nexiom, we specialize in turning search traffic into real business by combining data-driven strategies with personalized SEO solutions. Whether you're a local startup or an international brand targeting Pakistan, our job is to make sure your customers find you before your competitors.",

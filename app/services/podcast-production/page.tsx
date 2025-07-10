@@ -28,6 +28,8 @@ import { images } from "@/constants";
 export default function Home() {
 
     const heroData = {
+        image: "/assets/Podcast.jpg",
+
         heading: "Podcast Production & Marketing Services at ",
         highlight: "",
         paragraphs: [

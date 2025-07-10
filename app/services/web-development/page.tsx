@@ -37,6 +37,7 @@ export default function Home() {
             "Our expert developers work closely with your team to create websites that load quickly, perform flawlessly, and drive measurable results. Backed by a team with proven experience in digital marketing and website SEO, we ensure your site looks stunning and works smart."
 
         ],
+        image: "/assets/Web-Development.jpg",
         button: {
             text: "Get Your Offer",
             link: "https://wa.me/+923432469633",

@@ -86,6 +86,8 @@ import { cn } from "@/lib/utils";
 export default function Home() {
 
     const heroData = {
+        image: "/assets/Graphic-Design-Vedio-Editing.jpg",
+
         heading: "Graphic Design & Video Editing Services at  ",
         highlight: "Nexaim!",
         paragraphs: [

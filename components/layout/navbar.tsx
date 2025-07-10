@@ -101,7 +101,7 @@ const Navbar = (props: Props) => {
           Email Us
         </Link>
         <Button className="hidden lg:flex" href="https://wa.me/+923432469633">
-          WhatsApp Us
+          Chat Us
         </Button>
 
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>

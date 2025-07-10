@@ -23,7 +23,7 @@ export default function Home() {
             text: "Get Your Offer",
             link: "https://wa.me/+923432469633",
         },
-        videoSrc: images.heroVideo,
+        image: "/assets/Digital_Marketing.jpg",
         backgroundImage: images.heroBackground,
         curveImage: images.curve,
     };
