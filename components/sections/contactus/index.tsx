@@ -36,7 +36,7 @@ export default function ContactForm() {
       if (!response.ok) {
         console.error("Failed to send email.");
       }
-      toast.success("Your Response Successfully Recorded");
+      toast.success("Thanks for reaching out! We’ll get back to you soon");
 
     } catch (error) {
       console.error(error);
