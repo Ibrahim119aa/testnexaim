@@ -11,6 +11,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { images } from "@/constants";
 import Heading from "@/components/atoms/heading";
+import toast, { Toaster } from 'react-hot-toast';
+
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
@@ -34,6 +36,8 @@ export default function ContactForm() {
       if (!response.ok) {
         console.error("Failed to send email.");
       }
+      toast.success("Your Response Successfully Recorded");
+
     } catch (error) {
       console.error(error);
     } finally {
@@ -43,6 +47,7 @@ export default function ContactForm() {
 
   return (
     <Section id="contact-us" className="overflow-hidden">
+      <Toaster position="top-right" />
       <div className="container relative z-2">
         <div className="relative mb-[6.5rem] hidden justify-center lg:flex">
           <Image
