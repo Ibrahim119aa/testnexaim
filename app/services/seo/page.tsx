@@ -113,7 +113,7 @@ export default function Home() {
     },
     {
       question: "What makes you different from other SEO agencies in Pakistan?",
-      answer: "At Nexiom, we don’t believe in cookie-cutter solutions. Our SEO strategies are personalized for each client, ensuring we meet your specific needs and goals. With years of experience, a data-driven approach, and a team of experts, we focus on delivering sustainable results that drive traffic and business growth.",
+      answer: "At Nexaim, we don’t believe in cookie-cutter solutions. Our SEO strategies are personalized for each client, ensuring we meet your specific needs and goals. With years of experience, a data-driven approach, and a team of experts, we focus on delivering sustainable results that drive traffic and business growth.",
     },
     {
       question: "What is Content Optimization?",

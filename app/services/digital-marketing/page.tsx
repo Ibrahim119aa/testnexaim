@@ -77,12 +77,7 @@ export default function Home() {
             description: "Engaging content, consistent posting, and growth strategies to keep your audience hooked.",
             color: "color-1",
         },
-        {
-            icon: Youtube, // Replace with an appropriate icon
-            title: "YouTube Marketing",
-            description: "Grow your brand’s visibility and connect through powerful video storytelling.",
-            color: "color-1",
-        },
+
         {
             icon: ShoppingBag, // Replace with an appropriate icon
             title: "E-commerce Scaling",

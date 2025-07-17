@@ -58,14 +58,14 @@ const Hero = (props: Props) => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className={cn("relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24")}
+          className={cn("relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-16")}
         >
-          <div className={cn("relative z-1 rounded-2xl p-0.5 bg-conic-gradient")}>
-            <div className={cn("relative bg-n-8 rounded-[1rem]")}>
-              <div className={cn("h-[1.4rem] bg-n-10 rounded-t-[0.9rem]")} />
+          <div className={cn("relative z-1 rounded-2xl bg-conic-gradient shadow-lg")}>
+            <div className={cn("relative rounded-[1rem] pt-2 pb-2 px-1")}>
+              {/* Rounded corners and overflow moved to this div */}
               <div
                 className={cn(
-                  "aspect-[688/470] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]"
+                  "aspect-[688/470] overflow-hidden rounded-[1rem] md:aspect-[688/460] lg:aspect-[1024/460] px-1"
                 )}
               >
                 <video
@@ -73,35 +73,22 @@ const Hero = (props: Props) => {
                   loop
                   muted
                   controls
-                  className="w-full relative z-[1000] translate-y-[8%] aspect-video scale-100 md:translate-y-[-10%] md:scale-100 lg:translate-y-[-23%]"
+                  className="w-full relative z-[1000] aspect-video scale-100"
                 >
                   <source src={images.heroVideo} type="video/mp4" />
                 </video>
 
-                <Generating className="absolute inset-x-4 bottom-5 md:bottom-8 md:left-1/2 md:right-auto md:w-[31rem] md:-translate-x-1/2" />
-
-                {/* <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="absolute bottom-[7.5rem] left-[-5.5rem] hidden rounded-2xl border border-n-1/10 bg-n-9/40 p-1 backdrop-blur xl:flex">
-                    {heroIcons.map((icon, index) => (
-                      <li className="p-5" key={index}>
-                        <Image src={icon} height={24} width={25} alt={icon} />
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollParallax> */}
-
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="absolute bottom-44 right-[-5.5rem] hidden w-72 xl:flex"
+                    className="absolute bottom-32 right-[-5.5rem] hidden w-72 xl:flex"
                     title="Call AI"
                   />
                 </ScrollParallax>
               </div>
             </div>
-
-            {/* <Gradient /> */}
           </div>
-          <div className="absolute left-1/2 top-[-54%] w-[234%] -translate-x-1/2 md:top-[-46%] md:w-[138%] lg:top-[-104%]">
+
+          <div className="absolute left-1/2 top-[-40%] w-[200%] -translate-x-1/2 md:top-[-35%] md:w-[138%] lg:top-[-90%]">
             <Image
               src={images.heroBackground}
               width={1440}
@@ -114,9 +101,11 @@ const Hero = (props: Props) => {
           <BackgroundCircles parallaxRef={parallaxRef} />
         </motion.div>
 
-        {/* <CompanyLogos className="relative z-10 mt-20 hidden lg:block" /> */}
+
+
+
       </div>
-      <BottomLine />
+      {/* <BottomLine /> */}
     </Section>
   );
 };
