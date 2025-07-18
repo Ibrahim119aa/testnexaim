@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { div } from "framer-motion/client";
 
 export interface FAQItem {
   question: string;
@@ -24,7 +25,7 @@ export default function FAQSection({ data, subtitle }: Props) {
   };
 
   return (
-    <div className="min-h-screen bg-n-8 relative overflow-hidden">
+    <div id="faq" className="min-h-screen bg-n-8 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-color-1/20 rounded-full blur-xl"></div>
@@ -89,12 +90,18 @@ export default function FAQSection({ data, subtitle }: Props) {
               Can't find the answer you're looking for? Our team is here to help you succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="button px-8 py-3 bg-gradient-to-r from-color-1 to-color-6 text-n-1 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105">
-                CONTACT US
-              </button>
-              <button className="button px-8 py-3 border border-color-1/50 text-color-1 rounded-full hover:bg-color-1/10 transition-all duration-300">
-                WHATSAPP US
-              </button>
+              <a
+                href="https://wa.me/923342648061"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="button px-8 py-3 bg-gradient-to-r from-color-1 to-color-6 text-n-1 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105">
+                  CONTACT US
+                </button>
+              </a>
+
+
+
             </div>
           </div>
         </div>

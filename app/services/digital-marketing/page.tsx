@@ -1,5 +1,5 @@
 import Footer from "@/components/layout/footer";
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/components/layout/servicenavbar";
 import { Facebook, Users, Youtube, ShoppingBag, Image, Compass, Video } from "lucide-react";
 import FAQSection, { FAQItem } from "@/components/sections/service-page/Faqs";
 import ServiceBenefits, { BenefitItem } from "@/components/sections/service-page/service-benefits";
@@ -168,8 +168,8 @@ export default function Home() {
                     subtitle="At Nexaim, Our full-suite digital marketing services are tailored to help you dominate your niche and outshine your competition"
                     description=""
                     services={seoServices}
-                    primaryCta={{ text: "GET STARTED TODAY", link: "/contact" }}
-                    secondaryCta={{ text: "VIEW OUR PORTFOLIO", link: "/portfolio" }}
+                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "/contact" }}
+
                 />;
                 <FAQSection data={faqData} subtitle={faqsubtitle} />
                 {/* <Collaboration />

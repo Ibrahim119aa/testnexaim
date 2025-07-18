@@ -1,5 +1,5 @@
 import Footer from "@/components/layout/footer";
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/components/layout/servicenavbar";
 import { images } from "@/constants";
 
 
@@ -81,6 +81,7 @@ import ServicesSectionDetails, { Service } from "@/components/sections/service-p
 import ServiceHero from "@/components/sections/service-page/service-hero";
 import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
+
 // import { images, Seobenefits } from "@/constants";
 
 export default function Home() {
@@ -263,7 +264,7 @@ export default function Home() {
                     description=""
                     services={seoServices}
                     primaryCta={{ text: "GET STARTED TODAY", link: "/contact" }}
-                    secondaryCta={{ text: "VIEW OUR PORTFOLIO", link: "/portfolio" }}
+
                 />;
                 <FAQSection data={faqData} subtitle={faqsubtitle} />
                 {/* <Collaboration />

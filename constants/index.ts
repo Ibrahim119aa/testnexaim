@@ -198,7 +198,41 @@ export const navigation = [
     onlyMobile: true,
   },
 ];
+export const servicenavigation = [
+  {
+    id: "0",
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: "0",
+    title: "Services",
+    url: "#features",
+  },
+  {
+    id: "2",
+    title: "About Us",
+    url: "#faq",
+  },
+  {
+    id: "3",
+    title: "Contact Us",
+    url: "#features",
+  },
 
+  {
+    id: "4",
+    title: "Mail Us",
+    url: "mailto:thenexaim@gmail.com",
+    onlyMobile: true,
+  },
+  {
+    id: "5",
+    title: "Chat Us",
+    url: "https://wa.me/+923432469633",
+    onlyMobile: true,
+  },
+];
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];

@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/footer";
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/components/layout/servicenavbar";
+
 import { Search, MessageSquare, MapPin, FileText } from "lucide-react";
 import FAQSection, { FAQItem } from "@/components/sections/service-page/Faqs";
 import ServiceBenefits, { BenefitItem } from "@/components/sections/service-page/service-benefits";
@@ -141,7 +142,6 @@ export default function Home() {
           description="We offer a complete range of SEO services tailored to your business model and audience, including:"
           services={seoServices}
           primaryCta={{ text: "GET STARTED TODAY", link: "/contact" }}
-          secondaryCta={{ text: "VIEW OUR PORTFOLIO", link: "/portfolio" }}
         />;
         <FAQSection data={faqData} subtitle={faqsubtitle} />
         {/* <Collaboration />

@@ -73,7 +73,8 @@ const Hero = (props: Props) => {
                   loop
                   muted
                   controls
-                  className="w-full relative z-[1000] aspect-video scale-100"
+                  className="rounded-lg"
+                // className="w-full relative z-[1000] aspect-video scale-100"
                 >
                   <source src={images.heroVideo} type="video/mp4" />
                 </video>

@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/footer";
-import Navbar from "@/components/layout/navbar";
+import Navbar from "@/components/layout/servicenavbar";
+
 import {
     Video,
     Youtube,
@@ -178,7 +179,7 @@ export default function Home() {
                     description=""
                     services={seoServices}
                     primaryCta={{ text: "GET STARTED TODAY", link: "/contact" }}
-                    secondaryCta={{ text: "VIEW OUR PORTFOLIO", link: "/portfolio" }}
+
                 />;
                 <FAQSection data={faqData} subtitle={faqsubtitle} />
                 {/* <Collaboration />
