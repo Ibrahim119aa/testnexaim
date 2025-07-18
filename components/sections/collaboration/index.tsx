@@ -34,22 +34,32 @@ const Collaboration = (props: Props) => {
           </p>
           <div className="container lg:flex">
             <div className="max-w-[25rem]">
-              {/* <h2 className="h5 mb-12 max-md:mb-4 text-white">
-                HELPING PEOPLE CREATE BEAUTIFUL CONTANT AT
-              </h2> */}
+
               <ul className="mb-10 max-w-[22rem] md:mb-3">
                 {collabContent.map((item) => (
                   <li key={item.id} className="py-0">
                     <div className="flex items-center py-4 justify-center">
-                      <Image src={item.image} width={item.width} height={item.height} alt="check" />{" "}
+                      <Image
+                        className="transition-transform duration-300 ease-in-out hover:scale-105 "
+                        src={item.image}
+                        width={item.width}
+                        height={item.height}
+                        alt="check"
+                      />
+
                     </div>
-                    {/* {item.text && <p className="body-2 mt-3 text-n-3">{item.text}</p>} */}
                   </li>
                 ))}
+                <li className="py-0">
+                  <div className="flex items-center py-4 justify-center">
+                    <Button className="text-white md:mx-7 lg:mx-8" href="https://wa.me/+923432469633">
+                      Try it now
+                    </Button>
+
+                  </div>
+                </li>
               </ul>
-              <Button className="text-white" href="https://wa.me/+923432469633">
-                Try it now
-              </Button>
+
             </div>
 
             <div className="mt-[124px] lg:ml-auto xl:w-[38rem]">

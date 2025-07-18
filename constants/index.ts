@@ -5,7 +5,7 @@ export const images = {
   linkedin: "/assets/linkedin.png",
   discord2: "/assets/discord.png",
   pinterest: "/assets/pinterest.png",
-  advancetelecom: "/assets/advance-telecom.png",
+  advancetelecom: "/assets/img1.png",
   yourlogo: "/assets/yourlogo.svg",
   brainwave: "/assets/brainwave.svg",
   check: "/assets/check.svg",
@@ -84,7 +84,7 @@ export const images = {
   content: "/assets/content.png",
   nexiam: "/assets/nexiam.png",
   camera: "/assets/camera.png",
-  bolnews: "/assets/bol-news.png",
+  bolnews: "/assets/img2.png",
   childrenhostpital: "/assets/childrenhostpital.png",
   expressnews: "/assets/expressnews.png",
   // graphicdesign: "/assets/graphic-design.png",
@@ -166,6 +166,11 @@ const {
 export const navigation = [
   {
     id: "0",
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: "0",
     title: "Services",
     url: "#features",
   },
@@ -179,6 +184,7 @@ export const navigation = [
     title: "Contact Us",
     url: "#contact-us",
   },
+
   {
     id: "4",
     title: "Mail Us",
@@ -187,12 +193,46 @@ export const navigation = [
   },
   {
     id: "5",
-    title: "WhatsApp Us",
+    title: "Chat Us",
     url: "https://wa.me/+923432469633",
     onlyMobile: true,
   },
 ];
+export const servicenavigation = [
+  {
+    id: "0",
+    title: "Home",
+    url: "/",
+  },
+  {
+    id: "0",
+    title: "Services",
+    url: "#features",
+  },
+  {
+    id: "2",
+    title: "About Us",
+    url: "#faq",
+  },
+  {
+    id: "3",
+    title: "Contact Us",
+    url: "#features",
+  },
 
+  {
+    id: "4",
+    title: "Mail Us",
+    url: "mailto:thenexaim@gmail.com",
+    onlyMobile: true,
+  },
+  {
+    id: "5",
+    title: "Chat Us",
+    url: "https://wa.me/+923432469633",
+    onlyMobile: true,
+  },
+];
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
@@ -255,42 +295,45 @@ export const collabContent = [
     id: "0",
     title: "Intégration transparente",
     text: "Connectez tous vos outils en un clin d’œil, sans effort.",
+    // image: "/assets/03.png",
     image: advancetelecom,
-    height: 80,
-    width: 150,
+    height: 180,
+    width: 200,
   },
   {
     id: "1",
     title: "Automatisation Intelligent",
     text: "Laissez l’IA gérer les tâches répétitives pour que vous puissiez vous concentrer sur la créativité. 🧠",
+    // image: "/assets/01.png",
     image: bolnews,
-    height: 120,
-    width: 120,
+    height: 180,
+    width: 200,
   },
   {
     id: "2",
     title: "Sécurité de Niveau Supérieur",
     text: "Protégez vos données avec un décryptage ultra-sécurisée.",
-    image: childrenhostpital,
-    height: 80,
-    width: 150,
+    image: "/assets/img3.png",
+    height: 180,
+    width: 200,
   },
   {
     id: "3",
     title: "Sécurité de Niveau Supérieur",
     text: "Protégez vos données avec un décryptage ultra-sécurisée.",
-    image: expressnews,
-    height: 80,
-    width: 150,
+    image: "/assets/img4.png",
+    height: 180,
+    width: 200,
   },
   // {
-  //   id: "4",
+  //   id: "3",
   //   title: "Sécurité de Niveau Supérieur",
   //   text: "Protégez vos données avec un décryptage ultra-sécurisée.",
-  //   image: advancetelecom,
-  //   height: 80,
-  //   width: 150,
+  //   image: "/assets/img5.png",
+  //   height: 180,
+  //   width: 200,
   // },
+
 ];
 
 export const collabApps = [
@@ -398,70 +441,61 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Facebook Management",
-    text: "Boost your brand’s presence with expert Facebook management by Nexaim! We handle content creation, audience engagement, and ad campaigns to maximize reach and drive results. Let’s grow your business together",
+    title: "Digital Marketing",
+    text: "Drive Growth with Smart Strategies! Maximize your brand’s online presence through targeted campaigns, social media, and performance-based digital marketing. Nexaim turns clicks into customers.",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: facebookService,
     imageUrl: benefitImage2,
+    url: "/services/digital-marketing"
   },
   {
     id: "1",
-    title: "Instagram Management",
-    text: "Grow your presence with Nexaim’s strategic Instagram management. From stunning visuals to Reels, Stories, and targeted ads, we help you connect with your audience and increase engagement.",
+    title: "Graphic Design",
+    text: "Designs That Speak for Your Brand! From branding to visuals, Nexaim creates impactful and memorable designs that leave a strong impression and support your business identity.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: instagramService,
     imageUrl: benefitImage2,
     light: true,
+    url: "/services/graphic-design-and-video-editing"
   },
   {
     id: "2",
-    title: "Youtube Management",
-    text: "Expand your reach with Nexaim’s professional YouTube management. We optimize content, enhance SEO, and drive audience growth to boost visibility, engagement, and monetization.",
+    title: "Video Editing",
+    text: "Create Videos That Captivate & Convert! Nexaim transforms your raw footage into polished, high-quality videos. We enhance visuals, add effects, and craft seamless edits that engage your audience and elevate your brand.",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: youtubeService,
     imageUrl: benefitImage2,
+    url: "/services/graphic-design-and-video-editing"
   },
   {
     id: "3",
-    title: "Graphic Design & Branding  ",
-    text: "Nexaim delivers stunning and impactful designs that elevate your brand. From logos to marketing materials, we create visually compelling graphics that capture attention and leave a lasting impression.",
+    title: " Web Development  ",
+    text: "Websites That Work, Perform & Scale! We build fast, secure, and SEO-ready websites designed for user experience, brand impact, and business results custom-built from the ground up.",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: graphicdesign,
     imageUrl: benefitImage2,
+    url: "/services/web-development",
     light: true,
   },
   {
     id: "4",
-    title: "Video Editing ",
-    text: "Transform your raw footage into high-quality, engaging content with Nexaim’s expert video editing. We enhance visuals, add effects, and ensure a seamless flow to create professional videos that captivate your audience.",
+    title: "SEO ",
+    text: "Get Found Where It Matters! Boost your visibility with Nexaim’s smart SEO solutions. From on-page optimization to technical SEO, we help you rank higher and grow organically",
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: videoediting,
     imageUrl: benefitImage2,
+    url: "/services/seo"
   },
   {
     id: "5",
-    title: "Product shoot",
-    text: "Showcase your products with high-quality, professional photography by Nexaim. We capture stunning visuals that highlight every detail, making your products stand out and drive more sales.",
+    title: "Podcast",
+    text: "Turn Your  Voice into a Brand! From recording to promotion, Nexaim helps you launch and grow a podcast that connects, engages, and builds a loyal audience",
     backgroundUrl: "assets/benefits/card-6.svg",
     iconUrl: photoshoot,
     imageUrl: benefitImage2,
+    url: "/services/podcast-production"
   },
-  {
-    id: "6",
-    title: "Web Development ",
-    text: "Nexaim builds fast, responsive, and user-friendly websites tailored to your brand. From design to functionality, we create stunning, high-performing sites that enhance your online presence and drive growth",
-    backgroundUrl: "assets/benefits/card-1.svg",
-    iconUrl: webDevelopment,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "7",
-    title: "Event Management & Podcast",
-    text: "Nexaim delivers seamless event planning and expert podcast management to elevate your brand. From organizing and promoting events to producing high-quality podcasts, we handle everything to engage your audience and create impactful experiences.",
-    backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: podcast,
-    imageUrl: benefitImage2,
-  },
+
 ];
 export const Seobenefits = [
   {

@@ -1,48 +1,40 @@
-"use client";
 
-import type React from "react";
 
-import { Search, MessageSquare, MapPin, FileText } from "lucide-react";
+import React from "react";
+import type { LucideIcon } from "lucide-react";
+import { title } from "process";
 
-interface Service {
-  icon: React.ReactNode;
+export interface Service {
+  icon: LucideIcon;
   title: string;
   description: string;
   color: string;
 }
 
-const services: Service[] = [
-  {
-    icon: <Search className="w-8 h-8" />,
-    title: "SEO (Search Engine Optimization)",
-    description:
-      "From on-page optimization to backlink building, we handle every element that helps your website rank higher on Google. We optimize site structure, content, and technical aspects to increase visibility and drive more organic traffic.",
-    color: "color-1",
-  },
-  {
-    icon: <MessageSquare className="w-8 h-8" />,
-    title: "AEO (Answer Engine Optimization)",
-    description:
-      "AEO is the future of SEO. With voice search and AI assistants growing fast, we optimize your content to answer questions directly. Our AEO techniques help your website appear in featured snippets and voice results — making you the go-to source in your niche.",
-    color: "color-1",
-  },
-  {
-    icon: <MapPin className="w-8 h-8" />,
-    title: "GEO (Geo-targeted SEO)",
-    description:
-      "Targeting local customers? We specialize in local SEO strategies that put your business on the map — literally. From optimizing your Google Business Profile to managing local citations and maps, we help your business show up in local search results for maximum visibility.",
-    color: "color-1",
-  },
-  {
-    icon: <FileText className="w-8 h-8" />,
-    title: "Content Optimization",
-    description:
-      "Great content is the backbone of any successful SEO strategy. At Nexaim, We optimize it to meet both user and search engine expectations.",
-    color: "color-1",
-  },
-];
+interface Props {
+  heading: string;
+  gradientText: string;
+  subtitle: string;
+  description: string;
+  services: Service[];
+  primaryCta?: { text: string; link?: string };
+  secondaryCta?: { text: string; link?: string };
+  title: string,
+  subheading: string,
 
-export default function ServicesSectionDetails() {
+}
+
+export default function ServicesSectionDetails({
+  heading,
+  gradientText,
+  subtitle,
+  description,
+  services,
+  primaryCta,
+  secondaryCta,
+  title,
+  subheading
+}: Props) {
   return (
     <div className="bg-n-8 relative overflow-hidden">
       {/* Background decorative elements */}
@@ -57,71 +49,78 @@ export default function ServicesSectionDetails() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="h2 text-n-1 mb-6">
-            What Aspects We
+            {heading}
             <span className="block bg-gradient-to-r from-color-1 to-color-6 bg-clip-text text-transparent">
-              Cover
+              {gradientText}
             </span>
           </h2>
-          <p className="body-1 text-n-3 max-w-4xl mx-auto mb-4">
-            SEO isn't just about keywords. It's about being in the right place at the right time —
-            when your customers are searching.
-          </p>
-          <p className="body-2 text-n-4 max-w-3xl mx-auto">
-            We offer a complete range of SEO services tailored to your business model and audience,
-            including:
-          </p>
+          <p className="body-1 text-n-3 max-w-4xl mx-auto mb-4">{subtitle}</p>
+          <p className="body-2 text-n-4 max-w-3xl mx-auto">{description}</p>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="group bg-n-7/50 backdrop-blur-sm border border-n-6 rounded-2xl p-8 transition-all duration-300 hover:bg-n-6 hover:border-color-1/30 hover:transform hover:scale-105"
-            >
-              {/* Icon */}
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
               <div
-                className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-${service.color}/10 border border-${service.color}/20 mb-6 group-hover:bg-${service.color}/20 transition-all duration-300`}
+                key={index}
+                className="group bg-n-7/50 backdrop-blur-sm border border-n-6 rounded-2xl p-8 transition-all duration-300 hover:bg-n-6 hover:border-color-1/30 hover:transform hover:scale-105"
               >
+                {/* Icon */}
                 <div
-                  className={`text-${service.color} group-hover:scale-110 transition-transform duration-300`}
+                  className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-${service.color}/10 border border-${service.color}/20 mb-6 group-hover:bg-${service.color}/20 transition-all duration-300`}
                 >
-                  {service.icon}
+                  <Icon
+                    className={`w-8 h-8 text-${service.color} group-hover:scale-110 transition-transform duration-300`}
+                  />
                 </div>
+
+                {/* Title & Description */}
+                <h3 className="h5 text-n-1 mb-4 group-hover:text-color-1 transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="body-2 text-n-3 leading-relaxed">{service.description}</p>
+
+                {/* Hover Line */}
+                <div
+                  className={`w-0 h-0.25 bg-gradient-to-r from-${service.color} to-transparent mt-6 group-hover:w-full transition-all duration-500`}
+                ></div>
               </div>
-
-              {/* Content */}
-              <h3 className="h5 text-n-1 mb-4 group-hover:text-color-1 transition-colors duration-300">
-                {service.title}
-              </h3>
-              <p className="body-2 text-n-3 leading-relaxed">{service.description}</p>
-
-              {/* Hover Effect Line */}
-              <div
-                className={`w-0 h-0.25 bg-gradient-to-r from-${service.color} to-transparent mt-6 group-hover:w-full transition-all duration-500`}
-              ></div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
-        {/* Bottom Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-n-7/80 to-n-6/80 backdrop-blur-sm border border-n-5 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="h5 text-n-1 mb-4">Ready to Boost Your Rankings?</h3>
-            <p className="body-2 text-n-3 mb-6 max-w-2xl mx-auto">
-              Let us help you dominate search results with our comprehensive SEO strategies tailored
-              specifically for your business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="button px-8 py-3 bg-gradient-to-r from-color-1 to-color-6 text-n-1 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105">
-                GET STARTED TODAY
-              </button>
-              <button className="button px-8 py-3 border border-color-1/50 text-color-1 rounded-full hover:bg-color-1/10 transition-all duration-300">
-                VIEW OUR PORTFOLIO
-              </button>
+        {/* CTA Section */}
+        {(primaryCta || secondaryCta) && (
+          <div className="text-center mt-16">
+            <div className="bg-gradient-to-r from-n-7/80 to-n-6/80 backdrop-blur-sm border border-n-5 rounded-2xl p-8 max-w-4xl mx-auto">
+              <h3 className="h5 text-n-1 mb-4">{title}</h3>
+              <p className="body-2 text-n-3 mb-6 max-w-2xl mx-auto">
+                {subheading}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                {primaryCta && (
+                  <a
+                    target="_blank"
+                    href={primaryCta.link || "#"}
+                    className="button px-8 py-3 bg-gradient-to-r from-color-1 to-color-6 text-n-1 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105"
+                  >
+                    {primaryCta.text}
+                  </a>
+                )}
+                {secondaryCta && (
+                  <a
+                    href={secondaryCta.link || "#"}
+                    className="button px-8 py-3 border border-color-1/50 text-color-1 rounded-full hover:bg-color-1/10 transition-all duration-300"
+                  >
+                    {secondaryCta.text}
+                  </a>
+                )}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
