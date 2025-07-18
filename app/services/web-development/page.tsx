@@ -222,7 +222,7 @@ export default function Home() {
                     subtitle=""
                     description=""
                     services={seoServices}
-                    primaryCta={{ text: "GET STARTED TODAY", link: "/contact" }}
+                    primaryCta={{ text: "GET STARTED TODAY", link: "https://wa.me/+923432469633" }}
                 />;
                 <FAQSection data={faqData} subtitle={faqsubtitle} />
                 {/* <Collaboration />

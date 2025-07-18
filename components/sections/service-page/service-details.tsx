@@ -21,7 +21,7 @@ interface Props {
   secondaryCta?: { text: string; link?: string };
   title: string,
   subheading: string,
-  
+
 }
 
 export default function ServicesSectionDetails({
@@ -102,6 +102,7 @@ export default function ServicesSectionDetails({
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 {primaryCta && (
                   <a
+                    target="_blank"
                     href={primaryCta.link || "#"}
                     className="button px-8 py-3 bg-gradient-to-r from-color-1 to-color-6 text-n-1 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105"
                   >

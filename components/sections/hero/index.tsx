@@ -64,9 +64,9 @@ const Hero = (props: Props) => {
             <div className={cn("relative rounded-[1rem] pt-2 pb-2 px-1")}>
               {/* Rounded corners and overflow moved to this div */}
               <div
-                className={cn(
-                  "aspect-[688/470] overflow-hidden rounded-[1rem] md:aspect-[688/460] lg:aspect-[1024/460] px-1"
-                )}
+              // className={cn(
+              //   "aspect-[688/470] overflow-hidden rounded-[1rem] md:aspect-[688/460] lg:aspect-[1024/460] px-1"
+              // )}
               >
                 <video
                   autoPlay

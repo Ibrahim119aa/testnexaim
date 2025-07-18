@@ -168,7 +168,7 @@ export default function Home() {
                     subtitle="At Nexaim, Our full-suite digital marketing services are tailored to help you dominate your niche and outshine your competition"
                     description=""
                     services={seoServices}
-                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "/contact" }}
+                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
 
                 />;
                 <FAQSection data={faqData} subtitle={faqsubtitle} />
