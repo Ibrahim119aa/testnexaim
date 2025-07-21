@@ -1,3 +1,4 @@
+// app/layout.tsx
 import React from "react";
 import type { Metadata } from "next";
 import Script from "next/script";
@@ -11,9 +12,20 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      {/* <head></head> */}
+      <head>
+        {/* Google Adsense */}
+        <Script
+          id="adsbygoogle"
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9713388182757013"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         {children}
+
+        {/* Facebook Pixel */}
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -28,6 +40,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             fbq('track', 'PageView');
           `}
         </Script>
+
+        {/* Facebook Pixel fallback */}
         <noscript>
           <img
             height="1"

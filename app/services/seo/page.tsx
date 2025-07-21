@@ -141,7 +141,7 @@ export default function Home() {
           subtitle="SEO isn't just about keywords. It's about being in the right place at the right time."
           description="We offer a complete range of SEO services tailored to your business model and audience, including:"
           services={seoServices}
-          primaryCta={{ text: "GET STARTED TODAY", link: "https://wa.me/+923432469633" }}
+          primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
         />;
         <FAQSection data={faqData} subtitle={faqsubtitle} />
         {/* <Collaboration />

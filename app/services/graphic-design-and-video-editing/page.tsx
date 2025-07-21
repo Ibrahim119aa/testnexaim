@@ -263,7 +263,7 @@ export default function Home() {
                     subtitle=""
                     description=""
                     services={seoServices}
-                    primaryCta={{ text: "GET STARTED TODAY", link: "https://wa.me/+923432469633" }}
+                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
 
                 />;
                 <FAQSection data={faqData} subtitle={faqsubtitle} />
