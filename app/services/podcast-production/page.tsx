@@ -32,7 +32,7 @@ export default function Home() {
         image: "/assets/Podcast.jpg",
 
         heading: "Podcast Production & Marketing Services at ",
-        highlight: "",
+        highlight: "Nexaim",
         paragraphs: [
             "At Nexaim, we help you turn your voice into influence. Whether you're just starting or scaling your podcast, our full-service podcast production and marketing team makes sure every episode sounds professional, reaches the right audience, and aligns with your brand message.",
             "From content strategy and recording to publishing and promotion, we handle it all—so you can focus on what you do best: sharing great stories and insights."
@@ -178,7 +178,7 @@ export default function Home() {
                     subtitle=""
                     description=""
                     services={seoServices}
-                    primaryCta={{ text: "GET STARTED TODAY", link: "https://wa.me/+923432469633" }}
+                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
 
                 />;
                 <FAQSection data={faqData} subtitle={faqsubtitle} />
