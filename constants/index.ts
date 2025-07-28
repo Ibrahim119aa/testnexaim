@@ -207,12 +207,13 @@ export const servicenavigation = [
   {
     id: "0",
     title: "Services",
-    url: "#features",
+    url: "#faq",
+
   },
   {
     id: "2",
     title: "About Us",
-    url: "#faq",
+    url: "#features",
   },
   {
     id: "3",
@@ -450,8 +451,8 @@ export const benefits = [
   },
   {
     id: "1",
-    title: "Graphic Design",
-    text: "Designs That Speak for Your Brand! From branding to visuals, Nexaim creates impactful and memorable designs that leave a strong impression and support your business identity.",
+    title: "Graphic Design & Video Editing",
+    text: "Boost Your Brand with Stunning Designs & Scroll-Stopping Videos! Nexaim transforms your raw content into professional-grade visuals and polished video edits. We build strong brand identities and create content that engages, connects, and converts.",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: instagramService,
     imageUrl: benefitImage2,
