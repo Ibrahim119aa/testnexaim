@@ -8,20 +8,21 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { images } from "@/constants";
 import Heading from "@/components/atoms/heading";
-import toast, { Toaster } from 'react-hot-toast';
-
+import toast, { Toaster } from "react-hot-toast";
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
     const formData = new FormData(e.currentTarget as HTMLFormElement);
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -33,13 +34,16 @@ export default function ContactForm() {
           message: formData.get("message"),
         }),
       });
-      if (!response.ok) {
-        console.error("Failed to send email.");
-      }
-      toast.success("Thanks for reaching out! We’ll get back to you soon");
 
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      toast.success("Thanks for reaching out! We’ll get back to you soon.");
+      formRef.current?.reset(); // Clear form fields
     } catch (error) {
-      console.error(error);
+      toast.error("Something went wrong. Please try again.");
+      console.error("Error submitting contact form:", error);
     } finally {
       setLoading(false);
     }
@@ -68,6 +72,7 @@ export default function ContactForm() {
           className="!text-white"
           title="Transform once, impact forever—Nexaim is your digital growth partner"
         />
+
         <div className="relative max-w-lg m-auto">
           <div className="bg-conic-gradient rounded-xl p-[1px]">
             <Card className="w-full relative bg-n-8 backdrop-blur-xl border border-[#ffffff10]">
@@ -78,7 +83,7 @@ export default function ContactForm() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4" ref={formRef}>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="firstName" className="text-gray-300">
@@ -145,7 +150,6 @@ export default function ContactForm() {
           <LeftLine />
         </div>
       </div>
-      {/* Background gradient sphere */}
     </Section>
   );
 }
