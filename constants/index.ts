@@ -207,7 +207,8 @@ export const servicenavigation = [
   {
     id: "0",
     title: "Services",
-    url: "#faq",
+    url: "#features",
+
 
   },
   {
@@ -218,7 +219,7 @@ export const servicenavigation = [
   {
     id: "3",
     title: "Contact Us",
-    url: "#features",
+    url: "#faq",
   },
 
   {
@@ -459,15 +460,7 @@ export const benefits = [
     light: true,
     url: "/services/graphic-design-and-video-editing"
   },
-  {
-    id: "2",
-    title: "Video Editing",
-    text: "Create Videos That Captivate & Convert! Nexaim transforms your raw footage into polished, high-quality videos. We enhance visuals, add effects, and craft seamless edits that engage your audience and elevate your brand.",
-    backgroundUrl: "assets/benefits/card-3.svg",
-    iconUrl: youtubeService,
-    imageUrl: benefitImage2,
-    url: "/services/graphic-design-and-video-editing"
-  },
+
   {
     id: "3",
     title: " Web Development  ",
