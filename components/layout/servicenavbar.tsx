@@ -56,7 +56,7 @@ const ServiceNavbar = (props: Props) => {
         >
             <div className={cn(`flex items-center px-5 max-lg:py-4 lg:px-7.5 xl:px-10`)}>
                 <Link
-                    href="#hero"
+                    href="/"
                     className={cn(`flex gap-2 items-center text-xl font-bold xl:mr-8 text-[#B500A5]`)}
                 >
                     <Image src={waylogo} alt="waylogo" width={80} height={80} />
@@ -77,7 +77,7 @@ const ServiceNavbar = (props: Props) => {
                         {servicenavigation.map((item) => (
                             <Link
                                 key={item.id}
-                                href={item.url}
+                                href={item.url || ''}
                                 onClick={handleClick}
                                 className={cn(
                                     `block text-white relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1`,
