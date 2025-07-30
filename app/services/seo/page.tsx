@@ -1,6 +1,6 @@
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/servicenavbar";
-
+import Head from "next/head";
 import { Search, MessageSquare, MapPin, FileText } from "lucide-react";
 import FAQSection, { FAQItem } from "@/components/sections/service-page/Faqs";
 import ServiceBenefits, { BenefitItem } from "@/components/sections/service-page/service-benefits";
@@ -9,8 +9,20 @@ import ServiceHero from "@/components/sections/service-page/service-hero";
 import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
 import { images } from "@/constants";
-
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: 'Top SEO Expert in Pakistan - Best SEO Agency in Pakistan',
+  description: 'Nexaim is a top-tier SEO company in Pakistan, offering expert SEO services in off-page, on-page, and technical SEO. Based in Karachi, we serve clients across the country.',
+  alternates: {
+    canonical: 'https://thenexaim.com/best-seo-agency-in-pakistan',
+  },
+  openGraph: {
+    title: 'Top SEO Expert in Pakistan - Best SEO Agency in Pakistan',
+    description: 'Nexaim is a top-tier SEO company in Pakistan, offering expert SEO services in off-page, on-page, and technical SEO. Based in Karachi, we serve clients across the country.',
+    url: 'https://thenexaim.com/best-seo-agency-in-pakistan',
+    type: 'website',
+  },
+};
 export default function Home() {
 
   const heroData = {
@@ -124,34 +136,37 @@ export default function Home() {
   ];
   const faqsubtitle = " Get answers to the most common questions about our SEO and digital marketing services";
   return (
-    <main>
-      <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
-        <Navbar />
-        <ServiceHero content={heroData} />
-        {/* <Benefits /> */}
-        <ServiceBenefits
-          sectionTitle="There are hundreds of SEO agencies in Pakistan. So, why trust us?"
-          benefits={benefitsData}
-        />
-        <ServicesSectionDetails
-          title="Ready to Rank?"
-          subheading="Let's talk about how we can grow your business with SEO thats works."
-          heading="What Aspects We"
-          gradientText="Cover"
-          subtitle="SEO isn't just about keywords. It's about being in the right place at the right time."
-          description="We offer a complete range of SEO services tailored to your business model and audience, including:"
-          services={seoServices}
-          primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
-        />;
-        <FAQSection data={faqData} subtitle={faqsubtitle} />
-        {/* <Collaboration />
+    <>
+
+      <main>
+        <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
+          <Navbar />
+          <ServiceHero content={heroData} />
+          {/* <Benefits /> */}
+          <ServiceBenefits
+            sectionTitle="There are hundreds of SEO agencies in Pakistan. So, why trust us?"
+            benefits={benefitsData}
+          />
+          <ServicesSectionDetails
+            title="Ready to Rank?"
+            subheading="Let's talk about how we can grow your business with SEO thats works."
+            heading="What Aspects We"
+            gradientText="Cover"
+            subtitle="SEO isn't just about keywords. It's about being in the right place at the right time."
+            description="We offer a complete range of SEO services tailored to your business model and audience, including:"
+            services={seoServices}
+            primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+          />;
+          <FAQSection data={faqData} subtitle={faqsubtitle} />
+          {/* <Collaboration />
         <Services /> */}
-        {/* <Pricing /> */}
-        {/* <Roadmap /> */}
-        {/* <ContactForm /> */}
-        <Footer />
-      </div>
-      <ButtonGradient />
-    </main>
+          {/* <Pricing /> */}
+          {/* <Roadmap /> */}
+          {/* <ContactForm /> */}
+          <Footer />
+        </div>
+        <ButtonGradient />
+      </main>
+    </>
   );
 }

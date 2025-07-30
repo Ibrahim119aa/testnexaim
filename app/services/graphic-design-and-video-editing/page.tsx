@@ -81,9 +81,21 @@ import ServicesSectionDetails, { Service } from "@/components/sections/service-p
 import ServiceHero from "@/components/sections/service-page/service-hero";
 import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
-
+import { Metadata } from "next";
 // import { images, Seobenefits } from "@/constants";
-
+export const metadata: Metadata = {
+    title: 'Graphic Design Services - Graphic Design Agency in Pakistan',
+    description: 'Nexaim offers video editing and graphic design services in Pakistan. We turn ideas into creative visuals that build brand identity and boost business presence.',
+    alternates: {
+        canonical: 'https://thenexaim.com/graphic-design-and-video-editing-service',
+    },
+    openGraph: {
+        title: 'Graphic Design Services - Graphic Design Agency in Pakistan',
+        description: 'Nexaim offers video editing and graphic design services in Pakistan. We turn ideas into creative visuals that build brand identity and boost business presence.',
+        url: 'https://thenexaim.com/graphic-design-and-video-editing-service',
+        type: 'website',
+    },
+};
 export default function Home() {
 
     const heroData = {
@@ -244,37 +256,39 @@ export default function Home() {
     const faqsubtitle = " Get answers to the most common questions about our  graphic designing services"
 
     return (
-        <main>
-            <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
-                <Navbar />
-                <ServiceHero content={heroData} />
-                {/* <Benefits /> */}
-                <ServiceBenefits
-                    sectionTitle="Graphic Design That Builds Brands"
-                    benefits={benefitsData}
-                />
-                <ServicesSectionDetails
-                    heading="Video Editing That Connects and Converts 
+        <>
+            <main>
+                <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
+                    <Navbar />
+                    <ServiceHero content={heroData} />
+                    {/* <Benefits /> */}
+                    <ServiceBenefits
+                        sectionTitle="Graphic Design That Builds Brands"
+                        benefits={benefitsData}
+                    />
+                    <ServicesSectionDetails
+                        heading="Video Editing That Connects and Converts 
 "
-                    title="Let’s Build Something Visual. Let’s Build Nexaim."
-                    subheading="Whether you're launching a new brand or scaling up your online presence, Nexaim delivers the creative expertise you need. Let’s make something amazing together.
+                        title="Let’s Build Something Visual. Let’s Build Nexaim."
+                        subheading="Whether you're launching a new brand or scaling up your online presence, Nexaim delivers the creative expertise you need. Let’s make something amazing together.
 "
-                    gradientText=""
-                    subtitle=""
-                    description=""
-                    services={seoServices}
-                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+                        gradientText=""
+                        subtitle=""
+                        description=""
+                        services={seoServices}
+                        primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
 
-                />;
-                <FAQSection data={faqData} subtitle={faqsubtitle} />
-                {/* <Collaboration />
+                    />;
+                    <FAQSection data={faqData} subtitle={faqsubtitle} />
+                    {/* <Collaboration />
         <Services /> */}
-                {/* <Pricing /> */}
-                {/* <Roadmap /> */}
-                {/* <ContactForm /> */}
-                <Footer />
-            </div>
-            <ButtonGradient />
-        </main>
+                    {/* <Pricing /> */}
+                    {/* <Roadmap /> */}
+                    {/* <ContactForm /> */}
+                    <Footer />
+                </div>
+                <ButtonGradient />
+            </main>
+        </>
     );
 }
