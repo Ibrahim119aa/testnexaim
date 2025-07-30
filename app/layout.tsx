@@ -1,19 +1,11 @@
-// app/layout.tsx
 import React from "react";
-import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "Nexaim",
-  description: "Nexaim is a digital marketing agency that helps businesses grow online.",
-};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        {/* Google Adsense */}
         <Script
           id="adsbygoogle"
           async
@@ -25,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {children}
 
-        {/* Facebook Pixel */}
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -41,7 +32,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           `}
         </Script>
 
-        {/* Facebook Pixel fallback */}
         <noscript>
           <img
             height="1"

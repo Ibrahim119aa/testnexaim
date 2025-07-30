@@ -27,7 +27,20 @@ import ServiceHero from "@/components/sections/service-page/service-hero";
 import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
 import { images } from "@/constants";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+    title: 'Best Web Design Company In Pakistan - Web Development Services in Pakistan',
+    description: 'Nexaim offers professional web design and development services in Pakistan. We create custom websites focused on delivering a better UX/UI experience.',
+    alternates: {
+        canonical: 'https://thenexaim.com/web-design-and-development-services',
+    },
+    openGraph: {
+        title: 'Best Web Design Company In Pakistan - Web Development Services',
+        description: 'Nexaim offers professional web design and development services in Pakistan. We create custom websites focused on delivering a better UX/UI experience.',
+        url: 'https://thenexaim.com/web-design-and-development-services',
+        type: 'website',
+    },
+};
 export default function Home() {
 
     const heroData = {
@@ -203,36 +216,39 @@ export default function Home() {
     const faqsubtitle = " Get answers to the most common questions about our  web development services"
 
     return (
-        <main>
-            <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
-                <Navbar />
-                <ServiceHero content={heroData} />
-                {/* <Benefits /> */}
-                {/* <ServiceBenefits
+        <>
+
+            <main>
+                <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
+                    <Navbar />
+                    <ServiceHero content={heroData} />
+                    {/* <Benefits /> */}
+                    {/* <ServiceBenefits
                     sectionTitle=""
                     benefits={benefitsData}
                 /> */}
-                <ServicesSectionDetails
-                    title="Let’s Build a Website That Grows With You"
-                    subheading="Whether you're launching a new business or scaling your digital presence, Nexaim is your go-to web development partner. Our development team understands not just code — but marketing, branding, and results. Let’s turn your vision into a high-impact, conversion-ready website"
+                    <ServicesSectionDetails
+                        title="Let’s Build a Website That Grows With You"
+                        subheading="Whether you're launching a new business or scaling your digital presence, Nexaim is your go-to web development partner. Our development team understands not just code — but marketing, branding, and results. Let’s turn your vision into a high-impact, conversion-ready website"
 
-                    heading="Our Website Development Services Include
+                        heading="Our Website Development Services Include
 "
-                    gradientText=""
-                    subtitle=""
-                    description=""
-                    services={seoServices}
-                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
-                />;
-                <FAQSection data={faqData} subtitle={faqsubtitle} />
-                {/* <Collaboration />
+                        gradientText=""
+                        subtitle=""
+                        description=""
+                        services={seoServices}
+                        primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+                    />;
+                    <FAQSection data={faqData} subtitle={faqsubtitle} />
+                    {/* <Collaboration />
         <Services /> */}
-                {/* <Pricing /> */}
-                {/* <Roadmap /> */}
-                {/* <ContactForm /> */}
-                <Footer />
-            </div>
-            <ButtonGradient />
-        </main>
+                    {/* <Pricing /> */}
+                    {/* <Roadmap /> */}
+                    {/* <ContactForm /> */}
+                    <Footer />
+                </div>
+                <ButtonGradient />
+            </main>
+        </>
     );
 }
