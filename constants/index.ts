@@ -448,7 +448,7 @@ export const benefits = [
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: facebookService,
     imageUrl: benefitImage2,
-    url: "/services/digital-marketing"
+    url: "/affordable-digital-marketing-services-in-pakistan"
   },
   {
     id: "1",
@@ -458,7 +458,7 @@ export const benefits = [
     iconUrl: instagramService,
     imageUrl: benefitImage2,
     light: true,
-    url: "/services/graphic-design-and-video-editing"
+    url: "/graphic-design-and-video-editing-service"
   },
 
   {
@@ -468,7 +468,7 @@ export const benefits = [
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: graphicdesign,
     imageUrl: benefitImage2,
-    url: "/services/web-development",
+    url: "/web-design-and-development-services",
     light: true,
   },
   {
@@ -478,7 +478,7 @@ export const benefits = [
     backgroundUrl: "assets/benefits/card-5.svg",
     iconUrl: videoediting,
     imageUrl: benefitImage2,
-    url: "/services/seo"
+    url: "/best-seo-agency-in-pakistan"
   },
   {
     id: "5",

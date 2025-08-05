@@ -37,12 +37,12 @@ export default function FAQSection({ data, subtitle }: Props) {
 
       <div className="relative z-10 container">
         <div className="text-center mb-16 pt-16">
-          <h1 className="h2 text-n-1 mb-6">
+          <h2 className="h2 text-n-1 mb-6">
             Frequently Asked
             <span className="block bg-gradient-to-r from-color-1 to-color-6 bg-clip-text text-transparent">
               Questions
             </span>
-          </h1>
+          </h2>
           <p className="body-1 text-n-3 max-w-3xl mx-auto">
             {subtitle}
           </p>

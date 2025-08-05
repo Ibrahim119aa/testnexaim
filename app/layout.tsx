@@ -3,6 +3,24 @@ import Script from "next/script";
 import "./globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "The Nexaim",
+    "url": "https://thenexaim.com/",
+    "logo": "",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "03432469633",
+      "contactType": "customer service",
+      "areaServed": "PK",
+      "availableLanguage": "en"
+    },
+    "sameAs": [
+      "https://www.instagram.com/_thenexaim/",
+      "https://www.facebook.com/thenexaim"
+    ]
+  };
   return (
     <html lang="en">
       <head>
@@ -12,6 +30,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           strategy="afterInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9713388182757013"
           crossOrigin="anonymous"
+        />
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body>
