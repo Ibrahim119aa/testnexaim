@@ -535,6 +535,22 @@ export const Seobenefits = [
     imageUrl: benefitImage2,
   },
 ];
+import { type LucideIcon, Github, Twitter, Linkedin, Instagram, Globe } from "lucide-react"
+
+export type Social = {
+  id: string
+  title: string
+  url: string
+  icon: LucideIcon
+}
+
+export const footer: Social[] = [
+  { id: "github", title: "GitHub", url: "https://github.com/", icon: Github },
+  { id: "twitter", title: "Twitter", url: "https://twitter.com/", icon: Twitter },
+  { id: "linkedin", title: "LinkedIn", url: "https://www.linkedin.com/", icon: Linkedin },
+  { id: "instagram", title: "Instagram", url: "https://www.instagram.com/", icon: Instagram },
+  { id: "website", title: "Website", url: "https://thenexaim.com", icon: Globe },
+]
 
 export const socials = [
   {

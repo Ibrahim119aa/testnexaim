@@ -56,10 +56,10 @@ const Navbar = (props: Props) => {
     >
       <div className={cn(`flex items-center px-5 max-lg:py-4 lg:px-7.5 xl:px-10`)}>
         <Link
-          href="/"
+          href="/assets/"
           className={cn(`flex gap-2 items-center text-xl font-bold xl:mr-8 text-[#B500A5]`)}
         >
-          <Image src={waylogo} alt="waylogo" width={80} height={80} />
+          <img src={'/marketing-agency-for-startups/waylogo.png'} className="w-[80px] h-[80px]" alt="waylogo" />
           The Nexaim
         </Link>
 
