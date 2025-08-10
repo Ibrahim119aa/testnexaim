@@ -25,6 +25,20 @@ import ServiceHero from "@/components/sections/service-page/service-hero";
 import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
 import { images } from "@/constants";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+    title: 'Nexaim Podcast Production | Full-Service Podcasting & Audio-Visual Content',
+    description: 'Let Nexaim transform your podcast vision into high-impact audio and video content. From concept development, studio recording & editing to branding, social-media clipping, and distribution — we deliver polished episodes that boost audience engagement.',
+    alternates: {
+        canonical: 'https://thenexaim.com/services/podcast-production',
+    },
+    openGraph: {
+        title: 'Nexaim Podcast Production | Full-Service Podcasting & Audio-Visual Content',
+        description: 'Full-service podcast production by Nexaim. We handle recording, editing, branding, and distribution to create professional podcasts that captivate and grow your audience.',
+        url: 'https://thenexaim.com/services/podcast-production',
+        type: 'website',
+    },
+};
 
 export default function Home() {
 
