@@ -1,54 +1,28 @@
-import React from "react";
-import { cn } from "@/lib/utils";
-import SectionSvg from "../svg/section-svg";
+import type React from "react"
+import { cn } from "@/lib/utils"
 
-type Props = {
-  className?: string;
-  id?: string;
-  crosses?: boolean;
-  crossesOffset?: string;
-  customPaddings?: boolean;
-  children: React.ReactNode;
-};
+type SectionProps = {
+  crosses?: boolean
+  className?: string
+  children: React.ReactNode
+}
 
-const Section = ({ className, id, crosses, crossesOffset, customPaddings, children }: Props) => {
+export default function Section({ crosses = false, className, children }: SectionProps) {
   return (
-    <section
-      {...(id && { id })}
-      className={cn(
-        "relative",
-        customPaddings || "py-10 lg:py-16 xl:py-20",
-        !customPaddings && crosses && "lg:py-32 xl:py-40",
-        className
-      )}
-    >
-      {children}
-
-      <div
-        className={cn(
-          "pointer-events-none absolute left-5 top-0 hidden h-full w-0.25 bg-stroke-1 md:block lg:left-7.5 xl:left-10"
-        )}
-      />
-      <div
-        className={cn(
-          "pointer-events-none absolute right-5 top-0 hidden h-full w-0.25 bg-stroke-1 md:block lg:right-7.5 xl:right-10"
-        )}
-      />
-
+    <section className={cn("relative w-full", crosses && "isolate overflow-hidden", className)}>
       {crosses && (
-        <>
-          <div
-            className={cn(
-              "hidden absolute top-0 left-7.5 right-7.5 h-0.25 bg-stroke-1",
-              "pointer-events-none lg:block xl:left-10 right-10",
-              crossesOffset
-            )}
-          />
-          <SectionSvg crossesOffset={crossesOffset} />
-        </>
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 opacity-[0.06]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
+            color: "#0a0a0a",
+          }}
+        />
       )}
+      {children}
     </section>
-  );
-};
-
-export default Section;
+  )
+}

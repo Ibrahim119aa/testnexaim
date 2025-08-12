@@ -1,6 +1,6 @@
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/servicenavbar";
-
+import Script from "next/script";
 import {
     Video,
     Youtube,
@@ -217,7 +217,74 @@ export default function Home() {
 
     return (
         <>
+            <Script
+                id="product-schema-web-design"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        name: "Affordable Website Design Company - Custom Website Development Company",
+                        image:
+                            "https://thenexaim.com/_next/image?url=%2Fassets%2FWeb-Development.jpg&w=640&q=75",
+                        description:
+                            "The Nexaim provide professional website design and development services in Karachi, Pakistan, specializing in custom CMS and WordPress websites. All websites are SEO-friendly, responsive, and designed to increase brand visibility and user engagement.",
+                        brand: "The Nexaim",
+                        aggregateRating: {
+                            "@type": "AggregateRating",
+                            ratingValue: "5",
+                            bestRating: "5",
+                            worstRating: "4.9",
+                            ratingCount: "4",
+                        },
+                    }),
+                }}
+            />
 
+            {/* Service Schema */}
+            <Script
+                id="service-schema-web-design"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        name: "Affordable Website Design Company - Custom Website Development Company",
+                        description:
+                            "We provide professional website design and development services in Karachi, Pakistan, helping businesses enhance their online presence. Our team specializes in creating custom CMS and WordPress websites that are visually appealing, SEO-friendly, and built with responsive, user-friendly layouts. A well-designed website increases brand visibility, improves user engagement, and supports long-term digital growth",
+                        provider: {
+                            "@type": "Organization",
+                            name: "The Nexaim",
+                            url: "https://thenexaim.com/web-design-and-development-services",
+                            logo: "",
+                            contactPoint: {
+                                "@type": "ContactPoint",
+                                telephone: "03432469633",
+                                contactType: "Customer Service",
+                                areaServed: "PAK, KHI",
+                                availableLanguage: ["English"],
+                            },
+                        },
+                        areaServed: {
+                            "@type": "Place",
+                            name: "PAK",
+                        },
+                        serviceType:
+                            "best website design and development company,affordable website development,website design services,web maintenance services,site maintenance services,web development services in pakistan,web development company in karachi, best web design company In Pakistan",
+                        category: "SEO services",
+                        offers: {
+                            "@type": "Offer",
+                            priceCurrency: "PKR",
+                            price: "$",
+                            eligibleRegion: {
+                                "@type": "Place",
+                                name: "Pakistan",
+                            },
+                            availability: "https://schema.org/InStock",
+                        },
+                    }),
+                }}
+            />
             <main>
                 <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
                     <Navbar />

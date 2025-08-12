@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/servicenavbar";
 import { images } from "@/constants";
@@ -257,6 +258,74 @@ export default function Home() {
 
     return (
         <>
+            <Script
+                id="product-schema-graphic-design"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Product",
+                        name: "Graphic Design Agency in Pakistan - Graphic Design Services - The Nexaim",
+                        image:
+                            "https://thenexaim.com/_next/image?url=%2Fassets%2FGraphic-Design-Vedio-Editing.jpg&w=640&q=75",
+                        description:
+                            "The Nexaim provide professional website design and development services in Karachi, Pakistan, specializing in custom CMS and WordPress websites. All websites are SEO-friendly, responsive, and designed to increase brand visibility and user engagement.",
+                        brand: "The Nexaim",
+                        aggregateRating: {
+                            "@type": "AggregateRating",
+                            ratingValue: "5",
+                            bestRating: "5",
+                            worstRating: "4.9",
+                            ratingCount: "33",
+                        },
+                    }),
+                }}
+            />
+
+            {/* Service Schema */}
+            <Script
+                id="service-schema-graphic-design"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Service",
+                        name: "Graphic Design Agency in Pakistan - Graphic Design Services - The Nexaim",
+                        description:
+                            "We provide professional website design and development services in Karachi, Pakistan, helping businesses enhance their online presence. Our team specializes in creating custom CMS and WordPress websites that are visually appealing, SEO-friendly, and built with responsive, user-friendly layouts. A well-designed website increases brand visibility, improves user engagement, and supports long-term digital growth",
+                        provider: {
+                            "@type": "Organization",
+                            name: "The Nexaim",
+                            url: "https://thenexaim.com/graphic-design-and-video-editing-service",
+                            logo: "",
+                            contactPoint: {
+                                "@type": "ContactPoint",
+                                telephone: "03432469633",
+                                contactType: "sales",
+                                areaServed: "PAK, KHI",
+                                availableLanguage: ["English"],
+                            },
+                        },
+                        areaServed: {
+                            "@type": "Place",
+                            name: "PAK",
+                        },
+                        serviceType:
+                            "graphic design agency, graphic design services, graphic designing company in pakistan, graphic design agency in pakistan, graphic designing, logo designing, logo design service, advertisement posts, social media posts, gaming banners",
+                        category: "SEO services",
+                        offers: {
+                            "@type": "Offer",
+                            priceCurrency: "PKR",
+                            price: "$",
+                            eligibleRegion: {
+                                "@type": "Place",
+                                name: "Pakistan",
+                            },
+                            availability: "https://schema.org/InStock",
+                        },
+                    }),
+                }}
+            />
             <main>
                 <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
                     <Navbar />
