@@ -137,7 +137,7 @@ export default function Home() {
     ];
     const faqsubtitle = " Get answers to the most common questions about our SEO and digital marketing services";
     return (
-        <>
+        <body>
             <Script
                 id="product-schema"
                 type="application/ld+json"
@@ -235,6 +235,6 @@ export default function Home() {
                 </div>
                 <ButtonGradient />
             </main>
-        </>
+        </body>
     );
 }
