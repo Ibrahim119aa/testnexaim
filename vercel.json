@@ -1,25 +1,6 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
-    {
-      "source": "http://www.thenexaim.com/:path*",
-      "destination": "https://thenexaim.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "http://thenexaim.com/:path*",
-      "destination": "https://thenexaim.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://www.thenexaim.com/:path*",
-      "destination": "https://thenexaim.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*/",
-      "destination": "/:path*",
-      "permanent": true
-    },
     {
       "source": "/services/digital-marketing",
       "destination": "/affordable-digital-marketing-services-in-pakistan",
@@ -38,6 +19,11 @@
     {
       "source": "/services/seo",
       "destination": "/best-seo-agency-in-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/",
+      "destination": "/:path*",
       "permanent": true
     }
   ]
