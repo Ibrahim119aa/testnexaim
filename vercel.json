@@ -20,11 +20,6 @@
       "source": "/services/seo",
       "destination": "/best-seo-agency-in-pakistan",
       "permanent": true
-    },
-    {
-      "source": "/:path*/",
-      "destination": "/:path*",
-      "permanent": true
     }
   ]
 }
