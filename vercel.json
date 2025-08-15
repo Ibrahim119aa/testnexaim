@@ -1,0 +1,44 @@
+{
+  "redirects": [
+    {
+      "source": "http://www.thenexaim.com/:path*",
+      "destination": "https://thenexaim.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "http://thenexaim.com/:path*",
+      "destination": "https://thenexaim.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "https://www.thenexaim.com/:path*",
+      "destination": "https://thenexaim.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/services/digital-marketing",
+      "destination": "/affordable-digital-marketing-services-in-pakistan",
+      "permanent": true
+    },
+    {
+      "source": "/services/graphic-design-and-video-editing",
+      "destination": "/graphic-design-and-video-editing-service",
+      "permanent": true
+    },
+    {
+      "source": "/services/podcast-production",
+      "destination": "/web-design-and-development-services",
+      "permanent": true
+    },
+    {
+      "source": "/services/seo",
+      "destination": "/best-seo-agency-in-pakistan",
+      "permanent": true
+    }
+  ]
+}
