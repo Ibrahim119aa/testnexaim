@@ -24,6 +24,9 @@
     {
       "source": "/:path*/",
       "destination": "/:path*",
+      "has": [
+        { "type": "host", "value": "thenexaim.com" }
+      ],
       "permanent": true
     }
   ]
