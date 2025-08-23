@@ -12,6 +12,11 @@
       "permanent": true
     },
     {
+      "source": "/services/web-development",
+      "destination": "/web-design-and-development-services",
+      "permanent": true
+    },
+    {
       "source": "/services/seo",
       "destination": "/best-seo-agency-in-pakistan",
       "permanent": true
