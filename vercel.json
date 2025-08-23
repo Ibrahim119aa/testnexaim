@@ -12,11 +12,6 @@
       "permanent": true
     },
     {
-      "source": "/services/podcast-production",
-      "destination": "/web-design-and-development-services",
-      "permanent": true
-    },
-    {
       "source": "/services/seo",
       "destination": "/best-seo-agency-in-pakistan",
       "permanent": true
