@@ -26,6 +26,7 @@ import ButtonGradient from "@/components/svg/button-gradient";
 import { cn } from "@/lib/utils";
 import { images } from "@/constants";
 import { Metadata } from "next";
+import { main } from "framer-motion/client";
 export const metadata: Metadata = {
     title: 'Nexaim Podcast Production | Full-Service Podcasting & Audio-Visual Content',
     description: 'Let Nexaim transform your podcast vision into high-impact audio and video content. From concept development, studio recording & editing to branding, social-media clipping, and distribution — we deliver polished episodes that boost audience engagement.',
@@ -67,7 +68,7 @@ export default function Home() {
             text: "We understand the full funnel from production to promotion.",
             backgroundUrl: "/assets/benefits/card-1.svg",
 
-            imageUrl: "/assets/images/seo-benefit-1.jpg",
+            imageUrl: "",
             light: true,
 
         },
@@ -172,37 +173,45 @@ export default function Home() {
     const faqsubtitle = " Get answers to the most common questions about our  graphic designing services"
 
     return (
-        <main>
-            <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
-                <Navbar />
-                <ServiceHero content={heroData} />
-                {/* <Benefits /> */}
-                <ServiceBenefits
-                    sectionTitle="Why Choose Nexaim for Podcast Marketing?"
-                    benefits={benefitsData}
-                />
-                <ServicesSectionDetails
-                    heading="Our Podcast Services Include: 
-"
-                    title="Let’s Launch (or Level Up) Your Podcast"
-                    subheading="At Nexaim, we don’t just edit audio we create podcast brands that connect and grow. Whether you want to entertain, educate, or inspire, we’re here to help you produce episodes that stand out and generate real impact.
-"
-                    gradientText=""
-                    subtitle=""
-                    description=""
-                    services={seoServices}
-                    primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+        <html>
+            <head>
 
-                />;
-                <FAQSection data={faqData} subtitle={faqsubtitle} />
-                {/* <Collaboration />
+            </head>
+            <body>
+                <main>
+                    <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
+                        <Navbar />
+                        <ServiceHero content={heroData} />
+                        {/* <Benefits /> */}
+                        <ServiceBenefits
+                            sectionTitle="Why Choose Nexaim for Podcast Marketing?"
+                            benefits={benefitsData}
+                        />
+                        <ServicesSectionDetails
+                            heading="Our Podcast Services Include: 
+"
+                            title="Let’s Launch (or Level Up) Your Podcast"
+                            subheading="At Nexaim, we don’t just edit audio we create podcast brands that connect and grow. Whether you want to entertain, educate, or inspire, we’re here to help you produce episodes that stand out and generate real impact.
+"
+                            gradientText=""
+                            subtitle=""
+                            description=""
+                            services={seoServices}
+                            primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+
+                        />;
+                        <FAQSection data={faqData} subtitle={faqsubtitle} />
+                        {/* <Collaboration />
         <Services /> */}
-                {/* <Pricing /> */}
-                {/* <Roadmap /> */}
-                {/* <ContactForm /> */}
-                <Footer />
-            </div>
-            <ButtonGradient />
-        </main>
+                        {/* <Pricing /> */}
+                        {/* <Roadmap /> */}
+                        {/* <ContactForm /> */}
+                        <Footer />
+                    </div>
+                    <ButtonGradient />
+                </main>
+
+            </body>
+        </html>
     );
 }
