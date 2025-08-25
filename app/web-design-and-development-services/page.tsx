@@ -216,106 +216,111 @@ export default function Home() {
     const faqsubtitle = " Get answers to the most common questions about our  web development services"
 
     return (
-        <body>
-            <Script
-                id="product-schema-web-design"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org/",
-                        "@type": "Product",
-                        name: "Affordable Website Design Company - Custom Website Development Company",
-                        image:
-                            "https://thenexaim.com/_next/image?url=%2Fassets%2FWeb-Development.jpg&w=640&q=75",
-                        description:
-                            "The Nexaim provide professional website design and development services in Karachi, Pakistan, specializing in custom CMS and WordPress websites. All websites are SEO-friendly, responsive, and designed to increase brand visibility and user engagement.",
-                        brand: "The Nexaim",
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "5",
-                            bestRating: "5",
-                            worstRating: "4.9",
-                            ratingCount: "4",
-                        },
-                    }),
-                }}
-            />
+        <>
+            <head>
+                <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
+            </head>
+            <body>
+                <Script
+                    id="product-schema-web-design"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org/",
+                            "@type": "Product",
+                            name: "Affordable Website Design Company - Custom Website Development Company",
+                            image:
+                                "https://thenexaim.com/_next/image?url=%2Fassets%2FWeb-Development.jpg&w=640&q=75",
+                            description:
+                                "The Nexaim provide professional website design and development services in Karachi, Pakistan, specializing in custom CMS and WordPress websites. All websites are SEO-friendly, responsive, and designed to increase brand visibility and user engagement.",
+                            brand: "The Nexaim",
+                            aggregateRating: {
+                                "@type": "AggregateRating",
+                                ratingValue: "5",
+                                bestRating: "5",
+                                worstRating: "4.9",
+                                ratingCount: "4",
+                            },
+                        }),
+                    }}
+                />
 
-            {/* Service Schema */}
-            <Script
-                id="service-schema-web-design"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Service",
-                        name: "Affordable Website Design Company - Custom Website Development Company",
-                        description:
-                            "We provide professional website design and development services in Karachi, Pakistan, helping businesses enhance their online presence. Our team specializes in creating custom CMS and WordPress websites that are visually appealing, SEO-friendly, and built with responsive, user-friendly layouts. A well-designed website increases brand visibility, improves user engagement, and supports long-term digital growth",
-                        provider: {
-                            "@type": "Organization",
-                            name: "The Nexaim",
-                            url: "https://thenexaim.com/web-design-and-development-services",
-                            logo: "",
-                            contactPoint: {
-                                "@type": "ContactPoint",
-                                telephone: "03432469633",
-                                contactType: "Customer Service",
-                                areaServed: "PAK, KHI",
-                                availableLanguage: ["English"],
+                {/* Service Schema */}
+                <Script
+                    id="service-schema-web-design"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Service",
+                            name: "Affordable Website Design Company - Custom Website Development Company",
+                            description:
+                                "We provide professional website design and development services in Karachi, Pakistan, helping businesses enhance their online presence. Our team specializes in creating custom CMS and WordPress websites that are visually appealing, SEO-friendly, and built with responsive, user-friendly layouts. A well-designed website increases brand visibility, improves user engagement, and supports long-term digital growth",
+                            provider: {
+                                "@type": "Organization",
+                                name: "The Nexaim",
+                                url: "https://thenexaim.com/web-design-and-development-services",
+                                logo: "",
+                                contactPoint: {
+                                    "@type": "ContactPoint",
+                                    telephone: "03432469633",
+                                    contactType: "Customer Service",
+                                    areaServed: "PAK, KHI",
+                                    availableLanguage: ["English"],
+                                },
                             },
-                        },
-                        areaServed: {
-                            "@type": "Place",
-                            name: "PAK",
-                        },
-                        serviceType:
-                            "best website design and development company,affordable website development,website design services,web maintenance services,site maintenance services,web development services in pakistan,web development company in karachi, best web design company In Pakistan",
-                        category: "SEO services",
-                        offers: {
-                            "@type": "Offer",
-                            priceCurrency: "PKR",
-                            price: "$",
-                            eligibleRegion: {
+                            areaServed: {
                                 "@type": "Place",
-                                name: "Pakistan",
+                                name: "PAK",
                             },
-                            availability: "https://schema.org/InStock",
-                        },
-                    }),
-                }}
-            />
-            <main>
-                <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
-                    <Navbar />
-                    <ServiceHero content={heroData} />
-                    {/* <Benefits /> */}
-                    {/* <ServiceBenefits
+                            serviceType:
+                                "best website design and development company,affordable website development,website design services,web maintenance services,site maintenance services,web development services in pakistan,web development company in karachi, best web design company In Pakistan",
+                            category: "SEO services",
+                            offers: {
+                                "@type": "Offer",
+                                priceCurrency: "PKR",
+                                price: "$",
+                                eligibleRegion: {
+                                    "@type": "Place",
+                                    name: "Pakistan",
+                                },
+                                availability: "https://schema.org/InStock",
+                            },
+                        }),
+                    }}
+                />
+                <main>
+                    <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
+                        <Navbar />
+                        <ServiceHero content={heroData} />
+                        {/* <Benefits /> */}
+                        {/* <ServiceBenefits
                     sectionTitle=""
                     benefits={benefitsData}
                 /> */}
-                    <ServicesSectionDetails
-                        title="Let’s Build a Website That Grows With You"
-                        subheading="Whether you're launching a new business or scaling your digital presence, Nexaim is your go-to web development partner. Our development team understands not just code — but marketing, branding, and results. Let’s turn your vision into a high-impact, conversion-ready website"
+                        <ServicesSectionDetails
+                            title="Let’s Build a Website That Grows With You"
+                            subheading="Whether you're launching a new business or scaling your digital presence, Nexaim is your go-to web development partner. Our development team understands not just code — but marketing, branding, and results. Let’s turn your vision into a high-impact, conversion-ready website"
 
-                        heading="Our Website Development Services Include
+                            heading="Our Website Development Services Include
 "
-                        gradientText=""
-                        subtitle=""
-                        description=""
-                        services={seoServices}
-                        primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
-                    />;
-                    <FAQSection data={faqData} subtitle={faqsubtitle} />
-                    {/* <Collaboration />
+                            gradientText=""
+                            subtitle=""
+                            description=""
+                            services={seoServices}
+                            primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+                        />;
+                        <FAQSection data={faqData} subtitle={faqsubtitle} />
+                        {/* <Collaboration />
         <Services /> */}
-                    {/* <Pricing /> */}
-                    {/* <Roadmap /> */}
-                    {/* <ContactForm /> */}
-                    <Footer />
-                </div>
-                <ButtonGradient />
-            </main>
-        </body>
+                        {/* <Pricing /> */}
+                        {/* <Roadmap /> */}
+                        {/* <ContactForm /> */}
+                        <Footer />
+                    </div>
+                    <ButtonGradient />
+                </main>
+            </body>
+        </>
     );
 }

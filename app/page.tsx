@@ -34,6 +34,7 @@ export default function Home() {
 
     <html>
       <head>
+        <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
         <Script
           id="adsbygoogle"
           async

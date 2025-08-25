@@ -84,18 +84,20 @@ export default function TestimonialsSection() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <Badge className="mb-4 border-cyan-400/30 text-cyan-400 bg-cyan-400/10">
-                        CLIENT TESTIMONIALS
+                        WHAT OUR CLIENTS SAY
                     </Badge>
                     <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                        Transform once,{" "}
+                        Voices of{" "}
                         <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                            impact forever
+                            trust & success
                         </span>
                     </h2>
                     <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                        Nexaim – Turning Ideas into Digital Impact — hear what our clients say about their transformation journey
+                        Discover how Nexaim has empowered businesses to innovate, grow,
+                        and achieve long-lasting impact through technology.
                     </p>
                 </div>
+
 
                 {/* Testimonials Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

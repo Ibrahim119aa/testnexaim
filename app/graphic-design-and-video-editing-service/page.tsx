@@ -254,107 +254,112 @@ export default function Home() {
     const faqsubtitle = " Get answers to the most common questions about our  graphic designing services"
 
     return (
-        <body>
-            <Script
-                id="product-schema-graphic-design"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org/",
-                        "@type": "Product",
-                        name: "Graphic Design Agency in Pakistan - Graphic Design Services - The Nexaim",
-                        image:
-                            "https://thenexaim.com/_next/image?url=%2Fassets%2FGraphic-Design-Vedio-Editing.jpg&w=640&q=75",
-                        description:
-                            "The Nexaim provide professional website design and development services in Karachi, Pakistan, specializing in custom CMS and WordPress websites. All websites are SEO-friendly, responsive, and designed to increase brand visibility and user engagement.",
-                        brand: "The Nexaim",
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "5",
-                            bestRating: "5",
-                            worstRating: "4.9",
-                            ratingCount: "33",
-                        },
-                    }),
-                }}
-            />
-
-            {/* Service Schema */}
-            <Script
-                id="service-schema-graphic-design"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Service",
-                        name: "Graphic Design Agency in Pakistan - Graphic Design Services - The Nexaim",
-                        description:
-                            "We provide professional website design and development services in Karachi, Pakistan, helping businesses enhance their online presence. Our team specializes in creating custom CMS and WordPress websites that are visually appealing, SEO-friendly, and built with responsive, user-friendly layouts. A well-designed website increases brand visibility, improves user engagement, and supports long-term digital growth",
-                        provider: {
-                            "@type": "Organization",
-                            name: "The Nexaim",
-                            url: "https://thenexaim.com/graphic-design-and-video-editing-service",
-                            logo: "",
-                            contactPoint: {
-                                "@type": "ContactPoint",
-                                telephone: "03432469633",
-                                contactType: "sales",
-                                areaServed: "PAK, KHI",
-                                availableLanguage: ["English"],
+        <>
+            <head>
+                <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
+            </head>
+            <body>
+                <Script
+                    id="product-schema-graphic-design"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org/",
+                            "@type": "Product",
+                            name: "Graphic Design Agency in Pakistan - Graphic Design Services - The Nexaim",
+                            image:
+                                "https://thenexaim.com/_next/image?url=%2Fassets%2FGraphic-Design-Vedio-Editing.jpg&w=640&q=75",
+                            description:
+                                "The Nexaim provide professional website design and development services in Karachi, Pakistan, specializing in custom CMS and WordPress websites. All websites are SEO-friendly, responsive, and designed to increase brand visibility and user engagement.",
+                            brand: "The Nexaim",
+                            aggregateRating: {
+                                "@type": "AggregateRating",
+                                ratingValue: "5",
+                                bestRating: "5",
+                                worstRating: "4.9",
+                                ratingCount: "33",
                             },
-                        },
-                        areaServed: {
-                            "@type": "Place",
-                            name: "PAK",
-                        },
-                        serviceType:
-                            "graphic design agency, graphic design services, graphic designing company in pakistan, graphic design agency in pakistan, graphic designing, logo designing, logo design service, advertisement posts, social media posts, gaming banners",
-                        category: "SEO services",
-                        offers: {
-                            "@type": "Offer",
-                            priceCurrency: "PKR",
-                            price: "$",
-                            eligibleRegion: {
+                        }),
+                    }}
+                />
+
+                {/* Service Schema */}
+                <Script
+                    id="service-schema-graphic-design"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Service",
+                            name: "Graphic Design Agency in Pakistan - Graphic Design Services - The Nexaim",
+                            description:
+                                "We provide professional website design and development services in Karachi, Pakistan, helping businesses enhance their online presence. Our team specializes in creating custom CMS and WordPress websites that are visually appealing, SEO-friendly, and built with responsive, user-friendly layouts. A well-designed website increases brand visibility, improves user engagement, and supports long-term digital growth",
+                            provider: {
+                                "@type": "Organization",
+                                name: "The Nexaim",
+                                url: "https://thenexaim.com/graphic-design-and-video-editing-service",
+                                logo: "",
+                                contactPoint: {
+                                    "@type": "ContactPoint",
+                                    telephone: "03432469633",
+                                    contactType: "sales",
+                                    areaServed: "PAK, KHI",
+                                    availableLanguage: ["English"],
+                                },
+                            },
+                            areaServed: {
                                 "@type": "Place",
-                                name: "Pakistan",
+                                name: "PAK",
                             },
-                            availability: "https://schema.org/InStock",
-                        },
-                    }),
-                }}
-            />
-            <main>
-                <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
-                    <Navbar />
-                    <ServiceHero content={heroData} />
-                    {/* <Benefits /> */}
-                    <ServiceBenefits
-                        sectionTitle="Graphic Design That Builds Brands"
-                        benefits={benefitsData}
-                    />
-                    <ServicesSectionDetails
-                        heading="Video Editing That Connects and Converts 
+                            serviceType:
+                                "graphic design agency, graphic design services, graphic designing company in pakistan, graphic design agency in pakistan, graphic designing, logo designing, logo design service, advertisement posts, social media posts, gaming banners",
+                            category: "SEO services",
+                            offers: {
+                                "@type": "Offer",
+                                priceCurrency: "PKR",
+                                price: "$",
+                                eligibleRegion: {
+                                    "@type": "Place",
+                                    name: "Pakistan",
+                                },
+                                availability: "https://schema.org/InStock",
+                            },
+                        }),
+                    }}
+                />
+                <main>
+                    <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
+                        <Navbar />
+                        <ServiceHero content={heroData} />
+                        {/* <Benefits /> */}
+                        <ServiceBenefits
+                            sectionTitle="Graphic Design That Builds Brands"
+                            benefits={benefitsData}
+                        />
+                        <ServicesSectionDetails
+                            heading="Video Editing That Connects and Converts 
 "
-                        title="Let’s Build Something Visual. Let’s Build Nexaim."
-                        subheading="Whether you're launching a new brand or scaling up your online presence, Nexaim delivers the creative expertise you need. Let’s make something amazing together.
+                            title="Let’s Build Something Visual. Let’s Build Nexaim."
+                            subheading="Whether you're launching a new brand or scaling up your online presence, Nexaim delivers the creative expertise you need. Let’s make something amazing together.
 "
-                        gradientText=""
-                        subtitle=""
-                        description=""
-                        services={seoServices}
-                        primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+                            gradientText=""
+                            subtitle=""
+                            description=""
+                            services={seoServices}
+                            primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
 
-                    />;
-                    <FAQSection data={faqData} subtitle={faqsubtitle} />
-                    {/* <Collaboration />
+                        />;
+                        <FAQSection data={faqData} subtitle={faqsubtitle} />
+                        {/* <Collaboration />
         <Services /> */}
-                    {/* <Pricing /> */}
-                    {/* <Roadmap /> */}
-                    {/* <ContactForm /> */}
-                    <Footer />
-                </div>
-                <ButtonGradient />
-            </main>
-        </body>
+                        {/* <Pricing /> */}
+                        {/* <Roadmap /> */}
+                        {/* <ContactForm /> */}
+                        <Footer />
+                    </div>
+                    <ButtonGradient />
+                </main>
+            </body>
+        </>
     );
 }

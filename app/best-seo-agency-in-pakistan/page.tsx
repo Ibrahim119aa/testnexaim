@@ -50,7 +50,7 @@ export default function Home() {
             text: "We don’t use copy-paste formulas. Every website is different, and so is our approach.",
             backgroundUrl: "/assets/benefits/card-1.svg",
 
-            imageUrl: "/assets/images/seo-benefit-1.jpg",
+            imageUrl: "",
             light: true,
         },
         {
@@ -136,104 +136,109 @@ export default function Home() {
     ];
     const faqsubtitle = " Get answers to the most common questions about our SEO and digital marketing services";
     return (
-        <body>
-            <Script
-                id="product-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org/",
-                        "@type": "Product",
-                        name: "Top SEO Expert In Pakistan - SEO Services In Pakistan - The Nexaim",
-                        image:
-                            "https://thenexaim.com/_next/image?url=%2Fassets%2FSEO.jpg&w=640&q=75",
-                        description:
-                            "We offer professional SEO services in Karachi, Pakistan, designed to help businesses strengthen their online presence and reach targeted audiences. Our services include off-page SEO to build quality backlinks and brand authority, on-page SEO to optimize website structure and content, technical SEO to ensure fast loading speed and error-free performance, and content optimization to improve relevance and user engagement. Why choose us, With our expert strategies, we help businesses rank higher in AI-driven searches and secure top positions on Google’s first page, driving consistent organic traffic and measurable growth",
-                        brand: "The Nexaim",
-                        aggregateRating: {
-                            "@type": "AggregateRating",
-                            ratingValue: "5",
-                            bestRating: "5",
-                            worstRating: "4.9",
-                            ratingCount: "14",
-                        },
-                    }),
-                }}
-            />
+        <>
+            <head>
+                <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
+            </head>
+            <body>
+                <Script
+                    id="product-schema"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org/",
+                            "@type": "Product",
+                            name: "Top SEO Expert In Pakistan - SEO Services In Pakistan - The Nexaim",
+                            image:
+                                "https://thenexaim.com/_next/image?url=%2Fassets%2FSEO.jpg&w=640&q=75",
+                            description:
+                                "We offer professional SEO services in Karachi, Pakistan, designed to help businesses strengthen their online presence and reach targeted audiences. Our services include off-page SEO to build quality backlinks and brand authority, on-page SEO to optimize website structure and content, technical SEO to ensure fast loading speed and error-free performance, and content optimization to improve relevance and user engagement. Why choose us, With our expert strategies, we help businesses rank higher in AI-driven searches and secure top positions on Google’s first page, driving consistent organic traffic and measurable growth",
+                            brand: "The Nexaim",
+                            aggregateRating: {
+                                "@type": "AggregateRating",
+                                ratingValue: "5",
+                                bestRating: "5",
+                                worstRating: "4.9",
+                                ratingCount: "14",
+                            },
+                        }),
+                    }}
+                />
 
-            {/* Service Schema */}
-            <Script
-                id="service-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Service",
-                        name: "Best SEO Agency In Pakistan - The Nexaim",
-                        description:
-                            "We offer professional SEO services in Karachi, Pakistan, designed to help businesses strengthen their online presence and reach targeted audiences. Our services include off-page SEO to build quality backlinks and brand authority, on-page SEO to optimize website structure and content, technical SEO to ensure fast loading speed and error-free performance, and content optimization to improve relevance and user engagement. Why choose us, With our expert strategies, we help businesses rank higher in AI-driven searches and secure top positions on Google’s first page, driving consistent organic traffic and measurable growth",
-                        provider: {
-                            "@type": "Organization",
-                            name: "The Nexaim",
-                            url: "https://thenexaim.com/best-seo-agency-in-pakistan",
-                            logo: "",
-                            contactPoint: {
-                                "@type": "ContactPoint",
-                                telephone: "03432469633",
-                                contactType: "Customer Service",
-                                areaServed: "PAK, KHI",
-                                availableLanguage: ["English"],
+                {/* Service Schema */}
+                <Script
+                    id="service-schema"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Service",
+                            name: "Best SEO Agency In Pakistan - The Nexaim",
+                            description:
+                                "We offer professional SEO services in Karachi, Pakistan, designed to help businesses strengthen their online presence and reach targeted audiences. Our services include off-page SEO to build quality backlinks and brand authority, on-page SEO to optimize website structure and content, technical SEO to ensure fast loading speed and error-free performance, and content optimization to improve relevance and user engagement. Why choose us, With our expert strategies, we help businesses rank higher in AI-driven searches and secure top positions on Google’s first page, driving consistent organic traffic and measurable growth",
+                            provider: {
+                                "@type": "Organization",
+                                name: "The Nexaim",
+                                url: "https://thenexaim.com/best-seo-agency-in-pakistan",
+                                logo: "",
+                                contactPoint: {
+                                    "@type": "ContactPoint",
+                                    telephone: "03432469633",
+                                    contactType: "Customer Service",
+                                    areaServed: "PAK, KHI",
+                                    availableLanguage: ["English"],
+                                },
                             },
-                        },
-                        areaServed: {
-                            "@type": "Place",
-                            name: "PAK",
-                        },
-                        serviceType:
-                            "seo services in pakistan, we provide top seo expert in pakistan, best seo services in pakistan,top seo experts in pakistan, best seo expert in pakistan, seo services in islamabad, seo expert in karachi, seo agency in karachi, seo company in karachi, seo agency in pakistan, seo company in pakistan",
-                        category: "SEO services",
-                        offers: {
-                            "@type": "Offer",
-                            priceCurrency: "PKR",
-                            price: "$",
-                            eligibleRegion: {
+                            areaServed: {
                                 "@type": "Place",
-                                name: "Pakistan",
+                                name: "PAK",
                             },
-                            availability: "https://schema.org/InStock",
-                        },
-                    }),
-                }}
-            />
-            <main>
-                <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
-                    <Navbar />
-                    <ServiceHero content={heroData} />
-                    {/* <Benefits /> */}
-                    <ServiceBenefits
-                        sectionTitle="There are hundreds of SEO agencies in Pakistan. So, why trust us?"
-                        benefits={benefitsData}
-                    />
-                    <ServicesSectionDetails
-                        title="Ready to Rank?"
-                        subheading="Let's talk about how we can grow your business with SEO thats works."
-                        heading="What Aspects We"
-                        gradientText="Cover"
-                        subtitle="SEO isn't just about keywords. It's about being in the right place at the right time."
-                        description="We offer a complete range of SEO services tailored to your business model and audience, including:"
-                        services={seoServices}
-                        primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
-                    />;
-                    <FAQSection data={faqData} subtitle={faqsubtitle} />
-                    {/* <Collaboration />
+                            serviceType:
+                                "seo services in pakistan, we provide top seo expert in pakistan, best seo services in pakistan,top seo experts in pakistan, best seo expert in pakistan, seo services in islamabad, seo expert in karachi, seo agency in karachi, seo company in karachi, seo agency in pakistan, seo company in pakistan",
+                            category: "SEO services",
+                            offers: {
+                                "@type": "Offer",
+                                priceCurrency: "PKR",
+                                price: "$",
+                                eligibleRegion: {
+                                    "@type": "Place",
+                                    name: "Pakistan",
+                                },
+                                availability: "https://schema.org/InStock",
+                            },
+                        }),
+                    }}
+                />
+                <main>
+                    <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
+                        <Navbar />
+                        <ServiceHero content={heroData} />
+                        {/* <Benefits /> */}
+                        <ServiceBenefits
+                            sectionTitle="There are hundreds of SEO agencies in Pakistan. So, why trust us?"
+                            benefits={benefitsData}
+                        />
+                        <ServicesSectionDetails
+                            title="Ready to Rank?"
+                            subheading="Let's talk about how we can grow your business with SEO thats works."
+                            heading="What Aspects We"
+                            gradientText="Cover"
+                            subtitle="SEO isn't just about keywords. It's about being in the right place at the right time."
+                            description="We offer a complete range of SEO services tailored to your business model and audience, including:"
+                            services={seoServices}
+                            primaryCta={{ text: "VIEW OUR PORTFOLIO", link: "https://wa.me/+923432469633" }}
+                        />;
+                        <FAQSection data={faqData} subtitle={faqsubtitle} />
+                        {/* <Collaboration />
         <Services /> */}
-                    {/* <Pricing /> */}
-                    {/* <Roadmap /> */}
-                    {/* <ContactForm /> */}
-                    <Footer />
-                </div>
-                <ButtonGradient />
-            </main>
-        </body>
+                        {/* <Pricing /> */}
+                        {/* <Roadmap /> */}
+                        {/* <ContactForm /> */}
+                        <Footer />
+                    </div>
+                    <ButtonGradient />
+                </main>
+            </body>
+        </>
     );
 }

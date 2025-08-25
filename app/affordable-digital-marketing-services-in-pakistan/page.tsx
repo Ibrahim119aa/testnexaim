@@ -50,7 +50,7 @@ export default function Home() {
             text: "Proven strategies built on experience and research.",
             backgroundUrl: "/assets/benefits/card-1.svg",
 
-            imageUrl: "/assets/images/seo-benefit-1.jpg",
+            imageUrl: "",
             light: true,
         },
         {
@@ -215,6 +215,9 @@ export default function Home() {
     };
     return (
         <>
+            <head>
+                <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
+            </head>
             <Script
                 id="product-schema"
                 type="application/ld+json"
