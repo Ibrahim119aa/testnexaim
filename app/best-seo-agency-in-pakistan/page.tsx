@@ -136,7 +136,7 @@ export default function Home() {
     ];
     const faqsubtitle = " Get answers to the most common questions about our SEO and digital marketing services";
     return (
-        <>
+        <html>
             <head>
                 <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
             </head>
@@ -239,6 +239,6 @@ export default function Home() {
                     <ButtonGradient />
                 </main>
             </body>
-        </>
+        </html>
     );
 }
