@@ -218,20 +218,6 @@ export default function Home() {
             <head>
                 <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
             </head>
-            <Script
-                id="product-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(productSchema),
-                }}
-            />
-            <Script
-                id="service-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(serviceSchema),
-                }}
-            />
             <body>
                 <main>
                     <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
