@@ -14,19 +14,28 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 import Script from "next/script";
 export const metadata: Metadata = {
-  title: 'Software House in Karachi - The Nexaim',
-  description: 'Nexaim is Pakistan\'s leading digital marketing agency offering data-driven strategies for startups and brands. Grow your business online with our expert team!',
-  keywords: ['Software House Karachi', 'Digital Marketing Pakistan', 'Nexaim Agency'],
+  title: "Top Digital Marketing Agency in Karachi Pakistan | Nexaim Expert",
+  description:
+    "Elevate your brand with Nexaim Expert, the top digital marketing agency in Karachi. We offer best solutions to boost your online presence and drive results.",
+  keywords: [
+    "Digital Marketing Karachi",
+    "Top Marketing Agency Pakistan",
+    "Nexaim Expert",
+    "SEO Services Karachi",
+    "Social Media Marketing Karachi",
+  ],
   alternates: {
-    canonical: 'https://thenexaim.com',
+    canonical: "https://thenexaim.com",
   },
   openGraph: {
-    title: 'Software House in Karachi - The Nexaim',
-    description: 'Grow your business online with Pakistan\'s trusted digital marketing agency, Nexaim.',
-    url: 'https://thenexaim.com',
-    type: 'website',
+    title: "Top Digital Marketing Agency in Karachi Pakistan | Nexaim Expert",
+    description:
+      "Elevate your brand with Nexaim Expert, the top digital marketing agency in Karachi. We offer best solutions to boost your online presence and drive results.",
+    url: "https://thenexaim.com",
+    type: "website",
   },
 };
+
 export default function Home() {
 
 
@@ -38,6 +47,129 @@ export default function Home() {
 
       </head>
       <body>
+        <Script id="organization-schema" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "The Nexaim",
+            url: "https://thenexaim.com/",
+            logo: "",
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "03432469633",
+              contactType: "customer service",
+              areaServed: "PK",
+              availableLanguage: "en",
+            },
+            sameAs: [
+              "https://www.instagram.com/_thenexaim/",
+              "https://www.facebook.com/thenexaim",
+            ],
+          })}
+        </Script>
+
+        {/* LocalBusiness Schema */}
+        <Script id="localbusiness-schema" type="application/ld+json" strategy="afterInteractive">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "The Nexaim",
+            image:
+              "https://thenexaim.com/_next/image?url=%2Fassets%2F4-small.png&w=256&q=75",
+            logo: "",
+            "@id": "https://thenexaim.com/",
+            url: "https://thenexaim.com/",
+            telephone: "03432469633",
+            priceRange: "PKR",
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "PAK",
+              addressRegion: "KHI",
+            },
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday",
+              ],
+              opens: "09:00",
+              closes: "06:00",
+            },
+          })}
+        </Script>
+        <Script
+          id="product-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            name: "Software House In Karachi - Social Media Marketing Agency in Pakistan | The Nexaim",
+            image:
+              "https://thenexaim.com/_next/image?url=%2Fassets%2F4-small.png&w=256&q=75",
+            description:
+              "Nexaim provides professional digital marketing services in Karachi and is recognized as one of the leading social media marketing agencies in Pakistan. We also offer expert SEO, creative graphic design, web design and development, and engaging video animation services. As a trusted company, we deliver innovative solutions for businesses across Pakistan.",
+            brand: "The Nexaim",
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "5",
+              bestRating: "5",
+              worstRating: "4.9",
+              ratingCount: "43",
+            },
+          })}
+        </Script>
+
+        {/* ✅ Service Schema */}
+        <Script
+          id="service-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Software House In Karachi - Social Media Marketing Agency in Pakistan | The Nexaim",
+            description:
+              "Nexaim provides professional digital marketing services in Karachi and is recognized as one of the leading social media marketing agencies in Pakistan. We also offer expert SEO, creative graphic design, web design and development, and engaging video animation services. As a trusted company, we deliver innovative solutions for businesses across Pakistan.",
+            provider: {
+              "@type": "Organization",
+              name: "The Nexaim",
+              url: "https://thenexaim.com/",
+              logo: "",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "03432469633",
+                contactType: "Customer Service",
+                areaServed: "PAK, KHI",
+                availableLanguage: ["English"],
+              },
+            },
+            areaServed: {
+              "@type": "Place",
+              name: "PAK",
+            },
+            serviceType:
+              "best seo agency in Pakistan, software house in Karachi, graphic design services, graphic design agency in Pakistan, top seo expert in Pakistan, best web design company in Pakistan, web development services in Pakistan, social media marketing agency in Pakistan, digital marketing expert in Pakistan, podcast production & marketing services",
+            category: "Digital Marketing",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "PKR",
+              price: "$",
+              eligibleRegion: {
+                "@type": "Place",
+                name: "Pakistan",
+              },
+              availability: "https://schema.org/InStock",
+            },
+          })}
+        </Script>
         <main>
           <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
             <Navbar />
