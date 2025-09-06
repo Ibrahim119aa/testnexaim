@@ -114,7 +114,6 @@ const Footer = ({ className }: Props) => {
 
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="caption text-xs text-neutral-500">&copy; {year} All rights reserved.</p>
-            <p className="text-xs text-neutral-500">Crafted with Next.js and Tailwind CSS</p>
           </div>
         </div>
       </footer>

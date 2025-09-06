@@ -84,7 +84,7 @@ export default function ContactForm() {
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4" ref={formRef}>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="firstName" className="text-gray-300">
                         First name

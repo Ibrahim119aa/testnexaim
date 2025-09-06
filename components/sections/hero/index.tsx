@@ -32,7 +32,7 @@ const Hero = (props: Props) => {
   };
   return (
     <Section
-      className={cn("pt-[12rem] -mt-[5.25rem]")}
+      className={cn("lg:pt-[12rem] md:pt-[12rem] pt-[10rem] -mt-[5.25rem]")}
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
