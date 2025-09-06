@@ -123,7 +123,7 @@ export default function TestimonialsSection() {
                                 </div>
 
                                 {/* Quote */}
-                                <blockquote className="text-gray-200 mb-6 leading-relaxed">"{testimonial.quote}"</blockquote>
+                                <blockquote className="text-gray-200 text-sm mb-6 leading-relaxed">"{testimonial.quote}"</blockquote>
 
                                 {/* Author */}
                                 <div className="border-t border-white/10 pt-4">
@@ -138,9 +138,9 @@ export default function TestimonialsSection() {
 
                 {/* Call to Action */}
                 <div className="text-center mt-16">
-                    <div className="inline-flex items-center gap-4 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 rounded-full px-8 py-4">
-                        <span className="text-white font-medium">Ready to transform your business?</span>
-                        <button className="bg-gradient-to-r from-cyan-400 to-purple-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300">
+                    <div className="inline-flex items-center gap-4 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 rounded-full lg:px-8 md:px-6 px-3 py-4">
+                        <span className="text-white lg:font-medium md:font-medium text-sm">Ready to transform your business?</span>
+                        <button className="bg-gradient-to-r from-cyan-400 to-purple-500 text-white lg:px-6 md:px-4 px-2 py-2 rounded-full lg:font-medium md:font-medium text-sm hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300">
                             Get Started
                         </button>
                     </div>
