@@ -142,7 +142,7 @@ export default function TestimonialsSection() {
 
 
     return (
-        <section className="min-h-screen py-20 px-4 relative overflow-hidden bg-gradient-to-b from-[#020617] to-[#0b0f1a]">
+        <section className="py-8 px-4 relative overflow-hidden bg-gradient-to-b from-[#020617] to-[#0b0f1a]">
             {/* Background Elements */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.1),transparent_50%)]" />
             <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full opacity-20 blur-xl" />
@@ -212,7 +212,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 {/* CTA */}
-                <div className="text-center mt-16">
+                <div className="text-center mt-5">
                     <div className="inline-flex items-center gap-4 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-sm border border-white/10 rounded-full px-6 py-4">
                         <span className="text-white text-sm md:text-base">
                             Ready to transform your business?
