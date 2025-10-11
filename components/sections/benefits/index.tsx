@@ -23,36 +23,32 @@ const Benefits = () => {
   }, []);
 
   if (!mounted) return null;
-
+  // ... existing code ...
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2500,
     speed: 600,
-    slidesToShow: 3, // default desktop
+    mobileFirst: true,           // <— make it mobile-first
+    slidesToShow: 1,             // <— fallback is 1 on mobile
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1280, // large → keep 3 slides
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1024, // tablet
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768, // mobile
+        breakpoint: 768,         // >= 768px
         settings: {
           slidesToShow: 1,
         },
       },
+      {
+        breakpoint: 1024,        // >= 1024px
+        settings: {
+          slidesToShow: 3,
+        },
+      },
     ],
   };
+  // ... existing code ...
 
   return (
     <div className="w-full overflow-hidden bg-gray-50 py-12">
