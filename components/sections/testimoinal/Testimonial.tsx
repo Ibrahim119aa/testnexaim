@@ -132,8 +132,21 @@ export default function TestimonialsSection() {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         responsive: [
-            { breakpoint: 1024, settings: { slidesToShow: 2 } },
-            { breakpoint: 768, settings: { slidesToShow: 1 } },
+            // Extra large devices (≥1280px)
+            { breakpoint: 1536, settings: { slidesToShow: 4 } }, // 2XL screens
+            { breakpoint: 1280, settings: { slidesToShow: 3 } }, // XL screens
+
+            // Large devices (≥1024px)
+            { breakpoint: 1024, settings: { slidesToShow: 2 } }, // LG screens
+
+            // Medium devices (≥768px)
+            { breakpoint: 768, settings: { slidesToShow: 2 } }, // MD screens
+
+            // Small devices (≥640px)
+            { breakpoint: 640, settings: { slidesToShow: 1 } }, // SM screens
+
+            // Extra small devices (<640px)
+            { breakpoint: 480, settings: { slidesToShow: 1 } }, // XSM screens (phones)
         ],
     };
 
