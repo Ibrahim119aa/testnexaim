@@ -234,8 +234,7 @@ export default function Home() {
                             title="Let’s Build a Website That Grows With You"
                             subheading="Whether you're launching a new business or scaling your digital presence, Nexaim is your go-to web development partner. Our development team understands not just code — but marketing, branding, and results. Let’s turn your vision into a high-impact, conversion-ready website"
 
-                            heading="Our Website Development Services Include
-"
+                            heading="Website Development Services "
                             gradientText=""
                             subtitle=""
                             description=""

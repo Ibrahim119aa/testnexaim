@@ -49,11 +49,11 @@ export default function ServicesSectionDetails({
         {/* Header Section */}
         <div className="text-center mb-16">
           {
-            heading.trim() == "Our Website Development Services Include" ?
+            heading.trim() == "Website Development Services" ?
               (
                 <h2
 
-                  className="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight"
+                  className="text-4xl my-5 text-center md:text-6xl font-bold text-white mb-6 leading-tight"
                 >
 
                   <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">

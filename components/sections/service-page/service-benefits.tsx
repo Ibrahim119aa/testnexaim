@@ -62,15 +62,26 @@ const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2
+          <h2 className="text-4xl my-5 text-center md:text-6xl font-bold text-white mb-10 leading-tight">
+            
+            {sectionTitle.split(" ").length > 4 ? (
+              <>
+                <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  {sectionTitle.split(" ").slice(0, 4).join(" ")}
+                </span>
+                <br />
 
-            className="text-center text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight"
-          >
-
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              {sectionTitle}
-            </span>
+                <span className="bg-gradient-to-r from-cyan-400 via-purple-400  to-pink-400 bg-clip-text text-transparent">
+                  {sectionTitle.split(" ").slice(4).join(" ")}
+                </span>
+              </>
+            ) : (
+              <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                {sectionTitle}
+              </span>
+            )}
           </h2>
+
         </motion.div>
 
         <motion.div

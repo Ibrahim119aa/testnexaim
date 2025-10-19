@@ -67,17 +67,17 @@ const ServiceHero = ({ content }: Props) => {
               {text}
             </p>
           ))}
+          <a href="#" className="relative hidden lg:inline-flex  items-center justify-center border-[1px] border-[#ce66c5] px-5 py-2 overflow-hidden font-semibold text-white rounded-2xl bg-transparent"
+          >{content.button.text}</a>
 
-          <Button href={content.button.link} white>
-            {content.button.text}
-          </Button>
+
         </motion.div>
 
         {/* Video Area */}
 
       </div>
 
-      <BottomLine />
+
     </Section>
   );
 };
