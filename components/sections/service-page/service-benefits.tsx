@@ -58,12 +58,12 @@ const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
     <Section id="features">
       <div className="container relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-4xl my-5 text-center md:text-6xl font-bold text-white mb-10 leading-tight">
-            
+          <h2 className="text-4xl  text-center md:text-6xl font-bold text-white mb-10 leading-tight">
+
             {sectionTitle.split(" ").length > 4 ? (
               <>
                 <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
