@@ -7,6 +7,7 @@ import Image from "next/image"
 import Arrow from "@/components/svg/arrow"
 import { GradientLight } from "@/components/design/benefits"
 import ClipPath from "@/components/svg/clip-path"
+import Link from "next/link"
 
 export interface BenefitItem {
   id: number | string
@@ -121,7 +122,16 @@ const ServiceBenefits = ({ sectionTitle, benefits }: Props) => {
                     animate={isInView ? { opacity: 1 } : {}}
                     transition={{ delay: index * 0.1 + 0.3 }}
                   >
-                    {item.title}
+                    {item.title.toLowerCase().includes("website") ? (
+                      <Link
+                        href="/web-design-and-development-services"
+                        className=" hover:underline"
+                      >
+                        {item.title}
+                      </Link>
+                    ) : (
+                      item.title
+                    )}
                   </motion.h3>
 
                   <motion.p

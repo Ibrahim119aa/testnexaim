@@ -7,7 +7,7 @@ const AboutUs = () => {
     return (
         <div
             id="collaboration"
-            className="relative min-h-[48rem] w-full bg-gradient-to-b from-black/80 to-black/90 overflow-hidden"
+            className="relative min-h-[55rem] w-full bg-gradient-to-b from-black/80 to-black/90 overflow-hidden"
         >
             {/* Background Image */}
             <div className="aboutusbackground absolute inset-0 opacity-40"></div>
