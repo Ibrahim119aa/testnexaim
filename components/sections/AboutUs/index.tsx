@@ -25,9 +25,9 @@ const AboutUs = () => {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-white uppercase font-extrabold 
-              text-4xl sm:text-5xl md:text-6xl  lg:text-[6rem] 
+              text-3xl sm:text-5xl md:text-6xl  lg:text-[6rem] 
               leading-[3rem] sm:leading-[4rem] md:leading-[5rem] lg:leading-[7rem]">
-                            WHY CHOOSE <br /> US ?
+                            WHY CHOOSE  US ?
                         </h2>
 
                         <button className="px-8 py-3 font-semibold rounded-lg text-lg text-white border border-[#ce66c5] hover:bg-[#ce66c5]/20 transition">
