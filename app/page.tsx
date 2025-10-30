@@ -137,7 +137,6 @@ export default function Home() {
           })}
         </Script>
 
-        {/* LocalBusiness Schema */}
         <Script id="localbusiness-schema" type="application/ld+json" strategy="afterInteractive">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -195,50 +194,67 @@ export default function Home() {
           })}
         </Script>
 
-        {/* ✅ Service Schema */}
         <Script
-          id="service-schema"
+          id="services-schema"
           type="application/ld+json"
-          strategy="afterInteractive"
-        >
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: "Software House In Karachi - Social Media Marketing Agency in Pakistan | The Nexaim",
-            description:
-              "Nexaim provides professional digital marketing services in Karachi and is recognized as one of the leading social media marketing agencies in Pakistan. We also offer expert SEO, creative graphic design, web design and development, and engaging video animation services. As a trusted company, we deliver innovative solutions for businesses across Pakistan.",
-            provider: {
-              "@type": "Organization",
-              name: "The Nexaim",
-              url: "https://thenexaim.com/",
-              logo: "",
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "03432469633",
-                contactType: "Customer Service",
-                areaServed: "PAK, KHI",
-                availableLanguage: ["English"],
-              },
-            },
-            areaServed: {
-              "@type": "Place",
-              name: "PAK",
-            },
-            serviceType:
-              "best seo agency in Pakistan, software house in Karachi, graphic design services, graphic design agency in Pakistan, top seo expert in Pakistan, best web design company in Pakistan, web development services in Pakistan, social media marketing agency in Pakistan, digital marketing expert in Pakistan, podcast production & marketing services",
-            category: "Digital Marketing",
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "PKR",
-              price: "$",
-              eligibleRegion: {
-                "@type": "Place",
-                name: "Pakistan",
-              },
-              availability: "https://schema.org/InStock",
-            },
-          })}
-        </Script>
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Service",
+                  "@id": "https://thenexaim.com/affordable-digital-marketing-services-in-pakistan",
+                  name: "Digital Marketing (overview)",
+                  serviceType:
+                    "Facebook & Instagram Ads, Social Media Management, E-commerce Scaling, YouTube Video Marketing",
+                  url: "https://thenexaim.com/affordable-digital-marketing-services-in-pakistan",
+                  description:
+                    "Drive Growth with Smart Strategies! Maximize your brand’s online presence through targeted campaigns, social media, and performance-based digital marketing. Nexaim turns clicks into customers.",
+                },
+                {
+                  "@type": "Service",
+                  "@id": "https://thenexaim.com/graphic-design-and-video-editing-service",
+                  name: "Graphic Design & Video Editing (overview)",
+                  serviceType:
+                    "Logo Design, Branding, Business Cards, Flyers, Brochures, Infographic & Custom Illustrator, Product Packaging Mockup, YouTube Thumbnail and Channel Art",
+                  url: "https://thenexaim.com/graphic-design-and-video-editing-service",
+                  description:
+                    "Boost Your Brand with Stunning Designs & Scroll-Stopping Videos! Nexaim transforms your raw content into professional-grade visuals and polished video edits. We build strong brand identities and create content that engages, connects, and converts.",
+                },
+                {
+                  "@type": "Service",
+                  "@id": "https://thenexaim.com/web-design-and-development-services",
+                  name: "Website Design and Development (overview)",
+                  serviceType:
+                    "Custom Website Development and Design, Redesign Website, Landing Page Design, WordPress design and development, Shopify design and development, Web maintenance and CMS Integration",
+                  url: "https://thenexaim.com/web-design-and-development-services",
+                  description:
+                    "Websites That Work, Perform & Scale! We build fast, secure, and SEO-ready websites designed for user experience, brand impact, and business results—custom-built from the ground up.",
+                },
+                {
+                  "@type": "Service",
+                  "@id": "https://thenexaim.com/best-seo-agency-in-pakistan",
+                  name: "SEO Services (overview)",
+                  serviceType:
+                    "On-page SEO, Off-page SEO, Technical SEO, Content Optimization, Website Audit, Geo-location SEO, AEO",
+                  url: "https://thenexaim.com/best-seo-agency-in-pakistan",
+                  description:
+                    "Get Found Where It Matters! Boost your visibility with Nexaim’s smart SEO solutions. From on-page optimization to technical SEO, we help you rank higher and grow organically.",
+                },
+                {
+                  "@type": "Service",
+                  "@id": "https://thenexaim.com/services/podcast-production",
+                  name: "Podcast Services (overview)",
+                  serviceType:
+                    "Podcast concept development, Audio and Video Editing, Social Media Reels & Audiograms, Guest Booking & Collaboration, Performance Tracking & Analytics Report",
+                  url: "https://thenexaim.com/services/podcast-production",
+                  description:
+                    "Turn Your Voice into a Brand! From recording to promotion, Nexaim helps you launch and grow a podcast that connects, engages, and builds a loyal audience.",
+                },
+              ],
+            }),
+          }}
+        />
         <main>
           <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
             <Navbar />
