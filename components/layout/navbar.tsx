@@ -66,7 +66,7 @@ const Navbar = (props: Props) => {
           openNavigation ? "bg-black" : "bg-black"
         )}
       >
-        <div className={cn(`flex items-center px-5 max-lg:py-4 lg:px-7.5 xl:px-10`)}>
+        <div className={cn(`flex items-center px-5 max-lg:py-2 lg:px-7.5 xl:px-10`)}>
           <div
             onClick={handleNavigateHomePage}
             className={cn(`flex gap-2 items-center text-xl font-bold xl:mr-8 text-[#B500A5]`)}
