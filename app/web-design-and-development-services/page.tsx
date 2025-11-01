@@ -217,7 +217,9 @@ export default function Home() {
 
     return (
         <html>
-
+            {/* <head>
+                <meta name="google-site-verification" content="rSmgiUi5hClwP2sfbwSV1xX0POJwTuw5IjXRyxhtECs" />
+            </head> */}
             <body>
                 <main>
                     <Script
