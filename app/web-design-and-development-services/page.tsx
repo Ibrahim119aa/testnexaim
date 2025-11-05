@@ -337,11 +337,7 @@ export default function Home() {
                     <div className={cn("overflow-hidden bg-[#0E0C15] pt-[4.75rem] lg:pt-[5.25rem]")}>
                         <Navbar />
                         <ServiceHero content={heroData} />
-                        {/* <Benefits /> */}
-                        {/* <ServiceBenefits
-                    sectionTitle=""
-                    benefits={benefitsData}
-                /> */}
+
                         <ServicesSectionDetails
                             title="Let’s Build a Website That Grows With You"
                             subheading="Whether you're launching a new business or scaling your digital presence, Nexaim is your go-to web development partner. Our development team understands not just code — but marketing, branding, and results. Let’s turn your vision into a high-impact, conversion-ready website"

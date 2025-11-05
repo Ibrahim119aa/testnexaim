@@ -53,8 +53,7 @@ export default function Home() {
         provider: {
             "@type": "Organization",
             name: "The Nexaim",
-            url: "https://testnexaim.vercel.app/best-seo-agency-in-pakistan",
-            logo: "https://testnexaim.vercel.app/marketing-agency-for-startups/waylogo.png",
+            url: "https://thenexaim.com/best-seo-agency-in-pakistan",
             contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "03432469633",
